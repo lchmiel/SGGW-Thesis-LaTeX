@@ -4,11 +4,12 @@
 % Wersja 1.06 z 2021.11.14
 % Autorzy: Mikołaj Tkaczyk, Mikołaj Piekutowski
 % Zmiany:
-% 1. Zmiana strony tytułowej, aby zgadzała się z Zarządzeniem Rektora
+% 1. Zmiana strony tytułowej, aby zgadzała się z Zarządzeniem Rektora SGGW nr 100 z dnia 22 września 2021 r.
 % http://student.wzim.sggw.pl/wp-content/uploads/2015/10/Zarz%C4%85dzenie-Nr-100-Rektora-SGGW-z-dnia-22-wrze%C5%9Bnia-2021-r.-wytyczne-dotycz%C4%85ce-przygotowywania-prac-dyplomowych.pdf
 % 2. Możliwość ustawienia nagłówka strony tytułowej za pomocą ustawienia flag INZYNIERSKA, LICENCJACKA lub MAGISTERSKA.
-% 3. Dodanie kondycyjnego ustawiania stopki strony tytułowej, kontrolowanej narazie przez jedną flagę WZIM.
+% 3. Dodanie warunkowego ustawiania stopki strony tytułowej, kontrolowanej narazie przez jedną flagę WZIM.
 % 4. Zmiana wersji na zmienną, aby dynamicznie wyświetlała się w notce strony tytułowej.
+% 5. Zmiany te wymagały dodania dodatkowych plików obrazów, które muszą być umieszczone w tym samym katalogu, co plik klasy.
 
 % Wersja 1.05 z 2019.06.25
 % Autorzy: Pawel Wasil, Bartosz Sowa

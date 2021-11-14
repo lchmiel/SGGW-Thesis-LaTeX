@@ -56,10 +56,7 @@ opisywanej klasy i stanowić będzie swoistą wizytówkę jej działania.
 
 \section{Zmiany w klasie}
 \label{sec:zmiany}
-Ten rozdział jest dodany do pracy p.\ Łukasza Adamczyka przez autorów późniejszych wersji i~zmian w~klasie. Są tu wymienione przede wszystkim te wersje klasy, które miały wpływ na sposób jej wykorzystywania. Zmiany są również opisane w~pliku klasy.
-
-\subsubsection*{{\rm Mikołaj Tkaczyk, Mikołaj Piekutowski} \hspace{1ex} Zmiana strony tytułowej\\{\rm Wersja 1.06, 2021.11.14}}
-??? Tu proszę przede wszystkim opisać jak ustawia się flagi. Można też dodać opis zmian taki, jak w~pliku klasy. ???
+Ten podrozdział jest dodany do pracy p.\ Łukasza Adamczyka przez autorów późniekjszych modyfikacji klasy,
 
 
 \chapter{Implementacja}
