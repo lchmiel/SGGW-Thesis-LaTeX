@@ -1,6 +1,5 @@
 %
 % Klasa do pisania prac dyplomowych - licencjackich, inzynierskich i magisterskich - w SGGW
-% test pr
 
 % Wersja 1.06 z 2021.11.14
 % Autorzy: Mikołaj Tkaczyk, Mikołaj Piekutowski
