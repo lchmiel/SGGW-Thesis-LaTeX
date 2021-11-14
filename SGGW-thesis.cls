@@ -9,6 +9,7 @@
 % 2. Możliwość ustawienia nagłówka strony tytułowej za pomocą ustawienia flag INZYNIERSKA, LICENCJACKA lub MAGISTERSKA.
 % 3. Dodanie kondycyjnego ustawiania stopki strony tytułowej, kontrolowanej narazie przez jedną flagę WZIM.
 % 4. Zmiana wersji na zmienną, aby dynamicznie wyświetlała się w notce strony tytułowej.
+% 5. Test
 
 % Wersja 1.05 z 2019.06.25
 % Autorzy: Pawel Wasil, Bartosz Sowa
