@@ -50,7 +50,7 @@
 % Autor: Lukasz Adamczyk
 %
 \NeedsTeXFormat{LaTeX2e}[1995/12/01]
-\ProvidesClass{SGGW-thesis}[2019/06/25 LaTeX class for writing theses in SGGW]
+\ProvidesClass{SGGW-thesis}[2021.11.14 LaTeX class for writing theses in SGGW]
 
 
 \DeclareOption{multip}{\@multiptrue}
