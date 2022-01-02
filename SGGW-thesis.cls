@@ -50,7 +50,7 @@
 % Autor: Lukasz Adamczyk
 %
 \NeedsTeXFormat{LaTeX2e}[1995/12/01]
-\ProvidesClass{SGGW-thesis}[2019/06/25 LaTeX class for writing theses in SGGW]
+\ProvidesClass{SGGW-thesis}[2022/01/02 LaTeX class for writing theses in SGGW]
 
 
 \DeclareOption{multip}{\@multiptrue}
@@ -150,7 +150,7 @@
 
 \newif\ifWZIM
 \newcommand{\conditionaldepartmentfooter}{
-  \ifINZYNIERSKA
+  \ifWZIM
     \includegraphics[width=11.04cm]{stopka_WZIM.png}\par
   \fi
 }
