@@ -50,7 +50,7 @@
 % Autor: Lukasz Adamczyk
 %
 \NeedsTeXFormat{LaTeX2e}[1995/12/01]
-\ProvidesClass{SGGW-thesis}[2019/06/25 LaTeX class for writing theses in SGGW]
+\ProvidesClass{SGGW-thesis}[2022/01/02 LaTeX class for writing theses in SGGW]
 
 
 \DeclareOption{multip}{\@multiptrue}
@@ -150,7 +150,7 @@
 
 \newif\ifWZIM
 \newcommand{\conditionaldepartmentfooter}{
-  \ifINZYNIERSKA
+  \ifWZIM
     \includegraphics[width=11.04cm]{stopka_WZIM.png}\par
   \fi
 }
@@ -258,7 +258,7 @@
 	\null
 	\vfill
 	\begin{center}
-		{\textbf{O\'{s}wiadczenie promotora pracy}}\\
+		{\textbf{O\'{s}wiadczenie Promotora pracy}}\\
 	\end{center}
 		O\'{s}wiadczam, że
 		\if@multip
@@ -272,7 +272,7 @@
 		\noindent
 		Data \dotfill
 		\hspace{2cm}
-		Podpis promotora pracy \dotfill
+		Podpis promotora \dotfill
 
 	\vfill
 	\begin{center}
@@ -285,7 +285,7 @@
 			niniejsza praca dyplomowa zosta{\l}a napisana przeze mnie samodzielnie i~nie zawiera
 		\fi
 		  tre\'{s}ci uzyskanych w spos\'{o}b niezgodny z obowi\k{a}zuj\k{a}cymi przepisami prawa, w szczeg\'{o}lno\'{s}ci z ustaw\k{a} z dnia
-		4~lutego 1994~r.\ o~prawie autorskim i~prawach pokrewnych (Dz.\ U.\ Nr 90 poz.\ 631 z p\'{o}\'{z}n.\ zm.)\\[2ex]
+		4~lutego 1994~r.\ o~prawie autorskim i~prawach pokrewnych (Dz.\ U.\ 2019 poz.\ 1231 z p\'{o}\'{z}n.\ zm.)\\[2ex]
 		O\'{s}wiadczam, że przedstawiona praca nie by{\l}a wcze\'{s}niej podstaw\k{a} żadnej procedury zwi\k{a}zanej z nadaniem dyplomu lub uzyskaniem tytu{\l}u zawodowego.\\%[2ex]
 		
 		\noindent
