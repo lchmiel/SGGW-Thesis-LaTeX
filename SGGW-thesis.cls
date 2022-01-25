@@ -1,13 +1,20 @@
 %
 % Klasa do pisania prac dyplomowych - licencjackich, inzynierskich i magisterskich - w SGGW
 
+% Wersja 1.07 z 2022.01.26
+% Autor: Leszek Chmielewski
+% Zmiany:
+% 1. Drobny retusz na stronie oświadczeń promotora i autora: "Świadom" -> "Świadom/a".
+% 2. W rzeczywistości nowe zarządzenie Rektora i wytyczne podane są na stronie:
+%    https://www.sggw.edu.pl/strona-glowna/studia/informacje-praktyczne-dla-studentow/praca-dyplomowa/
+
 % Wersja 1.06 z 2021.11.14
 % Autorzy: Mikołaj Tkaczyk, Mikołaj Piekutowski
 % Zmiany:
 % 1. Zmiana strony tytułowej, aby zgadzała się z Zarządzeniem Rektora SGGW nr 100 z dnia 22 września 2021 r.
 % http://student.wzim.sggw.pl/wp-content/uploads/2015/10/Zarz%C4%85dzenie-Nr-100-Rektora-SGGW-z-dnia-22-wrze%C5%9Bnia-2021-r.-wytyczne-dotycz%C4%85ce-przygotowywania-prac-dyplomowych.pdf
 % 2. Możliwość ustawienia nagłówka strony tytułowej za pomocą ustawienia flag INZYNIERSKA, LICENCJACKA lub MAGISTERSKA.
-% 3. Dodanie warunkowego ustawiania stopki strony tytułowej, kontrolowanej narazie przez jedną flagę WZIM.
+% 3. Dodanie warunkowego ustawiania stopki strony tytułowej, kontrolowanej na razie przez jedną flagę WZIM.
 % 4. Zmiana wersji na zmienną, aby dynamicznie wyświetlała się w notce strony tytułowej.
 % 5. Zmiany te wymagały dodania dodatkowych plików obrazów, które muszą być umieszczone w tym samym katalogu, co plik klasy.
 
@@ -50,7 +57,7 @@
 % Autor: Lukasz Adamczyk
 %
 \NeedsTeXFormat{LaTeX2e}[1995/12/01]
-\ProvidesClass{SGGW-thesis}[2022/01/02 LaTeX class for writing theses in SGGW]
+\ProvidesClass{SGGW-thesis}[2022/01/26 LaTeX class for writing theses in SGGW]
 
 
 \DeclareOption{multip}{\@multiptrue}
@@ -103,7 +110,7 @@
 \newcommand{\TitleFont}[1]{\@setfontsize\TitleFont{18pt}{22}{#1}}	%definicja czcionki 18pt
 \newcommand{\VeryVeryLarge}[1]{\@setfontsize\VeryVeryLarge{24pt}{28}{#1}} %definicja czcionki 24pt
 
-\newcommand{\version}{1.06}
+\newcommand{\version}{1.07}
 
 %definicje zmiennych
 \def\@album{}
@@ -278,7 +285,7 @@
 	\begin{center}
 		{\textbf{O\'{s}wiadczenie autora pracy}}\\
 	\end{center}
-		\'{S}wiadom odpowiedzialno\'{s}ci prawnej, w tym odpowiedzialno\'{s}ci karnej za z{\l}ożenie fa{\l}szywego o\'{s}wiadczenia, o\'{s}wiadczam, że
+		\'{S}wiadom/a odpowiedzialno\'{s}ci prawnej, w tym odpowiedzialno\'{s}ci karnej za z{\l}ożenie fa{\l}szywego o\'{s}wiadczenia, o\'{s}wiadczam, że
 		\if@multip
 			wskazane przeze mnie rozdzia{\l}y pracy dyplomowej przygotowanej zespo{\l}owo zosta{\l}y napisane przeze mnie samodzielnie i~nie zawieraj\k{a}
 		\else
