@@ -1,7 +1,7 @@
 %
 % Klasa do pisania prac dyplomowych - licencjackich, inzynierskich i magisterskich - w SGGW
 
-% Wersja 1.07 z 2022.01.26
+% Wersja 1.061 z 2022.01.26
 % Autor: Leszek Chmielewski
 % Zmiany:
 % 1. Drobny retusz na stronie oświadczeń promotora i autora: "Świadom" -> "Świadom/a".
@@ -110,7 +110,7 @@
 \newcommand{\TitleFont}[1]{\@setfontsize\TitleFont{18pt}{22}{#1}}	%definicja czcionki 18pt
 \newcommand{\VeryVeryLarge}[1]{\@setfontsize\VeryVeryLarge{24pt}{28}{#1}} %definicja czcionki 24pt
 
-\newcommand{\version}{1.07}
+\newcommand{\version}{1.061}
 
 %definicje zmiennych
 \def\@album{}
