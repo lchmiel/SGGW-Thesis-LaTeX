@@ -6,12 +6,12 @@
 \title{Stworzenie klasy \LaTeX-owej\\do użytku przy pisaniu\\pracy dyplomowej w~SGGW}
 \Etitle{Creation of the \LaTeX\ Class to Use When Writing a Thesis\\at the Warsaw University of Life Sciences -- SGGW}
 \author{Łukasz Adamczyk}
-\date{2022\footnote{Dokument skompilowano z klasą {\tt SGGW-thesis} w wersji \version. Aktualną wersję klasy można pobrać ze strony \hspace{0.2em}\url{https://github.com/lchmiel/SGGW-Thesis-LaTeX}\hspace{0.2em} lub ze strony \hspace{0.2em}\url{http://stud.lchmiel.pl} $\rightarrow$
-Seminarium dyplomowe. Proszę przeczytać plik {\tt readme}. W~Państwa pracach proszę usunąć tę notkę.}}
+\date{2017\footnote{Dokument skompilowano z klasą {\tt SGGW-thesis} w wersji \version. Różni się ona od opisanej tutaj, lecz różnice w~korzystaniu z~niej są małe -- proszę przeczytać plik {\tt readme}. Aktualną wersję klasy można pobrać ze strony \hspace{0.2em}\url{https://github.com/lchmiel/SGGW-Thesis-LaTeX}\hspace{0.2em} lub ze strony \hspace{0.2em}\url{http://stud.lchmiel.pl} $\rightarrow$
+Seminarium dyplomowe. {\bf W~Państwa pracach proszę usunąć tę notkę.}}}
 \album{154833}
 \thesis{Praca dyplomowa na kierunku:}
 \course{Informatyka}
-\promotor{dr.\ hab.\ inż.\ Leszka Chmielewskiego, prof.\ SGGW}
+\promotor{dra hab.\ inż.\ Leszka Chmielewskiego, prof.\ SGGW}
 \pworkplace{Instytut Informatyki Technicznej\\Katedra Sztucznej Inteligencji}
 
 \usepackage{hyperref}
@@ -70,7 +70,7 @@ Powyższe elementy opisano w~rozdziałach~\ref{sec:dodatkowe-zmienne}-\ref{sec:k
 
 Klasa zawiera teksty w języku polskim, z polskimi znakami. Wszystkie polskie znaki sa generowane odpowiednimi makrami \TeX-a, na przykład  ć=\verb|\'{c}|, ł=\verb|{\l}|,
 ą=\verb|\k{a}|. Dzięki temu jest ona zapisana w pliku w kodzie ASCII, co zabezpiecza ją przed uszkodzeniem w przypadku przenoszenia między różnymi platformami. Oczywiście,
-najwygodniej jest pisać samą prace dyplomową w kodowaniu {\tt UTF8} z polskimi znakami wprowadzanymi wprost z~klawiatury, co jest wpieranie przez klasę.
+najwygodniej jest pisać samą prace dyplomową w kodowaniu {\tt UTF8} z polskimi znakami wprowadzanymi wprost z~klawiatury, co jest wspieranie przez klasę.
 
 
 \section{Dodatkowe zmienne}
@@ -167,7 +167,7 @@ spowoduje, że strona druga nie zostanie automatycznie wygenerowana jako pusta. 
 \item{\verb|\promotor| -- dane promotora pracy,}
 \item{\verb|\pworkplace| -- miejsce pracy promotora.}
 \end{enumerate}
-Przykładowa preambuła dokumentu wygląda następująco:
+Przykładowa preambuła dokumentu wygląda następująco:\vspace{-0.85ex}
 \begin{verbatim}
 \documentclass{SGGW-thesis}
 \title{Stworzenie klasy LaTeX-owej do użytku przy pisaniu
@@ -184,7 +184,7 @@ the Warsaw University of Life Sciences -- SGGW}
 \promotor{dr.\ hab.\ inż.\ Leszka Chmielewskiego, prof.\ SGGW}
 \pworkplace{Wydział Zastosowań Informatyki i Matematyki\\
 Katedra Informatyki\\Zakład Podstaw Informatyki}
-\end{verbatim}
+\end{verbatim}\vspace{-0.6ex}
 Należy zwrócić uwagę na to, że w argumentach makr mogą występować znaki nowej linii \verb|\\|, jeśli są potrzebne, na przykład gdy automatyczny podział długiego tytułu
 pomiędzy linie tekstu nie jest korzystny. Znak nowej linii zawsze wystąpi w makrze \verb|\university|, gdzie zgodnie z~wytycznymi~\cite{wymagania} słowa {\em Szkoła Główna
 Gospodarstwa Wiejskiego} są w~jednej linii, a~słowa {\em w Warszawie} w~następnej.

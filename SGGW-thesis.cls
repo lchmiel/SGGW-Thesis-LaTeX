@@ -1,6 +1,11 @@
 %
 % Klasa do pisania prac dyplomowych - licencjackich, inzynierskich i magisterskich - w SGGW
 
+% Wersja 1.062 z 2023.07.31
+% Autorzy: Konrad Jażdżyk, Patryk Stępień
+% Zmiana:
+% 1. Poprawka wielkości marginesów.
+
 % Wersja 1.061 z 2022.01.26
 % Autor: Leszek Chmielewski
 % Zmiany:
@@ -57,7 +62,7 @@
 % Autor: Lukasz Adamczyk
 %
 \NeedsTeXFormat{LaTeX2e}[1995/12/01]
-\ProvidesClass{SGGW-thesis}[2022/01/26 LaTeX class for writing theses in SGGW]
+\ProvidesClass{SGGW-thesis}[2023/07/31 LaTeX class for writing theses in SGGW]
 
 
 \DeclareOption{multip}{\@multiptrue}
@@ -80,7 +85,7 @@
 
 \RequirePackage[labelfont=bf,labelsep=period]{caption} %tytuly rys i tab: gruba czcionka, kropka
 
-\RequirePackage[a4paper,top=2.5cm,bottom=2.5cm,inner=3.5cm,outer=2cm]{geometry}
+\RequirePackage[a4paper,top=2.5cm,bottom=2.5cm,inner=3.5cm,outer=2.5cm]{geometry}
 
 \RequirePackage{polski}
 \selecthyphenation{polish}
@@ -110,7 +115,7 @@
 \newcommand{\TitleFont}[1]{\@setfontsize\TitleFont{18pt}{22}{#1}}	%definicja czcionki 18pt
 \newcommand{\VeryVeryLarge}[1]{\@setfontsize\VeryVeryLarge{24pt}{28}{#1}} %definicja czcionki 24pt
 
-\newcommand{\version}{1.061}
+\newcommand{\version}{1.062}
 
 %definicje zmiennych
 \def\@album{}
