@@ -1,6 +1,22 @@
 %
 % Klasa do pisania prac dyplomowych - licencjackich, inzynierskich i magisterskich - w SGGW
 
+% Wersja 1.07 z 2024.10.22
+% Autorzy: Leszek Chmielewski, Dawid Puszka
+% Zmiany:
+% 1. Poprawka polegająca na dodaniu pakietu "lmodern" w takm celu, aby
+%    w dokumencie PDF były użyte naturalne polskie czcionki, zamiast
+%    dostawiania polskich znaków diakrytycznych do liter łacińskich,
+%    co powodowało, że widok dokumentu był prawidłowy, lecz kopiowanie
+%    tekstu powodowało rozdzielanie polskich liter i znaków diakrytycznych.
+% 2. Bibliografia jest umieszczana w spisie treści jako pozycja nienumerowana.
+%    Zarządzenie Rektora tego nie normuje, ale jest to przyjęty zwyczaj. 
+% 3. Uporządkowanie kolejności wczytywania pakietów.
+% 4. Dodanie w przykładowej pracy "main.tex", dostarczanej wraz z klasą,
+%    notatek informujących o zgodności klasy z Zarządzeniami Rektora SGGW.
+% 5. Obecnie zarządzenie Rektora i wytyczne podane są na stronie:
+%    https://www.sggw.edu.pl/studenci/praca-dyplomowa/
+
 % Wersja 1.062 z 2023.07.31
 % Autorzy: Konrad Jażdżyk, Patryk Stępień
 % Zmiana:
@@ -36,7 +52,7 @@
 % 2. Drobne retusze w formatach
 
 % Wersja 1.03 z 2018.01.10.
-% Autor: Lukasz Adamczyk
+% Autor: Łukasz Adamczyk
 % Zmiany:
 % 1. Poprawiono blad zwiazany z odstepami linii tekstu tytulu polskiego i angielskiego.
 
@@ -59,10 +75,10 @@
 % 1. Poprawka stylu podpisow rys i tab. Zastosowano pakiet "caption".
 
 % Wersja 1.0 z 2017.01.16.
-% Autor: Lukasz Adamczyk
+% Autor: Łukasz Adamczyk
 %
 \NeedsTeXFormat{LaTeX2e}[1995/12/01]
-\ProvidesClass{SGGW-thesis}[2023/07/31 LaTeX class for writing theses in SGGW]
+\ProvidesClass{SGGW-thesis}[2024/10/12 LaTeX class for writing theses in WULS-SGGW]
 
 
 \DeclareOption{multip}{\@multiptrue}
@@ -77,11 +93,12 @@
 \ProcessOptions*\relax
 \LoadClass[12pt,notitlepage,twoside]{report}
 
-\RequirePackage{graphicx}
 \RequirePackage[T1]{fontenc}
-\RequirePackage{mathptmx} %czcionka Times New Roman
 \RequirePackage[utf8]{inputenc}
-\RequirePackage[nottoc,numbib]{tocbibind} %bibliografia z numerem i w spisie tresci
+\RequirePackage{mathptmx} %czcionka Times New Roman
+\RequirePackage{lmodern} %dla polskiej czcionki w UTF8 w plikach PDF
+
+\RequirePackage[nottoc]{tocbibind} %bibliografia w spisie tresci bez numeru rozdzialu
 
 \RequirePackage[labelfont=bf,labelsep=period]{caption} %tytuly rys i tab: gruba czcionka, kropka
 
@@ -89,6 +106,8 @@
 
 \RequirePackage{polski}
 \selecthyphenation{polish}
+
+\RequirePackage{graphicx}
 
 \RequirePackage{titlesec} % zmiana formatu chapter do (1 Nazwa)
 \titleformat{\chapter}
@@ -115,7 +134,7 @@
 \newcommand{\TitleFont}[1]{\@setfontsize\TitleFont{18pt}{22}{#1}}	%definicja czcionki 18pt
 \newcommand{\VeryVeryLarge}[1]{\@setfontsize\VeryVeryLarge{24pt}{28}{#1}} %definicja czcionki 24pt
 
-\newcommand{\version}{1.062}
+\newcommand{\SGGWthesisVersion}{1.07}
 
 %definicje zmiennych
 \def\@album{}
