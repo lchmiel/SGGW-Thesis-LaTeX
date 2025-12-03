@@ -1,7 +1,22 @@
 %
 % Klasa do pisania prac dyplomowych - licencjackich, inzynierskich i magisterskich - w SGGW
+%
 
-% Wersja 1.07 z 2024.10.22
+\newcommand{\SGGWthesisVersion}{1.071a}
+
+% Wersja 1.071a z 2025.01.12
+% Autor: Leszek Chmielewski
+% Zmiana:
+% 1. Dodana kropka w oświadczeniu autora pracy, akapit pierwszy. 
+
+% Wersja 1.071 z 2024.11.05
+% Autor: Leszek Chmielewski
+% Zmiany:
+% 1. Drobny retusz w umieszczeniu zmiennej z numerem wersji na początku dokumentu.
+% 2. Uaktualniony komentarz w \ProvidesClass{}[]
+% 3. Retusze w źródle main.tex uaktualniające opis dla nowszej wersji klasy.
+
+% Wersja 1.07 z 2024.10.22 i 2024.11.04
 % Autorzy: Leszek Chmielewski, Dawid Puszka
 % Zmiany:
 % 1. Poprawka polegająca na dodaniu pakietu "lmodern" w takm celu, aby
@@ -9,12 +24,14 @@
 %    dostawiania polskich znaków diakrytycznych do liter łacińskich,
 %    co powodowało, że widok dokumentu był prawidłowy, lecz kopiowanie
 %    tekstu powodowało rozdzielanie polskich liter i znaków diakrytycznych.
-% 2. Bibliografia jest umieszczana w spisie treści jako pozycja nienumerowana.
-%    Zarządzenie Rektora tego nie normuje, ale jest to przyjęty zwyczaj. 
-% 3. Uporządkowanie kolejności wczytywania pakietów.
-% 4. Dodanie w przykładowej pracy "main.tex", dostarczanej wraz z klasą,
-%    notatek informujących o zgodności klasy z Zarządzeniami Rektora SGGW.
-% 5. Obecnie zarządzenie Rektora i wytyczne podane są na stronie:
+% 2. Rezygnacja z reprezentacji polskich liter makrami LaTeXa na rzecz UTF8.
+% 3. Bibliografia jest umieszczana w spisie treści jako pozycja nienumerowana.
+%    Zarządzenie Rektora tego nie normuje, ale jest to przyjęty zwyczaj.
+% 4. Uporządkowanie kolejności wczytywania pakietów.
+% 5. Dodanie w przykładowej pracy "main.tex", dostarczanej wraz z klasą,
+%    notatek informujących o zgodności klasy z Zarządzeniami Rektora SGGW
+%    i o poprawkach redaktorskich względem oryginalnej pracy.
+% 6. Obecnie zarządzenie Rektora i wytyczne podane są na stronie:
 %    https://www.sggw.edu.pl/studenci/praca-dyplomowa/
 
 % Wersja 1.062 z 2023.07.31
@@ -78,7 +95,7 @@
 % Autor: Łukasz Adamczyk
 %
 \NeedsTeXFormat{LaTeX2e}[1995/12/01]
-\ProvidesClass{SGGW-thesis}[2024/10/12 LaTeX class for writing theses in WULS-SGGW]
+\ProvidesClass{SGGW-thesis}[2024/11/05 LaTeX class for writing theses in Polish at WULS-SGGW]
 
 
 \DeclareOption{multip}{\@multiptrue}
@@ -133,8 +150,6 @@
 \newcommand{\VeryLarge}[1]{\@setfontsize\VeryLarge{16pt}{18}{#1}}	%definicja czcionki 16pt
 \newcommand{\TitleFont}[1]{\@setfontsize\TitleFont{18pt}{22}{#1}}	%definicja czcionki 18pt
 \newcommand{\VeryVeryLarge}[1]{\@setfontsize\VeryVeryLarge{24pt}{28}{#1}} %definicja czcionki 24pt
-
-\newcommand{\SGGWthesisVersion}{1.07}
 
 %definicje zmiennych
 \def\@album{}
@@ -230,11 +245,11 @@
 \newcommand{\twoppage}[6]{ %definicja strony z dwoma autorami pracy
 	\null
 	\vfill
-	\noindent{\normalsize{Praca przygotowana zespo{\l}owo przez:}}\\
+	\noindent{\normalsize{Praca przygotowana zespołowo przez:}}\\
 	\begin{quote}
 	\noindent{\Overnormal{1. #1}}\\
 	{\normalsize{#2\\
-	kt\'{o}ry jest autorem:\\
+	który jest autorem:\\
 	#3\\
 	}}
 	\end{quote}
@@ -242,7 +257,7 @@
 	\begin{quote}
 	\noindent{\Overnormal{2. #4}}\\
 	{\normalsize{#5\\
-	kt\'{o}ry jest autorem:\\
+	który jest autorem:\\
 	#6\\
 	}}
 	\end{quote}
@@ -255,11 +270,11 @@
 \newcommand{\threeppage}[9]{ %definicja strony z trzema autorami pracy
 	\null
 	\vfill
-	\noindent{\normalsize{Praca przygotowana zespo{\l}owo przez:}}\\
+	\noindent{\normalsize{Praca przygotowana zespołowo przez:}}\\
 	\begin{quote}
 		\noindent{\Overnormal{1. #1}}\\
 		{\normalsize{#2\\
-		kt\'{o}ry jest autorem:\\
+		który jest autorem:\\
 		#3\\
 		}}
 	\end{quote}
@@ -267,7 +282,7 @@
 	\begin{quote}
 		\noindent{\Overnormal{2. #4}}\\
 		{\normalsize{#5\\
-		kt\'{o}ry jest autorem:\\
+		który jest autorem:\\
 		#6\\
 		}}
 	\end{quote}
@@ -275,7 +290,7 @@
 	\begin{quote}
 		\noindent{\Overnormal{3. #7}}\\
 		{\normalsize{#8\\
-		kt\'{o}ry jest autorem:\\
+		który jest autorem:\\
 		#9\\
 		}}
 	\end{quote}	
@@ -289,15 +304,15 @@
 	\null
 	\vfill
 	\begin{center}
-		{\textbf{O\'{s}wiadczenie Promotora pracy}}\\
+		{\textbf{Oświadczenie Promotora pracy}}\\
 	\end{center}
-		O\'{s}wiadczam, że
+		Oświadczam, że
 		\if@multip
-			wskazane przez autora rozdzia{\l}y pracy dyplomowej przygotowanej zespo{\l}owo zosta{\l}y przygotowane pod moim kierunkiem i~stwierdzam, że spe{\l}niaj\k{a} one
+			wskazane przez autora rozdziały pracy dyplomowej przygotowanej zespołowo zostały przygotowane pod moim kierunkiem i~stwierdzam, że spełniają one
 		\else
-			niniejsza praca zosta{\l}a przygotowana pod moim kierunkiem i~stwierdzam, że spe{\l}nia ona
+			niniejsza praca została przygotowana pod moim kierunkiem i~stwierdzam, że spełnia ona
 		\fi
-		 warunki do przedstawienia tej pracy w post\k{e}powaniu o nadanie tytu{\l}u zawodowego.\\
+		 warunki do przedstawienia tej pracy w postępowaniu o nadanie tytułu zawodowego.\\
 		
 		
 		\noindent
@@ -307,22 +322,21 @@
 
 	\vfill
 	\begin{center}
-		{\textbf{O\'{s}wiadczenie autora pracy}}\\
+		{\textbf{Oświadczenie autora pracy}}\\
 	\end{center}
-		\'{S}wiadom/a odpowiedzialno\'{s}ci prawnej, w tym odpowiedzialno\'{s}ci karnej za z{\l}ożenie fa{\l}szywego o\'{s}wiadczenia, o\'{s}wiadczam, że
+		Świadom/a odpowiedzialności prawnej, w tym odpowiedzialności karnej za złożenie fałszywego oświadczenia, oświadczam, że
 		\if@multip
-			wskazane przeze mnie rozdzia{\l}y pracy dyplomowej przygotowanej zespo{\l}owo zosta{\l}y napisane przeze mnie samodzielnie i~nie zawieraj\k{a}
+			wskazane przeze mnie rozdziały pracy dyplomowej przygotowanej zespołowo zostały napisane przeze mnie samodzielnie i~nie zawierają
 		\else
-			niniejsza praca dyplomowa zosta{\l}a napisana przeze mnie samodzielnie i~nie zawiera
+			niniejsza praca dyplomowa została napisana przeze mnie samodzielnie i~nie zawiera
 		\fi
-		  tre\'{s}ci uzyskanych w spos\'{o}b niezgodny z obowi\k{a}zuj\k{a}cymi przepisami prawa, w szczeg\'{o}lno\'{s}ci z ustaw\k{a} z dnia
-		4~lutego 1994~r.\ o~prawie autorskim i~prawach pokrewnych (Dz.\ U.\ 2019 poz.\ 1231 z p\'{o}\'{z}n.\ zm.)\\[2ex]
-		O\'{s}wiadczam, że przedstawiona praca nie by{\l}a wcze\'{s}niej podstaw\k{a} żadnej procedury zwi\k{a}zanej z nadaniem dyplomu lub uzyskaniem tytu{\l}u zawodowego.\\%[2ex]
+		treści uzyskanych w~sposób niezgodny z~obowiązującymi przepisami prawa, w~szczególności z~ustawą z~dnia
+		4~lutego 1994~r.\ o~prawie autorskim i~prawach pokrewnych (Dz.\ U.\ 2019 poz.\ 1231 z późn.\ zm.).\\[2ex]
+		Oświadczam, że przedstawiona praca nie była wcześniej podstawą żadnej procedury związanej z nadaniem dyplomu lub uzyskaniem tytułu zawodowego.\\
 		
 		\noindent
-		O\'{s}wiadczam, że niniejsza wersja pracy jest identyczna z za{\l}\k{a}czon\k{a} wersj\k{a} elektroniczn\k{a}.
-		Przyjmuj\k{e} do wiadomo\'{s}ci, że praca dyplomowa poddana zostanie procedurze antyplagiatowej.
-		\\
+		Oświadczam, że niniejsza wersja pracy jest identyczna z załączoną wersją elektroniczną.
+		Przyjmuję do wiadomości, że praca dyplomowa poddana zostanie procedurze antyplagiatowej.\\
 		
 		\noindent
 		Data \dotfill
@@ -349,7 +363,7 @@
 		\textbf{#1}\\[1.5ex]
 		{#2}
 		\\[4ex]
-		S{\l}owa kluczowe -- {#3}
+		Słowa kluczowe -- {#3}
 	
 	\vfill
 	\begin{center}
@@ -377,7 +391,7 @@
 	\null
 	\vspace{5\baselineskip}
 	\begin{flushleft}
-		Wyrażam zgod\k{e} na udost\k{e}pnienie mojej pracy w~czytelniach Biblioteki SGGW w~tym w~Archiwum Prac Dyplomowych SGGW%
+		Wyrażam zgodę na udostępnienie mojej pracy w~czytelniach Biblioteki SGGW w~tym w~Archiwum Prac Dyplomowych SGGW%
 		\ifthenelse{\isempty{#1}}{}{po roku #1}.
 	\end{flushleft}
 	\vspace{2cm}
