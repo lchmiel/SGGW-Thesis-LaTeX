@@ -6,8 +6,10 @@
 \title{Stworzenie klasy \LaTeX-owej\\do użytku przy pisaniu\\pracy dyplomowej w~SGGW}
 \Etitle{Creation of the \LaTeX\ Class to Use When Writing a Thesis\\at the Warsaw University of Life Sciences -- SGGW}
 \author{Łukasz Adamczyk}
-\date{2017\footnote{Dokument skompilowano z klasą {\tt SGGW-thesis} w wersji \SGGWthesisVersion. Różni się ona od opisanej tutaj, lecz różnice w~korzystaniu z~niej są małe -- proszę przeczytać plik {\tt readme}. Aktualną wersję klasy można pobrać ze strony \hspace{0.2em}\url{https://github.com/lchmiel/SGGW-Thesis-LaTeX}\hspace{0.2em} lub ze strony \hspace{0.2em}\url{http://stud.lchmiel.pl} $\rightarrow$
-Seminarium dyplomowe. {\bf W~Państwa pracach proszę usunąć tę notkę.}}}
+\date{2017\footnote{Ten dokument skompilowano \today{} z klasą {\tt SGGW-thesis} w wersji \SGGWthesisVersion. Różni się ona od opisanej tutaj, lecz różnice w~korzystaniu z~niej są małe -- proszę przeczytać plik {\tt readme}. Aktualną wersję klasy można pobrać ze strony \hspace{0.2em}\url{https://github.com/lchmiel/SGGW-Thesis-LaTeX}\hspace{0.2em} lub ze strony \hspace{0.2em}\url{http://stud.lchmiel.pl} $\rightarrow$
+Seminarium dyplomowe.\\
+\indent Ta wersja pracy zawiera \hyperref[sec:dodatek]{użyteczny Dodatek~}\ref{sec:dodatek} oraz przypisy. Wyjaśniono w~nich różnice między wersją pierwotną z~2017 roku a~obecną.
+{\bf W~Państwa pracach proszę usunąć cały ten przypis.}}}
 \album{154833}
 \thesis{Praca dyplomowa na kierunku:}
 \course{Informatyka}
@@ -15,6 +17,27 @@ Seminarium dyplomowe. {\bf W~Państwa pracach proszę usunąć tę notkę.}}}
 \pworkplace{Instytut Informatyki Technicznej\\Katedra Sztucznej Inteligencji}
 
 \usepackage{hyperref}
+
+% Pakiety dodane ze względu na Dodatek (\appendix)
+% trzeba je dołączyć w preambule, więc nie można tego zrobić w Dodatku.
+\usepackage{xcolor}
+\usepackage{amsmath,amssymb}
+\usepackage{listings}
+\usepackage{booktabs}
+\usepackage{siunitx}
+\usepackage{marginnote}
+\usepackage[labelformat=simple,labelfont=bf,font=normalsize]{subcaption}\renewcommand\thesubfigure{\alph{subfigure}}
+\usepackage{comment}
+\RequirePackage[normalem]{ulem}
+\definecolor{MgvCiteColor}{rgb}{0.00,0.50,0.00}
+\definecolor{MgvUrlColor}{rgb}{0.00,0.00,0.50}
+\definecolor{MgvLinkColor}{rgb}{0.70,0.00,0.00}
+\definecolor{MgvFileColor}{rgb}{0.50,0.00,0.50} % dark magenta
+\hypersetup{
+  pdffitwindow=true,pdfnewwindow=true,plainpages=false,linktocpage=true,breaklinks=true,colorlinks=true,
+  linkcolor=MgvLinkColor,citecolor=MgvCiteColor,urlcolor=MgvUrlColor,filecolor=MgvFileColor,
+}
+% Pakiety dodane ze względu na Dodatek - koniec
 
 \begin{document}
 \maketitle
@@ -38,17 +61,18 @@ main parts. The first one describes the most important aspects of the implementa
   \tableofcontents
 }
 
-\startchapterfromoddpage % niezależnie od długości spisu treści pierwszy rozdział zacznie się na nieparzystej stronie
+%\startchapterfromoddpage % niezależnie od długości spisu treści pierwszy rozdział zacznie się na nieparzystej stronie
 
 \chapter{Wstęp}
+
+\section{Motywacja}
+\label{sec:motywacja}
 Pisanie pracy dyplomowej oprócz oczywistego aspektu przekazywania informacji wiąże się także z odpowiednim sformatowaniem wynikowego tekstu według zasad narzuconych przez
-uczelnię. Jednym z narzędzi ułatwiających formatowanie jest \LaTeX, system składania dokumentów opierający się na paradygmacie WYSIWYM ({\em ang.\ What You See Is What You
-Mean}) co oznacza, że pisząc tekst określamy rolę dla każdego fragmentu danych, a~\LaTeX zajmuje się odpowiednią prezentacją. W przypadku Szkoły Głównej Gospodarstwa
-Wiejskiego w~Warszawie oczekiwania pod względem formatowania dokumentu silnie odbiegają od standardowych rozwiązań zaimplementowanych w~\LaTeX-u, dlatego postanowiłem
-stworzyć klasę {\tt SGGW-thesis}, która pomaga w~stworzeniu pracy dyplomowej spełniającej oczekiwania Uczelni.
+uczelnię\footnote{W~pierwotnej wersji klasy było to Zarządzenie nr~34 Rektora SGGW~\cite{wymagania}. Obecnie klasa wspiera wymagania zgodne z~Zarządzeniem nr 100 Rektora SGGW~\cite{wymagania-100}.}. Jednym z narzędzi ułatwiających formatowanie jest \LaTeX, system składania dokumentów opierający się na paradygmacie WYSIWYM ({\em ang.\ What You See Is What You Mean}) co oznacza, że pisząc tekst określamy rolę dla każdego fragmentu danych, a~\LaTeX\ zajmuje się odpowiednią prezentacją. W przypadku Szkoły Głównej Gospodarstwa Wiejskiego w~Warszawie oczekiwania pod względem formatowania dokumentu silnie odbiegają od standardowych rozwiązań zaimplementowanych w~\LaTeX-u\footnote{W wersji pracy z~2017 roku potraktowano słowo \LaTeX{} jak skrótowiec i~zastosowano pisownię: w~\LaTeX-u, \LaTeX-a. Obecnie przyjęto by, że \LaTeX{} jest nazwą zasymilowaną w~języku polskim, i~zastosowano by pisownię: w~\LaTeX{}u, \LaTeX{}a. Tu pozostawiono oryginalną wersję z~roku 2017.}, dlatego postanowiłem stworzyć klasę {\tt SGGW-thesis}, która pomaga w~stworzeniu pracy dyplomowej spełniającej oczekiwania Uczelni\footnote{W pierwotnej wersji pracy nie było tego rozdziału, zaś rozdział~\ref{sec:cel-zakres} miał numer~\ref{sec:motywacja}. Był to błąd, gdyż nie powinien mieć miejsca podział rozdziału na jeden podrozdział.}\footnote{W~tej wersji pracy użyto komendy {\tt \textbackslash{}hypersetup}, w~której definiuje sie m.\ in. kolory aktywnych tekstów, co jest szczególnie przydatne w~Dodatku~\ref{sec:dodatek}. W~Państwa pracach nie potrzeba używać tej komendy, gdyż powoduje ona, że teksty aktywne są drukowane w~kolorach, co nie jest korzystne.}.
 
 
 \section{Cel i zakres pracy}
+\label{sec:cel-zakres}
 Praca ma na celu zaimplementowanie klasy \LaTeX-owej, której użycie znacznie ułatwia formatowanie pracy dyplomowej pisanej w~Szkole Głównej Gospodarstwa Wiejskiego. Wynikową
 klasę cechować będzie zwięzłość oraz czytelność. Cechy te powinny ułatwić zmianę implementacji w przypadku modyfikacji wymagań stawianych przez uczelnię. Treść pracy zawierać
 będzie opis najważniejszych fragmentów implementacji oraz przewodnik użycia klasy przy pisaniu prac dyplomowych. Ponadto ta praca inżynierska zostanie napisana przy użyciu
@@ -56,21 +80,21 @@ opisywanej klasy i stanowić będzie swoistą wizytówkę jej działania.
 
 
 \chapter{Implementacja}
-W tym rozdziale przedstawiono techniczne aspekty implementacji. Większość wiedzy na temat implementacji własnej klasy \LaTeX-owej zaczerpnięto z~\cite{latexclass}. Opisywana
-klasa została oparta na standardowej klasie \LaTeX-owej \verb|report|, z której dziedziczy zachowanie nieokreślone w kodzie źródłowym. Główne elementy implementacji,
-pozwalającej na odpowiednie formatowanie dokumentu to:
+\label{sec:implementacja}
+W tym rozdziale przedstawiono techniczne aspekty implementacji. Większość wiedzy na temat implementacji własnej klasy \LaTeX-owej zaczerpnięto z~wzorca~\cite{latexclass}\footnote{O~bibliografii napisano w~przypisie~\ref{not:bibTeX}, str.~\pageref{not:bibTeX}.}. Opisywana
+klasa została oparta na standardowej klasie \LaTeX-owej \verb|report|, z której dziedziczy zachowania nie określone w kodzie źródłowym klasy. Główne elementy implementacji,
+pozwalającej na odpowiednie formatowanie dokumentu, to:
 \begin{enumerate} [label=\alph*.]
 \item{implementacja dodatkowych zmiennych,}
 \item{reimplementacja komendy \verb|\maketitle|,}
-\item{implementacja dodatkowych komend: \verb|\twoppage|, \verb|\threeppage|
-\verb|\statementpage|, \verb|\abstractpage| oraz \verb|\beforelastpage|,}
+\item{implementacja dodatkowych komend: \verb|\twoppage|, \verb|\threeppage|,
+\linebreak \verb|\statementpage|, \verb|\abstractpage| oraz \verb|\beforelastpage|,}\label{itm:implementacja}
 \item{konfiguracja pakietów standardowych \LaTeX-a.}
 \end{enumerate}
 Powyższe elementy opisano w~rozdziałach~\ref{sec:dodatkowe-zmienne}-\ref{sec:konfiguracja-pakietow}.
 
 Klasa zawiera teksty w języku polskim, z polskimi znakami. Wszystkie polskie znaki sa generowane odpowiednimi makrami \TeX-a, na przykład  ć=\verb|\'{c}|, ł=\verb|{\l}|,
-ą=\verb|\k{a}|. Dzięki temu jest ona zapisana w pliku w kodzie ASCII, co zabezpiecza ją przed uszkodzeniem w przypadku przenoszenia między różnymi platformami. Oczywiście,
-najwygodniej jest pisać samą prace dyplomową w kodowaniu {\tt UTF8} z polskimi znakami wprowadzanymi wprost z~klawiatury, co jest wspieranie przez klasę.
+ą=\verb|\k{a}|\footnote{\label{not:UTF8}W~obecnej wersji nie ma to miejsca. Wszystkie polskie litery są pisane w kodowaniu UTF8, które jest standardem i~jego zastosowanie nie powoduje problemów z~przenośnością dokumentów.}. Dzięki temu jest ona zapisana w~pliku w~kodzie ASCII, co zabezpiecza ją przed uszkodzeniem w~przypadku przenoszenia między różnymi platformami\footnote{Nieaktualne, patrz notatka~\ref{not:UTF8}.}. Oczywiście, najwygodniej jest pisać samą prace dyplomową w~kodowaniu {\tt UTF8} z~polskimi znakami wprowadzanymi wprost z~klawiatury, co jest wspieranie przez klasę.
 
 
 \section{Dodatkowe zmienne}
@@ -95,7 +119,7 @@ które wykorzystywane są do tworzenia strony tytułowej. Opisywana klasa rozsze
 które wykorzystywane są w komendzie \verb|\maketitle| opisanej w podrozdziale~\ref{sec:maketitle}.
 
 
-\section{Reimplementacja komendy \textbackslash maketitle}
+\section{Reimplementacja komendy {\tt \textbackslash maketitle}}
 \label{sec:maketitle}
 Tytułowa klasa pozwala na użycie standardowej komendy \verb|\maketitle| do wygenerowania strony tytułowej pracy dyplomowej dzięki zastąpieniu konwencjonalnej implementacji.
 W tym celu użyto komendy \verb|\renewcommand{\maketitle}|.
@@ -107,7 +131,7 @@ dokumentu użyto opcjonalnego parametru \verb|[multip]|. Takie zachowanie osiąg
 
 \section{Implementacja dodatkowych komend}
 \label{sec:implementacja-dodatkowych}
-Klasa {\tt SGGW-thesis} pozwala na generowanie standardowych stron wymaganych w~pracy dyplomowej przez SGGW poprzez implementację komend:
+Klasa {\tt SGGW-thesis} pozwala na generowanie standardowych stron wymaganych\linebreak w~pracy dyplomowej przez SGGW poprzez implementację komend:
 \begin{enumerate}[label=\alph*.,itemsep=0pt]
 \item{\verb|\statementpage| -- trzecia strona dokumentu zawierająca oświadczenia,}
 \item{\verb|\abstractpage| -- piąta strona dokumentu zawierająca streszczenia,}
@@ -122,22 +146,22 @@ wcześniej sprawdzenie \verb|\if@multip| do wybrania odpowiedniej wersji tekstu.
 
 \section{Konfiguracja pakietów \LaTeX-a}
 \label{sec:konfiguracja-pakietow}
-W klasach wykorzystywanie pakietów odbywa się za pomocą komendy \verb|RequirePackage|. Pakiety używane są do rozszerzenia lub zmiany funkcjonalności. Opisywana klasa korzysta
+W klasach wykorzystywanie pakietów odbywa się za pomocą komendy\linebreak \verb|RequirePackage|. Pakiety używane są do rozszerzenia lub zmiany funkcjonalności. Opisywana klasa korzysta
 z następujących pakietów:
 \begin{enumerate}[label=\alph*.,itemsep=0pt]
-\item{[\verb|T1]{fontenc}| -- odpowiednie drukowanie polskich znaków,}
-\item{\verb|{mathptmx}| -- czcionka Times New Roman,}
+\item{\verb|[T1]{fontenc}| -- odpowiednie drukowanie polskich znaków,}
+\item{\verb|{mathptmx}| -- czcionka Times New Roman\footnote{Obecnie dodano również pakiet {\tt lmodern}, dzięki któremu polskie znaki są kodowane w~PDF w~UTF8, a nie w~ASCII z~osobno dodanymi glifami ,,ogonków''.},}
 \item{\verb|{polski}| -- zbiór zasad pisania i dzielenia wyrazów w języku polskim,}
 \item{\verb|[utf8]{inputenc}| -- odpowiednie wpisywanie polskich znaków,}
-\item{\verb|[nottoc,numbib]{tocbibind}| -- umieszczenie bibliografii wraz z numerem w spisie treści oraz usunięcie ze spisu treści odniesienia do niego samego,}
+\item{\verb|[nottoc,numbib]{tocbibind}| -- umieszczenie bibliografii wraz z numerem\footnote{Obecnie spis treści jest rozdziałem nienumerowanym.} w~spisie treści oraz usunięcie ze spisu treści odniesienia do niego samego,}
 \item{\verb|{xifthen}| -- umożliwienie wykorzystania komendy \verb|\ifthenelse|,}
-\item{\verb|[a4paper,top=2.5cm,bottom=2.5cm,inner=3.5cm,outer=2cm]{geometry}|\\ -- ustawienie rozmiaru papieru oraz wielkości marginesów.}
+\item{\verb|[a4paper,top=2.5cm,bottom=2.5cm,inner=3.5cm,outer=2cm]{geometry}|\\ -- ustawienie rozmiaru papieru oraz wielkości marginesów\footnote{W~obecnej wersji te liczby są nieco zmienione, lepiej dopasowane do~\cite{wymagania-100}.}.}
 \end{enumerate}
 
 
 \chapter{Użycie}
 Ten rozdział może być traktowany jako swoista instrukcja dla studentów SGGW, którzy chcą wykorzystać opisywaną klasę przy pisaniu pracy dyplomowej. Wymagana będzie wiedza o
-tworzeniu dokumentów w \LaTeX-u, polecanym źródłem zdobycia takiej wiedzy jest~\cite{latexcompanion}. Pierwszy podrozdział opisuje jak zainstalować klasę w systemie
+tworzeniu dokumentów w \LaTeX-u, polecanym źródłem zdobycia takiej wiedzy jest~\cite{latexcompanion}\footnote{Bardzo dobre, a~łatwiej dostępe źródła, to książka elektroniczna~\cite{notsoshort} oraz jej tłumaczenie na język polski~\cite{notsoshortPL}.}. Pierwszy podrozdział opisuje jak zainstalować klasę w systemie
 operacyjnym Windows, a dokładniej w dystrybucji MiK\TeX. Drugi podrozdział przedstawia  potrzebne deklaracje, wykorzystywane w dokumencie, natomiast trzeci podrozdział
 demonstruje użycie komend wewnątrz środowiska \verb|document|.
 
@@ -153,7 +177,7 @@ plik \verb|SGGW-thesis.cls| w folderze \verb|cls| i wracamy do ustawień MiK\TeX
 \section{Preambuła}
 Dokument \LaTeX-owy rozpoczynany jest preambułą, w której dokonujemy deklaracji m.in. klas, pakietów oraz zmiennych. Aby użyć klasy {\tt SGGW-thesis} należy umieścić komendę
 \verb|\documentclass{SGGW-thesis}| na początku dokumentu. W~przypadku pracy pisanej przez kilka osób należy skorzystać z opcjonalnego parametru \verb|multip|, który
-spowoduje, że strona druga nie zostanie automatycznie wygenerowana jako pusta.  Następnie należy przypisać wartości zmiennym używanym do stworzenia strony tytułowej:
+spowoduje, że strona druga nie zostanie automatycznie wygenerowana jako pusta\footnote{\label{not:nowekomendy}Bezpośrednio po wyborze klasy należy wpisać jeszcze dwie komendy opisane w~pliku {\tt readme}.}. Następnie należy przypisać wartości zmiennym używanym do stworzenia strony tytułowej:
 \begin{enumerate}[label=\alph*.]
 \item{\verb|\title| -- tytuł dokumentu,}
 \item{\verb|\author| -- autor dokumentu,}
@@ -167,7 +191,7 @@ spowoduje, że strona druga nie zostanie automatycznie wygenerowana jako pusta. 
 \item{\verb|\promotor| -- dane promotora pracy,}
 \item{\verb|\pworkplace| -- miejsce pracy promotora.}
 \end{enumerate}
-Przykładowa preambuła dokumentu wygląda następująco:\vspace{-0.85ex}
+Przykładowa preambuła dokumentu wygląda następująco\footnote{Z zastrzeżeniem jak w~przypisie~\ref{not:nowekomendy}.}:\vspace{-0.85ex}
 \begin{verbatim}
 \documentclass{SGGW-thesis}
 \title{Stworzenie klasy LaTeX-owej do użytku przy pisaniu
@@ -194,6 +218,7 @@ generujących tytuły na stronie tytułowej, lecz trzeba je podać  osobno.
 
 
 \section{Wnętrze środowiska document}
+\label{sec:srodowisko-document}
 Środowisko \verb|document| zawiera treść pisanego dokumentu. Praca dyplomowa zaczyna się stroną tytułową, którą tworzymy komendą \verb|\maketitle|. Strona druga jest zależna
 od ilości osób będących autorami pracy. W przypadku samodzielnego tworzenia strona ta pozostaje pusta. Dla pracy dwuosobowej należy użyć komendy \verb|\twoppage| przyjmującej
 sześć parametrów:
@@ -225,36 +250,24 @@ Na piątej stronie znajdują się streszczenia. Do jej stworzenia służy komend
 \end{enumerate}
 Strona siódma zawiera spis treści. Wygenerować go można za pomocą standardowej komendy \LaTeX-a \verb|\tableofcontents|.
 
-Przedostatnia strona pracy generowana jest komendą \verb|\beforelastpage|. W przypadku pracy przygotowanej lub współfinansowanej z udziałem interesariuszy zewnętrznych
-postulujących klauzulę tajności należy posłużyć się wywołaniem z opcjonalnym argumentem zawierającym rok. Przykładowa komenda w takim przypadku to
+Przedostatnia strona pracy generowana jest komendą \verb|\beforelastpage|. \linebreak W przypadku pracy przygotowanej lub współfinansowanej z udziałem interesariuszy zewnętrznych
+postulujących klauzulę tajności należy posłużyć się wywołaniem z~opcjonalnym argumentem zawierającym rok. Przykładowa komenda w takim przypadku to
 \verb|\beforelastpage[2017]|. W~ten sposób do oświadczenia zostanie dopisane zastrzeżenie, że pracę można udostępnić po określonym roku.
 
 Warto wspomnieć, że podczas pisania pracy do rozpoczynania rozdziałów należy użyć komendy \verb|\chapter|, a podrozdziałów \verb|\section|, ze względu na dziedziczenie tej
-funkcjonalności z~klasy \verb|report|.
+funkcjonalności z~klasy \verb|report|\footnote{\label{not:subsubsection}Z~tego powodu rekomenduje się używanie podrozdziałów do poziomu {\tt \textbackslash{}subsection}, a~unikanie poziomu {\tt \textbackslash{}subsubsection}, ze względu na czytelność treści, gdyż ten poziom były już czwartym poziomem w~hierarchii rozdziałów. Zamiast tego dobrze jest stosować {\tt \textbackslash{}subsubsection*} lub {\tt \textbackslash{}paragraph} i~ewentualnie {\tt \textbackslash{}subparagraph}, które są podrozdziałami kolejnych poziomów, lecz nie numerowanymi i~nie umieszczanymi w~spisie treści.}.
 
 
 \chapter{Podsumowanie i wnioski}
-Zgodnie z założeniami stworzono klasę ułatwiającą tworzenie dokumentów spełniających wymagania przedstawione w~\cite{wymagania}. Ostateczna implementacja zawiera niecałe
-trzysta linii kodu źródłowego, co świadczy o zwięzłości klasy. Zastosowanie komentarzy znacznie poprawia czytelność. Z perspektywy piszącego, odpowiednio użyta klasa
-zapewnia, że tekst spełnia wymagania uczelni stawiane pracy dyplomowej.
+Zgodnie z założeniami stworzono klasę ułatwiającą tworzenie dokumentów spełniających wymagania przedstawione w~\cite{wymagania}\footnote{Obecna wersja spełnia wymagania opisane w~\cite{wymagania-100}.}. Ostateczna implementacja zawiera niecałe trzysta linii kodu źródłowego\footnote{Obecna wersja ma znacznie więcej linii kodu.}, co świadczy o zwięzłości klasy. Zastosowanie komentarzy znacznie poprawia czytelność. Z~perspektywy piszącego, odpowiednio użyta klasa zapewnia, że tekst spełnia wymagania uczelni stawiane pracy dyplomowej.\footnote{\label{not:bibTeX}W~pierwotnej wersji tej pracy użyto środowiska literatury {\tt thebibliography}. Obecnie zdecydowanie nie rekomenduje się takiego sposobu tworzenia bibliografii. Natomiast, bardzo zalecane jest użycie programu Bib\TeX{} i~stylu bibliograficznego {\tt SGGW-thesis.bst}. Ułatwia to tworzenie literatury. Zostało to opisane w~Dodatku~\ref{sec:dodatek}, rozdział~\ref{sec:dod:bibliografia}. Można skorzystać z~przykładów różnych pozycji literatury z~pliku {\tt SGGW-thesis.bib}.}
 
-
-\begin{thebibliography}{9}
-\bibitem{wymagania}
-\textit{Zarządzenie nr 34 Rektora Szkoły Głównej Gospodarstwa Wiejskiego w Warszawie z dnia 01 czerwca 2016 r.\ w~ sprawie wprowadzenia ,,Wytycznych dotyczących
-przygotowywania prac dyplomowych w~Szkole Głównej Gospodarstwa Wiejskiego w Warszawie''}, Załączniki 1 i~2
-\url{https://www.sggw.pl/dla-studentow/informacje-formalno-prawne/dokumenty-do-pobrania}
-$\rightarrow$ Praca dyplomowa (dostęp: 04.01.2017)
-\bibitem{latexclass}
-\textit{\LaTeXe\ for class and package writers} \url{http://www.latex-project.org/help/documentation/} $\rightarrow$ LaTeX2e for class... (dostęp 04.01.2017)
-\bibitem{latexcompanion}
-Frank Mittelbach and Michel Goossens with Johannes Braams, David Carlisle and Chris Rowley,
-\textit{The \LaTeX\ Companion}. Second Edition,
-Addison-Wesley, 2004.
-\bibitem{tds}
-\textit{A Directory Structure for \TeX\ Files} \url{http://tug.org/tds/tds.html} (dostęp 11.01.2017)
-\end{thebibliography}
+% Do tworzenia bibliografii zdecydowanie rekomendujemy pliki bibliografii *.bib i użycie programu BibTeX, będącego częścią systemu LaTeX.
+% Absolutnie rezygnujemy z tworzenia bibliografii w środowisku \thebibliography.
+\bibliographystyle{SGGW-thesis} % styl bibliograficzny dostosowany do typowych wymagań, uwzględnia dane internetowe, skraca imiona do inicjałów
+\bibliography{SGGW-thesis} % tu znajdziesz wiele przykładów różnych rodzajów pozycji bibliograficznych, kopiuj i przerabiaj na własne
 
 \beforelastpage
+
+\include{Dodatek/dodatek.tex}
 
 \end{document}

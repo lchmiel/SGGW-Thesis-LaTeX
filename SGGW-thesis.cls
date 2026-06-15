@@ -2,12 +2,52 @@
 % Klasa do pisania prac dyplomowych - licencjackich, inzynierskich i magisterskich - w SGGW
 %
 
-\newcommand{\SGGWthesisVersion}{1.071a}
+\newcommand{\SGGWthesisVersion}{1.081}
+
+% Wersja 1.081 z 2026.06.12
+% Autor: Leszek Chmielewski
+% Zmiany:
+% 1. Drobne retusze, nie wpływające na działanie klasy.
+
+% Wersja 1.080 z 2026.06.08
+% Autor: Leszek Chmielewski
+% Zmiany:
+% 1. Włączenie do klasy całego mechanizmu dodawania uwag do pracy
+%    wzorowanego na mechanizmie z MG&V.
+%    Dotąd uwagi wymagały dodania pakietu lchmiel.sty, teraz to jest niepotrzebne.
+% 2. Dodanie komendy \keysinfoPL, która powoduje wypisanie informacji o tym,
+%    jak używać kluczy z poradnika będącego Dodatkiem do wzorcowej pracy dyplomowej.
+%    Jest to pierwsze nawiązanie w klasie do Poradnika.
+% 3. Dodanie pakietu [bottom]footmisc, aby przypisy były zawsze na dole strony, pod środowiskami pływającymi
+
+% Wersja 1.072 z 2026.05.22
+% Autor: Leszek Chmielewski
+% Zmiany:
+% 1. Dodanie pakietu [nocompress]cite, aby pozycje literatury były sortowane,
+%    ale nie kompresowane, np. 1, 2, 3, 5 a nie nie 1-3, 5.
+% 2. Pakiety url i hyperref z opcjami dla dzielenia \url{} na wiele linii, więcej niż dwie
+% 3. Dodanie pakietu doi, aby pozycje z DOI były aktywnymi linkami.
+% Te trzy pozycje muszą być dodane na końcu pliku klasy, inaczej sa błędy w wewnęrznych linkach dokumentu.
+% 4. Definicje skróconych nazw użytecznych komend: \usp, \on, \ud, \tbs, \mbs, \bs
+
+% Wersja 1.071c z 2026.04.16
+% Autor: Leszek Chmielewski
+% Zmiana:
+% 1. Zmiana tytułu rozdzialu zawierającego bibliografię z domyślnego dla języka
+%    polskiego "Spis literatury" na "Bibliografia".
+
+% Wersja 1.071b z 2026.01.21
+% Autor: Leszek Chmielewski
+% Zmiana:
+% 1. Zmiana poziomu podrozdziałów, które będą numerowane, z domyślnego 2 na 3.
+%    Zatem, będą numerowane i umieszczone w spisie treści: \chapter, \section, \subsection, \subsubsection.
+%    Nie będą numerowane i nie będą umieszczone w spisie treści: \paragraph, \subparagraph.
+%    Ma to zastosowanie w Dodatku, ktory jest w przygotowaniu.
 
 % Wersja 1.071a z 2025.01.12
 % Autor: Leszek Chmielewski
 % Zmiana:
-% 1. Dodana kropka w oświadczeniu autora pracy, akapit pierwszy. 
+% 1. Dodana kropka w oświadczeniu autora pracy, akapit pierwszy.
 
 % Wersja 1.071 z 2024.11.05
 % Autor: Leszek Chmielewski
@@ -59,7 +99,7 @@
 % Wersja 1.05 z 2019.06.25
 % Autorzy: Pawel Wasil, Bartosz Sowa
 % Zmiany:
-% 1. Zmiana \onehalfspacing na \setstretch{1.4} - dzieki temu interlinia jest niemal identyczna jak w wersji w Word, czyli odtep 1.5.
+% 1. Zmiana \onehalfspacing na \setstretch{1.4} - dzieki temu interlinia jest niemal identyczna jak w wersji w Word, czyli odstęp 1.5.
 %
 % Wersja 1.04 z 2018.01.17.
 % Autorzy: Pawel Wasil, Michal Rosa
@@ -121,8 +161,11 @@
 
 \RequirePackage[a4paper,top=2.5cm,bottom=2.5cm,inner=3.5cm,outer=2.5cm]{geometry}
 
+\RequirePackage[bottom]{footmisc} % aby przypisy były zawsze na dole strony, pod środowiskami pływającymi
+
 \RequirePackage{polski}
 \selecthyphenation{polish}
+\renewcommand\bibname{Bibliografia}
 
 \RequirePackage{graphicx}
 
@@ -130,6 +173,9 @@
 \titleformat{\chapter}
   {\normalfont\LARGE\bfseries}{\thechapter}{1em}{}
 \titlespacing*{\chapter}{0pt}{3.5ex plus 1ex minus .2ex}{2.3ex plus .2ex}
+
+\setcounter{secnumdepth}{3} % ustalenie, że numerowane są podrozdziały do poziomu \subsubsection{}
+\setcounter{tocdepth}{3} % ustalenie, że są umieszczane w spisie treści podrozdziały do poziomu \subsubsection{}
 
 \RequirePackage{enumitem} %zmiana odleglosci w listach - generalne zmniejszenie
 % Jesli efekt nie jest wlasciwy, to trzeba stosowac opcje pakietu "enumitem" w konkretnych listach.
@@ -403,3 +449,131 @@
 	\newpage\null
     \thispagestyle{empty}
 }
+
+% short "unit space" for separating numbers from units
+\newcommand{\usp}{\ensuremath{\,}}
+% Operator Name: typeset as an operator, with straight Roman font
+\RequirePackage{amsmath,amssymb}
+\newcommand{\on}[1]{{\ensuremath{\operatorname{{#1}}}}}
+% upright d, a differential operator
+\newcommand{\ud}{{\ensuremath{\textrm{d}}}}
+% shorthands for text backslash, math backslash
+\newcommand{\tbs}{\textbackslash}
+\newcommand{\bs}{\tbs}
+\newcommand{\mbs}{\backslash}
+
+
+% aby pozycje literatury były sortowane, ale nie kompresowane, np. 1, 2, 3, 5 a nie nie 1-3, 5
+\RequirePackage[nocompress]{cite}
+
+% dla dzielenia \url{} na wiele linii, więcej niż dwie
+\RequirePackage[hyphens]{url}
+\RequirePackage[hyperindex,breaklinks]{hyperref}
+
+% aby pozycje z DOI były aktywnymi linkami
+\RequirePackage{doi}
+
+
+% 2020/06/13-2021/10/16: making editorial comments in the text
+% 2021/10/16: resigning from the option [dvipsnames] in xcolor package which caused clashes, defining own colours
+% BEGIN making editorial comments in the text
+\RequirePackage{xcolor} % Colours modified on 2025/05/05
+\definecolor{ColorInsert}{rgb}{0,0.5,0.1}
+\definecolor{ColorRemove}{rgb}{0.9,0,0}
+\definecolor{ColorRemark}{rgb}{0.7,0.45,0}
+\RequirePackage[normalem]{ulem} % implements the crossing out of a text
+\RequirePackage{etoolbox} % implements among others the test if the parameter is empty
+% Editorial remark % Clarified 2024/06/18, added languages 2025/12/07
+% auxiliary variable to set the language: Remark or Uwaga -- the latter if REMLANGPL is true
+% language is set by using the respective command: \edreminfo or \edreminfoPL or setting \REMLANGPLtrue, \REMLANGPLfalse
+\newif\ifREMLANGPL
+\newcommand{\edreminfo}{% Modified 2023/01/26 (text corrected), 2024/10/18 (text corrected), 2024/11/09 (no footnote mark),
+  % 2024/12/27 (correction of explanations); 2025/03/08 (comments become remarks, commands not changed); 2025/03/17 (shortened); 2025/05/05 (corrected).%
+  \renewcommand{\remarkname}{Remark}\REMLANGPLfalse%
+  \footnotetext{\color{ColorRemark}{\underline{\bf Information on editorial interventions}\hspace{.5em}%
+  In this version of the document the editorial interventions: remarks and replacements (some with remarks) are displayed. Remarks are placed in footnotes.
+  In the replacements, the deleted text is marked as \rpl{red crossed-out}{}, and the proposed text as \rpl{}{green underlined}.
+  Sometimes the replacements can badly fit in the lines of text, or comments continued in the next page can lose colour; this is unavoidable.\\
+  \indent The interventions are shown if in the preamble the command {\tt \textbackslash{}SHOWREMARKStrue}\usp{} is present.
+  Otherwise, remarks are not shown and replacements are accepted.\\
+  \indent Single corrections or remarks can be accepted or rejected by simply editing the text of the source file.
+  Also, a~single correction or remark can be accepted by adding~`{\tt a}' at the end of its name, or rejected by adding~`{\tt r}'.
+  For example, {\tt \textbackslash{}rpl\{$\cdot$\}\{$\cdot$\}} can be
+  accepted by changing its name to {\tt \textbackslash{}rpla\{$\cdot$\}\{$\cdot$\}}
+  or rejected by changing its name to {\tt \textbackslash{}rplr\{$\cdot$\}\{$\cdot$\}}.\\
+  \indent More information can be found in the class file {\tt SGGW-thesis-EN.cls}.%
+}}}
+\newcommand{\edreminfoPL}{% Modified 2023/01/26 (text corrected), 2024/10/18 (text corrected), 2024/11/09 (no footnote mark),
+  % 2024/12/27 (correction of explanations); 2025/03/08 (comments become remarks, commands not changed); 2025/03/17 (shortened); 2025/05/05 (corrected).%%
+  \renewcommand{\remarkname}{Uwaga}\REMLANGPLtrue%
+  \footnotetext{\color{ColorRemark}{\underline{\bf Informacja o interwencjach edytorskich}\hspace{.5em}%
+  W~tej wersji dokumentu są pokazane interwencje edytorskie: uwagi i~zamiany (niektóre z~uwagami). Uwagi są unieszczone w~notkach w~stopce.
+  W~zamianach tekst usnięty jest oznaczony jako \rpl{czerwony skreślony}{}, a tekst wprowadzony jako \rpl{}{zielony podkreślony}.
+  Czasem zamiany źle wpisują się w~linie tekstu, lub komentarze przechodzące na następną stronę tracą kolor; nie można tego uniknąć.\\
+  \indent Interwencje są pokazywane, jeśli w~preambule jest obecna komenda {\tt \textbackslash{}SHOWREMARKStrue}\usp{}.
+  W~przeciwnym przypadku uwagi nie są pokazane, a~zamiany są zaakceptowane.\\
+  \indent Pojedyncze zamiany lub poprawki można zaakceptować lub odrzucić zwyczajnie edytując tekst źródłowy.
+  Również, pojedynczą poprawkę lub uwagę można zaakceptować dodając~`{\tt a}' jak {\em accept\/} na końcy jej nazwy, lub odrzucić dodając~`{\tt r}' jak {\em reject}.
+  Na przykład, {\tt \textbackslash{}rpl\{$\cdot$\}\{$\cdot$\}} można zaakceptować
+  zmieniając jej nazwę na {\tt \textbackslash{}rpla\{$\cdot$\}\{$\cdot$\}}
+  lub odrzucić zmieniając jej nazwę na {\tt \textbackslash{}rplr\{$\cdot$\}\{$\cdot$\}}.\\
+  \indent Więcej informacji można znaleźć w~pliku klasy {\tt SGGW-thesis.cls}.%
+}}}
+\newcommand{\edrembody}[1]{\protect{\footnote{\color{ColorRemark}{\underline{\bf \remarkname}\hspace{.5em}#1}}}}% 2024/06/18 Remark instead for Editorial remark
+\newcommand{\edrem}[1]{\edrembody{#1}}
+% Replacement - replacement of the text with another text
+\newcommand{\rplbody}[2]{\protect{{\color{ColorRemove}\sout{#1}}{\color{ColorInsert}\uline{#2}}}}
+\newcommand{\rpl}[2]{\rplbody{#1}{#2}}
+% Replacement commented - replacement of the text with another text, with a remark (before 2025/03/08 called comment, now remark for easier searching of editorial interventions)
+\newcommand{\rplcbody}[3]{\protect{{\color{ColorRemove}\sout{#1}}{\color{ColorInsert}\uline{#2}}\footnote{\color{ColorRemark}{\uline{\bf \remarkname}\hspace{.5em}{#3}}}}}
+\newcommand{\rplc}[3]{\rplcbody{#1}{#2}{#3}}
+
+% Global hiding the replacements and comments
+\newif\ifSHOWREMARKS
+
+% single type of remark can be removed or type of correction can be accepted by putting in the source an uncommented line as follows:
+%\renewcommand{\edrem}[1]{} % uncomment this line to hide editorial remarks
+%\renewcommand{\edreminfo}{} % uncomment this line to hide info for editorial remarks
+%\renewcommand{\rpl}[2]{{#2}} % uncomment this line to hide the replacements and to leave only the inserted text
+%\renewcommand{\rplc}[3]{{#2}} % uncomment this line to hide the commented replacements and to leave only the inserted text
+
+% Important replacements and comments which are not hidden by global hiding
+\newcommand{\edremi}[1]{\edrembody{#1}}
+\newcommand{\rpli}[2]{\rplbody{#1}{#2}}
+\newcommand{\rplci}[3]{\rplcbody{#1}{#2}{#3}}
+% Accepting or rejecting a particular replacement - add 'a' to accept or 'r' to reject at the end of the command name
+% 2023/06/10: inserting \mbox{} instead of negative \hspace if second parameter is empty
+\newcommand{\edrema}[1]{} % accept the comment - hide it
+\newcommand{\rpla}[2]{\ifstrempty{#2}{\mbox{}}{#2}} % accept this change - show changed text only, in black, not underlined
+\newcommand{\rplr}[2]{\protect{{#1}}} % reject this change - show original text, in black, not crossed % corrected 2025/12/08
+\newcommand{\rplca}[3]{\ifstrempty{#2}{\mbox{}}{#2}} % accept this change - show changed text only, in black, not underlined
+\newcommand{\rplcr}[3]{\protect{{#1}}} % reject this change - show original text, in black, not crossed % corrected 2025/12/08
+% END making editorial comments in the text
+
+% Wypisanie informacji o tym, jak używać kluczy z poradnika bedącego Dodatkiem do wzorcowej pracy dyplomowej.
+\providecommand{\keysinfoPL}{%
+\footnotetext{\color{ColorRemark}\underline{\bf Uwaga o~słowach kluczowych}\hspace{.5em}%
+Po napotkaniu w~uwagach do Państwa pracy słowa kluczowego o~formacie \#AAAA, gdzie A~jest wielką literą, proszę szukać tego słowa w~Poradniku,
+który jest dodatkiem do wzorca pracy dyplomowej.
+Najpierw proszę poszukać w~nim słowa kluczowego \#KLCZ, tam jest wyjaśnienie jak używać kluczy.
+W~dalszych uwagach podany jest zazwyczaj tylko klucz, a~wyjaśnienia są w~Poradniku pod tym kluczem.
+Często w~kluczu jest pomijany znak~`\#'.}}
+
+
+\AtBeginDocument{%
+% before end of preamble
+\ifREMLANGPL
+  \providecommand{\remarkname}{Uwaga}
+  \else
+  \providecommand{\remarkname}{Remark}
+\fi
+\ifSHOWREMARKS\else
+  \renewcommand{\edrem}[1]{} % uncomment this line to hide editorial remarks
+  \renewcommand{\edreminfo}{} % uncomment this line to hide info for editorial remarks
+  \renewcommand{\rpl}[2]{{#2}} % uncomment this line to hide the replacements and to leave only the inserted text
+  \renewcommand{\rplc}[3]{{#2}} % uncomment this line to hide the commented replacements and to leave only the inserted text
+  \renewcommand{\edreminfo}{}
+  \renewcommand{\edreminfoPL}{}
+  \renewcommand{\keysinfoPL}{}
+\fi
+} % \AtBeginDocument
