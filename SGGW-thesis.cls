@@ -4,6 +4,12 @@
 
 \newcommand{\SGGWthesisVersion}{1.082}
 
+% Wersja 1.082 z 2026.06.17
+% Autor: Leszek Chmielewski
+% Zmiany:
+% 1. Uściślenia w komendzie \keysinfoPL, która powoduje wypisanie informacji o tym,
+%    jak używać kluczy z poradnika będącego Dodatkiem do wzorcowej pracy dyplomowej.
+
 % Wersja 1.081 z 2026.06.12
 % Autor: Leszek Chmielewski
 % Zmiany:
@@ -487,6 +493,7 @@
 % auxiliary variable to set the language: Remark or Uwaga -- the latter if REMLANGPL is true
 % language is set by using the respective command: \edreminfo or \edreminfoPL or setting \REMLANGPLtrue, \REMLANGPLfalse
 \newif\ifREMLANGPL
+\REMLANGPLtrue % Domyślnie jest język polski; angielski można włączyć
 \newcommand{\edreminfo}{% Modified 2023/01/26 (text corrected), 2024/10/18 (text corrected), 2024/11/09 (no footnote mark),
   % 2024/12/27 (correction of explanations); 2025/03/08 (comments become remarks, commands not changed); 2025/03/17 (shortened); 2025/05/05 (corrected).%
   \renewcommand{\remarkname}{Remark}\REMLANGPLfalse%
