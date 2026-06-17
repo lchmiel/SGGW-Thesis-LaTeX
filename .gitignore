@@ -2,3 +2,8 @@ Project.prj
 *.log
 *.blg
 *.aux
+*.bbl
+*.out
+*.synctex
+*.toc
+
