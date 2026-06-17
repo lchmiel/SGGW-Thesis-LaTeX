@@ -9,6 +9,7 @@
 % Zmiany:
 % 1. Uściślenia w komendzie \keysinfoPL, która powoduje wypisanie informacji o tym,
 %    jak używać kluczy z poradnika będącego Dodatkiem do wzorcowej pracy dyplomowej.
+% 2. W uwagach i komentarzach do zmian językiem domyślnym jest zawsze polski.
 
 % Wersja 1.081 z 2026.06.12
 % Autor: Leszek Chmielewski
