@@ -2,7 +2,7 @@
 % Klasa do pisania prac dyplomowych - licencjackich, inzynierskich i magisterskich - w SGGW
 %
 
-\newcommand{\SGGWthesisVersion}{1.081}
+\newcommand{\SGGWthesisVersion}{1.082}
 
 % Wersja 1.081 z 2026.06.12
 % Autor: Leszek Chmielewski
@@ -513,7 +513,7 @@
   \indent Interwencje są pokazywane, jeśli w~preambule jest obecna komenda {\tt \textbackslash{}SHOWREMARKStrue}\usp{}.
   W~przeciwnym przypadku uwagi nie są pokazane, a~zamiany są zaakceptowane.\\
   \indent Pojedyncze zamiany lub poprawki można zaakceptować lub odrzucić zwyczajnie edytując tekst źródłowy.
-  Również, pojedynczą poprawkę lub uwagę można zaakceptować dodając~`{\tt a}' jak {\em accept\/} na końcy jej nazwy, lub odrzucić dodając~`{\tt r}' jak {\em reject}.
+  Również, pojedynczą poprawkę lub uwagę można zaakceptować dodając~`{\tt a}' jak {\em accept\/} na końcu jej nazwy, lub odrzucić dodając~`{\tt r}' jak {\em reject}.
   Na przykład, {\tt \textbackslash{}rpl\{$\cdot$\}\{$\cdot$\}} można zaakceptować
   zmieniając jej nazwę na {\tt \textbackslash{}rpla\{$\cdot$\}\{$\cdot$\}}
   lub odrzucić zmieniając jej nazwę na {\tt \textbackslash{}rplr\{$\cdot$\}\{$\cdot$\}}.\\
@@ -552,10 +552,10 @@
 
 % Wypisanie informacji o tym, jak używać kluczy z poradnika bedącego Dodatkiem do wzorcowej pracy dyplomowej.
 \providecommand{\keysinfoPL}{%
-\footnotetext{\color{ColorRemark}\underline{\bf Uwaga o~słowach kluczowych}\hspace{.5em}%
-Po napotkaniu w~uwagach do Państwa pracy słowa kluczowego o~formacie \#AAAA, gdzie A~jest wielką literą, proszę szukać tego słowa w~Poradniku,
-który jest dodatkiem do wzorca pracy dyplomowej.
-Najpierw proszę poszukać w~nim słowa kluczowego \#KLCZ, tam jest wyjaśnienie jak używać kluczy.
+\footnotetext{\color{ColorRemark}\underline{\bf Informacja o~słowach kluczowych}\hspace{.5em}%
+Po napotkaniu w~uwagach do Państwa pracy słowa kluczowego o~formacie \#AAAA, gdzie A~jest wielką literą, należy szukać tego słowa w~Poradniku,
+który jest Dodatkiem~A do wzorca pracy dyplomowej (w~pliku {\tt main.pdf} z~repozytorium~\cite{klasa-github} lub ze strony~\cite{www-LC-klasaLaTeX}).
+Najpierw trzeba poszukać w~nim słowa kluczowego \#KLCZ, tam jest wyjaśnienie jak używać kluczy.
 W~dalszych uwagach podany jest zazwyczaj tylko klucz, a~wyjaśnienia są w~Poradniku pod tym kluczem.
 Często w~kluczu jest pomijany znak~`\#'.}}
 
