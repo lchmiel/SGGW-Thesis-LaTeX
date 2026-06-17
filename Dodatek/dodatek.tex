@@ -1,6 +1,6 @@
 \appendix
 
-\newcommand{\SGGWappendixVersion}{0.633b}
+\newcommand{\SGGWappendixVersion}{0.634b}
 
 % definicje dodane ze względu na Dodatek (\appendix)
 \newcommand{\kf}[1]{{\tt {\#{#1}}}}
@@ -11,7 +11,7 @@
 
 
 \chapter[Dodatek: Poradnik pisania prac dyplomowych]{Dodatek:\\[-.3\baselineskip] Poradnik pisania prac dyplomowych\\[-.45\baselineskip]{\footnotesize\rm Wersja dodatku {\SGGWappendixVersion}, \hyperref[sec:dod:zmiany]{kompilacja z dnia \today}. Wersja klasy {\SGGWthesisVersion}.}\\[-.35\baselineskip]\normalsize Leszek Chmielewski, Izabella Antoniuk}
-\label{sec:dodatek}
+\label{sec:dod:dodatek}
 
 {\color{red}\footnotesize
 \noindent {\bf Uwaga} \hspace{.2em} W Państwa pracach należy pominąć ten dodatek, usuwając w~pliku głównym tekst od linii \verb+\appendix+ włącznie do linii \verb+\end{document}+ wyłącznie. Sprowadza się to do wykomentowania linii \linebreak {\tt \textbackslash{}include\{Dodatek/dodatek.tex\}} w~pliku głównym. Można wtedy usunąć podkatalog {\tt Dodatek}.
@@ -191,8 +191,7 @@ Przegląd literatury powinien być szerszy, niż \hyperref[sec:dod:przeglad-lite
 
 \paragraph{Liczba stron}\ky{LSPM}
 \label{sec:dod:liczba-stron-magisterskiej}
-Nie ma wyraźnych wymagań co do liczby pozycji literatury ani objętości pracy magisterskiej; objętość powinna być wystarczająca dla opisania zagadnienia poruszanego w~pracy. Jednak praktyka pokazuje, że liczba stron tekstu i~elementów graficznych, nie licząc elementów dodatkowych, takich jak spisy, wymagane strony, itd., powinna wynosić co najmniej 60~stron w~formacie zgodnym z~wymaganiami uczelnianymi, w~każdym razie raczej nie więcej, niż~80. W~przypadku, gdy objętość pracy może wynosić powyżej 60 stron tekstu, z~elementami graficznymi, należy się zastanowić, czy części opisów nie można przenieść do załączników na końcu pracy -- elementy takie mogą zawierać informacje dodatkowe, które mogą być przydatne przy zrozumieniu pracy, jednak nie są wymagane w~jej głównej treści, jak np.\ instrukcja 
-obsługi przygotowanej aplikacji.
+Nie ma wyraźnych wymagań co do liczby pozycji literatury ani objętości pracy magisterskiej; objętość powinna być wystarczająca dla opisania zagadnienia poruszanego w~pracy. Jednak praktyka pokazuje, że liczba stron tekstu i~elementów graficznych, nie licząc elementów dodatkowych, takich jak spisy, wymagane strony, itd., powinna wynosić co najmniej 60~stron w~formacie zgodnym z~wymaganiami uczelnianymi, w~każdym razie raczej nie więcej, niż~80. W~przypadku, gdy objętość pracy może wynosić powyżej 60 stron tekstu, z~elementami graficznymi, należy się zastanowić, czy części opisów nie można przenieść do załączników na końcu pracy -- elementy takie mogą zawierać informacje dodatkowe, które mogą być przydatne przy zrozumieniu pracy, jednak nie są wymagane w~jej głównej treści, jak np.\ instrukcja obsługi przygotowanej aplikacji.
 
 \vspace{2\parsep}
 
@@ -1006,6 +1005,7 @@ Poniżej nie kopiujemy informacji dla dyplomantów, które są na stronach Dziek
   \item{\kf{CTWN}} -- \hyperref[sec:dod:cytowanie]{Cytowanie}
   \item{\kf{CZKD}} -- \hyperref[sec:dod:czcionka-kodu]{Czcionka dla kodu}
   \item{\kf{HRPR}} -- \hyperref[sec:dod:hierarchia]{Hierarchia rozprawy i podział na rozdziały}
+  \item{\kf{INPR}} -- \hyperref[sec:dod:instrukcja-promotorzy]{Instrukcja dla promotorów}
   \item{\kf{JDNS}} -- \hyperref[sec:dod:jednostki]{Jednostki}
   \item{\kf{KLCZ}} -- \hyperref[sec:dod:klucze]{Słowa-klucze do wyszukiwania tematów}
   \item{\kf{KOAD}} -- \hyperref[sec:dod:apostrof-dywiz]{Końcówki: apostrof i dywiz}
@@ -1052,11 +1052,46 @@ Poniżej nie kopiujemy informacji dla dyplomantów, które są na stronach Dziek
 \end{description}
 
 
+\section{Instrukcja dla promotorów}
+\label{sec:dod:instrukcja-promotorzy}
+
+Dla\ky{INPR} promotorów, a~także dla tych (nielicznych) recenzentów, który będą mieć dostęp do plików źródłowych pracy dyplomowej, przygotowaliśmy dwie użyteczne komendy. Pierwsza ma ułatwić informowanie Dyplomanta o~systemie kluczy. Druga ma dostarczyć narzędzi do komentowania treści dyplomu i~wprowadzania w~nim zmian w~sposób zbliżony do tego, jaki znamy z~edytorów tekstu typu WYSIWYG.
+
+Aby aby komendy działały, w~preambule dokumentu trzeba wstawić komendę\\[2pt]
+\verb+\SHOWREMARKStrue+\\[2pt]
+Zaprzeczenie ({\tt true} $\rightarrow$ {\tt false}), usunięcie lub wykomentowanie tej komendy spowoduje wyłączenie poniższych komend, zniknięcie komentarzy i~zaakceptowanie zmian wprowadzonych komendami opisanymi niżej. W~takim ustawieniu praca dyplomowa nadaje się do druku.\vspace{6pt}
+
+\noindent\verb+\keysinfoPL+\\[2pt]
+Tę komendę należy wstawić na początku pierwszego rozdziału pracy dyplomowej zawierającego tekst. Spowoduje to wypisanie przypisu zawierającego tekst taki, jak w~przypisie zaczynającym się od słów {\color{ColorRemark}\bf Informacja o~słowach kluczowych} na dole tej strony\keysinfoPL. Przypis będzie miał numer~0 (tu jest jednym z~dalszych przypisów w~dokumencie i~otrzymał inny numer). Jak widać, tekst informuje Dyplomanta o~tym, jak używać \hyperref[sec:dod:klucze]{kluczy}.\\[6pt]
+\noindent\verb+\edreminfoPL+
+\\[2pt]
+Tę komendę również należy wstawić na początku pierwszego rozdziału pracy dyplomowej zawierającego tekst (obie komendy można wstawić razem, oba przypisy będą miały numer~$0$). Spowoduje to wypisanie przypisu zawierającego tekst taki, jak w~przypisie zaczynającym się od słów {\color{ColorRemark}\bf Informacja o~interwencjach edytorskich} na dole tej strony\edreminfoPL. Tekst informuje Dyplomanta o~tym, jak obsługiwać system uwag i~zamian zaimplementowany w~klasie {\tt SGGW-thesis}.
+
+\paragraph{Krótka instrukcja systemu uwag i~zamian} z~klasy {\tt SGGW-thesis.cls}\\[-1.5ex]
+
+\noindent Podamy komendy i wyniki ich działania.
+\begin{description}\small
+\item[Komendy proste] -- komentarz (uwaga edytorska), zamiana, zamiana z komentarzem:
+\item{\verb+wyraz\edrem{Komentarz~A.}+} $\rightarrow$ wyraz\edrem{Komentarz~A.} 
+\item{\verb+\rpl{stary}{nowy}+} $\rightarrow$ \rpl{stary}{nowy}
+\item{\verb+\rplc{stary}{nowy}{Komentarz~B.}+} $\rightarrow$ \rplc{stary}{nowy}{Komentarz~B.} 
+\item[Komendy zaakceptowane] -- z~przyrostkiem {\tt a} -- komentarze nie są pokazywane
+\item{\verb+wyraz\edrema{Komentarz~C.}+} $\rightarrow$ wyraz\edrema{Komentarz~C.} 
+\item{\verb+\rpla{zamiana odrzucona}{zamiana zaakceptowana}+} $\rightarrow$ \rpla{zamiana odrzucona}{zamiana zaakceptowana}
+\item{\verb+\rplca{odrzucona}{zaakceptowana}{Komentarz~D}+} $\rightarrow$ \rplca{odrzucona}{zaakceptowana}{Komentarz~D+}
+\item[Komendy odrzucone] -- z~przyrostkiem {\tt r} -- komentarze nie są pokazywane
+\item{\verb+wyraz\edremr{Komentarz~E.}+} $\rightarrow$ wyraz\edrema{Komentarz~E.} 
+\item{\verb+\rplr{zamiana odrzucona}{zamiana zaakceptowana}+} $\rightarrow$ \rplr{zamiana odrzucona}{zamiana zaakceptowana}
+\item{\verb+\rplcr{odrzucona}{zaakceptowana}{Komentarz~F}+} $\rightarrow$ \rplcr{odrzucona}{zaakceptowana}{Komentarz~F+}
+\end{description}
+
+
 \section{Zmiany}
 \label{sec:dod:zmiany}
 Zmiany dotyczą przede wszystkim klasy, dodatku, pliku bibliografii i~stylu bibliograficznego. Dotyczą także głównego pliku, w~którym poprawki są rzadkie.  Zmiany są podane datami, od najnowszej do najstarszej.
 \begin{description}
-\item[\rm 2026.06.15:~{\tt dodatek.tex}.] Dodano wiele rozdziałów~, niektóre podzielono. Poprawiono strukturę dokumentu. Wersja dodatku:~0.633b. Jest to pierwsza wersja udostępniona do powszechnego użytku.
+\item[\rm 2026.06.??:~{\tt main.tex}, {\tt dodatek.tex}, {\tt SGGW-thesis.cls}, {\tt SGGW-thesis.bib}.] \mbox{}\linebreak Dodano rozdział~\ref{sec:dod:instrukcja-promotorzy} zawierający \hyperref[sec:dod:instrukcja-promotorzy]{instrukcję dla promotorów}, na samym końcu Poradnika. Uporządkowano informacje o~dostępie do niniejszych materiałów nadając im postać pozycji w~bibliografii~\cite{klasa-github, www-LC-klasaLaTeX}. Wymagało to poprawek w~niemal wszystkich plikach. Wersja klasy:~1.082, wersja dodatku:~0.634b.
+\item[\rm 2026.06.15:~{\tt dodatek.tex}.] Dodano wiele rozdziałów, niektóre podzielono. Poprawiono strukturę dokumentu. Wersja dodatku:~0.633b. Jest to pierwsza wersja udostępniona do powszechnego użytku.
 \item[\rm 2026.06.11:~{\tt dodatek.tex}, {\tt SGGW-thesis.bib}.] W~rozdziale o~\hyperref[sec:dod:liczebniki]{liczebnikach} dodano temat {\em ilość czy liczba?} z~literaturą. Wersja dodatku:~0.632b. 
 \item[\rm 2026.06.10:~{\tt main.tex}, {\tt dodatek.tex}, {\tt SGGW-thesis.bib}.] Drobne retusze w~Dodatku, wersja~0.631b, i~wynikające z~nich uzupełnienia w~pliku literatury. Drobne retusze w~pliku głównym w~przypisach dotyczących obecnej wersji klasy. 
 \item[\rm 2026.06.08:~{\tt SGGW-thesis.cls}, {\tt dodatek.tex}, {\tt SGGW-thesis.bib}.] W~klasie włączono cały mechanizm dodawania uwag do pracy, wzorowany na mechanizmie z~MG\&V~\cite{MGV-main}. Dodano komendę {\tt \bs{}keysinfoPL}, która powoduje wypisanie informacji o~tym, jak używać kluczy z~tego poradnika (jest to pierwsze nawiązanie do poradnika w~klasie). Wersja klasy:~1.080. W~poradniku i~bibliografii: uzupełniono wszystkie początkowo planowane zasady, wraz z~ich literaturą. Przeniesiono dodatek do jego podkatalogu.
