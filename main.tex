@@ -17,8 +17,10 @@
 
 \usepackage{hyperref}
 
-% Pakiety i ustawienia dodane ze względu na Dodatek (\appendix)
-% trzeba je dołączyć w preambule, więc nie można tego zrobić w Dodatku.
+% Pakiety i ustawienia dodane ze względu na Dodatek (\appendix).
+% Trzeba je dołączyć w preambule, więc nie można tego zrobić w Dodatku.
+% Po usunięciu Dodatku w Państwa poniżą sekcję można usunąć, 
+% chyba, że korzystając ze wzorców w Dodatku, używamy niektórych pakietów i ustawień.
 \SHOWREMARKStrue
 \usepackage{xcolor}
 \usepackage{amsmath,amssymb}
@@ -33,6 +35,7 @@
 \definecolor{MgvUrlColor}{rgb}{0.00,0.00,0.50}
 \definecolor{MgvLinkColor}{rgb}{0.70,0.00,0.00}
 \definecolor{MgvFileColor}{rgb}{0.50,0.00,0.50} % dark magenta
+% Ustawienia kolorów w PDF należy usunąć, bo kolory nie są korzystne w druku.
 \hypersetup{
   pdffitwindow=true,pdfnewwindow=true,plainpages=false,linktocpage=true,breaklinks=true,colorlinks=true,
   linkcolor=MgvLinkColor,citecolor=MgvCiteColor,urlcolor=MgvUrlColor,filecolor=MgvFileColor,
@@ -61,17 +64,14 @@ main parts. The first one describes the most important aspects of the implementa
   \tableofcontents
 }
 
-%\startchapterfromoddpage % niezależnie od długości spisu treści pierwszy rozdział zacznie się na nieparzystej stronie
+\startchapterfromoddpage % niezależnie od długości spisu treści pierwszy rozdział zacznie się na nieparzystej stronie
 
 \chapter{Wstęp}
 
 \section{Motywacja}
 \label{sec:motywacja}
-%\edreminfoPL
-%\keysinfoPL
 
-Pisanie pracy dyplomowej oprócz oczywistego aspektu przekazywania informacji wiąże się także z odpowiednim sformatowaniem wynikowego tekstu według zasad narzuconych przez
-uczelnię\footnote{W~pierwotnej wersji klasy było to Zarządzenie nr~34 Rektora SGGW~\cite{wymagania}. Obecnie klasa wspiera wymagania zgodne z~Zarządzeniem nr 100 Rektora SGGW~\cite{wymagania-100}.}. Jednym z narzędzi ułatwiających formatowanie jest \LaTeX, system składania dokumentów opierający się na paradygmacie WYSIWYM ({\em ang.\ What You See Is What You Mean}) co oznacza, że pisząc tekst określamy rolę dla każdego fragmentu danych, a~\LaTeX\ zajmuje się odpowiednią prezentacją. W przypadku Szkoły Głównej Gospodarstwa Wiejskiego w~Warszawie oczekiwania pod względem formatowania dokumentu silnie odbiegają od standardowych rozwiązań zaimplementowanych w~\LaTeX-u\footnote{W wersji pracy z~2017 roku potraktowano słowo \LaTeX{} jak skrótowiec i~zastosowano pisownię: w~\LaTeX-u, \LaTeX-a. Obecnie przyjęto by, że \LaTeX{} jest nazwą zasymilowaną w~języku polskim, i~zastosowano by pisownię: w~\LaTeX{}u, \LaTeX{}a. Tu pozostawiono oryginalną wersję z~roku 2017.}, dlatego postanowiłem stworzyć klasę {\tt SGGW-thesis}, która pomaga w~stworzeniu pracy dyplomowej spełniającej oczekiwania Uczelni\footnote{W pierwotnej wersji pracy nie było tego rozdziału, zaś rozdział~\ref{sec:cel-zakres} miał numer~\ref{sec:motywacja}. Był to błąd, gdyż nie powinien mieć miejsca podział rozdziału na jeden podrozdział.}\footnote{W~tej wersji pracy użyto komendy {\tt \textbackslash{}hypersetup}, w~której definiuje sie m.\ in. kolory aktywnych tekstów, co jest szczególnie przydatne w~Dodatku~\ref{sec:dod:dodatek}. W~Państwa pracach nie potrzeba używać tej komendy, gdyż powoduje ona, że teksty aktywne są drukowane w~kolorach, co nie jest korzystne.}.
+Pisanie pracy dyplomowej oprócz oczywistego aspektu przekazywania informacji wiąże się także z odpowiednim sformatowaniem wynikowego tekstu według zasad narzuconych przez uczelnię\footnote{W~pierwotnej wersji klasy było to Zarządzenie nr~34 Rektora SGGW~\cite{wymagania}. Obecnie klasa wspiera wymagania zgodne z~Zarządzeniem nr 100 Rektora SGGW~\cite{wymagania-100}.}. Jednym z narzędzi ułatwiających formatowanie jest \LaTeX, system składania dokumentów opierający się na paradygmacie WYSIWYM ({\em ang.\ What You See Is What You Mean}) co oznacza, że pisząc tekst określamy rolę dla każdego fragmentu danych, a~\LaTeX\ zajmuje się odpowiednią prezentacją. W przypadku Szkoły Głównej Gospodarstwa Wiejskiego w~Warszawie oczekiwania pod względem formatowania dokumentu silnie odbiegają od standardowych rozwiązań zaimplementowanych w~\LaTeX-u\footnote{W wersji pracy z~2017 roku potraktowano słowo \LaTeX{} jak skrótowiec i~zastosowano pisownię: w~\LaTeX-u, \LaTeX-a. Obecnie przyjęto by, że \LaTeX{} jest nazwą zasymilowaną w~języku polskim, i~zastosowano by pisownię: w~\LaTeX{}u, \LaTeX{}a. Tu pozostawiono oryginalną wersję z~roku 2017.}, dlatego postanowiłem stworzyć klasę {\tt SGGW-thesis}, która pomaga w~stworzeniu pracy dyplomowej spełniającej oczekiwania Uczelni\footnote{W pierwotnej wersji pracy nie było tego rozdziału, zaś rozdział~\ref{sec:cel-zakres} miał numer~\ref{sec:motywacja}. Był to błąd, gdyż nie powinien mieć miejsca podział rozdziału na jeden podrozdział.}\footnote{W~tej wersji pracy użyto komendy {\tt \textbackslash{}hypersetup}, w~której definiuje sie m.\ in. kolory aktywnych tekstów, co jest szczególnie przydatne w~Dodatku~\ref{sec:dod:dodatek}. W~Państwa pracach nie potrzeba używać tej komendy, gdyż powoduje ona, że teksty aktywne są drukowane w~kolorach, co nie jest korzystne.}.
 
 
 \section{Cel i zakres pracy}
@@ -273,7 +273,7 @@ Zgodnie z założeniami stworzono klasę ułatwiającą tworzenie dokumentów sp
 
 % W Państwa pracy należy usunąć tę linię, a w pliku main.tex usunąć odniesienia do etykiet w tym pliku.
 % Etykiety te mają wewnątrz łańcuch ":dod:". W każdym razie i tak będą Państwo zastępować treść tej pracy własną treścią.
-% Wtedy można skasować cały podkatalog "/Dodatek". 
+% Wtedy można skasować cały podkatalog "/Dodatek".
 \include{Dodatek/dodatek.tex}
 
 \end{document}
