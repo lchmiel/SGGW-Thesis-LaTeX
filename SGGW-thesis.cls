@@ -4,7 +4,7 @@
 
 \newcommand{\SGGWthesisVersion}{1.083}
 
-% Wersja 1.083 z 2026.06.??
+% Wersja 1.083 z 2026.06.18
 % Autor: Leszek Chmielewski
 % Zmiany:
 % 1. W komendzie \keysinfoPL, która powoduje wypisanie informacji o używaniu kluczy
