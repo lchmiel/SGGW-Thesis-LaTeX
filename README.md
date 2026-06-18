@@ -1,7 +1,13 @@
 # SGGW-Thesis-Latex
-This class was created by Łukasz Adamczyk as part of his engineering thesis. The repository is supposed to provide better versioning and ease of contribution.
+The LaTeX class "SGGW-thesis.cls" together with the thesis "main.tex" written in LaTeX with the use of this class was created by Łukasz Adamczyk as the part of his engineer thesis in 2017. This repository is supposed to provide better versioning and ease of contribution.
 
-# Instruction
+The project is continuously maintained by several Authors. For detailed information on changes, which go far beyond the original thesis, see the main.pdf file, subsection "Zmiany" in the Appendix A "Poradnik pisania prac dyplomowych".
+
+As it can be seen, the commands of the class are been named in English, but the thesis in LaTeX and the whole project is been written in Polish. An English version in the early stage of development can be found at "https://lchmiel.pl/stud.html#ClassLaTeXSGGW".
+
+This project is also available at "https://lchmiel.pl/stud.html#KlasaLaTeXSGGW". 
+
+# Basic instructions
 ## Changing thesis type header
 To change the header containing thesis type, after the 
 ```latex
@@ -21,7 +27,7 @@ set one of the flags to true
 ```
 
 ## Changing department footer
-To change the footer containing department, after the 
+To change the footer containing the department, after the 
 ```latex
 \documentclass{SGGW-thesis}
 ```
