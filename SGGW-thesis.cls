@@ -1,15 +1,21 @@
 %
-% Klasa do pisania prac dyplomowych - licencjackich, inzynierskich i magisterskich - w SGGW
+% Klasa do pisania prac dyplomowych w SGGW - licencjackich, inzynierskich i magisterskich.
 %
 
-\newcommand{\SGGWthesisVersion}{1.082}
+\newcommand{\SGGWthesisVersion}{1.083}
+
+% Wersja 1.083 z 2026.06.??
+% Autor: Leszek Chmielewski
+% Zmiany:
+% 1. W komendzie \keysinfoPL, która powoduje wypisanie informacji o używaniu kluczy
+%    w Poradniku, zmieniono odnośniki do literatury na adres w GitHub podany jawnie.
 
 % Wersja 1.082 z 2026.06.17
 % Autor: Leszek Chmielewski
 % Zmiany:
 % 1. Uściślenia w komendzie \keysinfoPL, która powoduje wypisanie informacji o tym,
 %    jak używać kluczy z poradnika będącego Dodatkiem do wzorcowej pracy dyplomowej.
-% 2. W uwagach i komentarzach do zmian językiem domyślnym jest zawsze polski.
+% 2. W uwagach i komentarzach do zmian językiem domyślnym jest polski.
 
 % Wersja 1.081 z 2026.06.12
 % Autor: Leszek Chmielewski
@@ -561,11 +567,11 @@
 % Wypisanie informacji o tym, jak używać kluczy z poradnika bedącego Dodatkiem do wzorcowej pracy dyplomowej.
 \providecommand{\keysinfoPL}{%
 \footnotetext{\color{ColorRemark}\underline{\bf Informacja o~słowach kluczowych}\hspace{.5em}%
-Po napotkaniu w~uwagach do Państwa pracy słowa kluczowego o~formacie \#AAAA, gdzie A~jest wielką literą, należy szukać tego słowa w~Poradniku,
-który jest Dodatkiem~A do wzorca pracy dyplomowej (w~pliku {\tt main.pdf} z~repozytorium~\cite{klasa-github} lub ze strony~\cite{www-LC-klasaLaTeX}).
+Po napotkaniu w~uwagach do Państwa pracy słowa kluczowego w~formacie "\#AAAA", gdzie A -- wielka litera, należy szukać tego słowa w~Poradniku,
+który jest Dodatkiem~A do wzorca pracy dyplomowej (w~pliku {\tt main.pdf} z~repozytorium~\url{https://github.com/lchmiel/SGGW-Thesis-LaTeX}).
 Najpierw trzeba poszukać w~nim słowa kluczowego \#KLCZ, tam jest wyjaśnienie jak używać kluczy.
-W~dalszych uwagach podany jest zazwyczaj tylko klucz, a~wyjaśnienia są w~Poradniku pod tym kluczem.
-Często w~kluczu jest pomijany znak~`\#'.}}
+W~dalszych uwagach zazwyczaj podany jest tylko klucz, a~wyjaśnienia są w~Poradniku pod tym kluczem.
+Czasem w~kluczu jest pomijany znak~`\#'.}}
 
 
 \AtBeginDocument{%
