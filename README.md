@@ -3,7 +3,7 @@ The LaTeX class "SGGW-thesis.cls" together with the thesis "main.tex" written in
 
 The project is continuously maintained by several Authors. For detailed information on changes, which go far beyond the original thesis, see the main.pdf file, subsection "Zmiany" in the Appendix A "Poradnik pisania prac dyplomowych".
 
-As it can be seen, the commands of the class are been named in English, but the thesis in LaTeX and the whole project is been written in Polish. An English version in the early stage of development can be found at "https://lchmiel.pl/stud.html#ClassLaTeXSGGW".
+As it can be seen, the commands of the class are been named in English, but the thesis in LaTeX and the whole project is written in Polish. An English version in the early stage of development can be found at "https://lchmiel.pl/stud.html#ClassLaTeXSGGW".
 
 This project is also available at "https://lchmiel.pl/stud.html#KlasaLaTeXSGGW". 
 
