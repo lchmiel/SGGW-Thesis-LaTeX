@@ -3,9 +3,9 @@ The LaTeX class "SGGW-thesis.cls" together with the thesis "main.tex" written in
 
 The project is continuously maintained by several Authors. For detailed information on changes, which go far beyond the original thesis, see the main.pdf file, subsection "Zmiany" in the Appendix A "Poradnik pisania prac dyplomowych".
 
-The commands provided by the class are named in English, but the thesis in LaTeX and the whole project is written in Polish. An English version in the early stage of development can be found at "https://lchmiel.pl/stud.html#ClassLaTeXSGGW".
+The commands provided by the class are named in English (excluding the flags explained below), but the thesis in LaTeX and the whole project is written in Polish. An English version in the early stage of development can be found at https://lchmiel.pl/stud.html#ClassLaTeXSGGW.
 
-This project is also available at "https://lchmiel.pl/stud.html#KlasaLaTeXSGGW". 
+This project is also available at https://lchmiel.pl/stud.html#KlasaLaTeXSGGW. 
 
 # Basic instructions
 ## Changing thesis type header
