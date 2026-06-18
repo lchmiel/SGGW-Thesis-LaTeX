@@ -1,6 +1,7 @@
 %%
 %% This is file `smgv.bst',
-%% generated with the docstrip utility.
+%% generated with the docstrip utility
+%% for document class SGGW-thesis.cls by lchmiel at 2025.12.30.
 %%
 %% The original source files were:
 %%
