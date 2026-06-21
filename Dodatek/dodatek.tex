@@ -1,6 +1,6 @@
 \appendix
 
-\newcommand{\SGGWappendixVersion}{0.635b}
+\newcommand{\SGGWappendixVersion}{0.637b} % właśnie pracujemy nad nową wersją. Była 0.636b, będzie 0.637b.
 
 % definicje dodane ze względu na Dodatek (\appendix)
 \newcommand{\kf}[1]{{\tt {\#{#1}}}}
@@ -332,13 +332,13 @@ Słowa w~obcym języku piszemy czcionką wyróżnioną: ``{\em Client Side Rende
 
 Z całą pewnością nie polecamy pisania nazw typowo angielskich z~polskimi końcówkami. Dotyczy to słów, które jeszcze nie zostały zasymilowane w~polskim języku. Złotą zasadą jest dodanie odpowiedniego polskiego rzeczownika przed nazwą angielską, i~odmienianie tego rzeczownika. Przykłady: ``firmę Microsoft'', ``w~języku JavaScript'', ``na platformie MS Teams'', ``w~bibliotece TensorFlow'', ``w~środowisku Visual Studio'' (w~tym celu trzeba wiedzieć, czy TensorFlow to biblioteka, a~Visual Studio to środowisko). Ta zasada może się wydawać przesadna, ale wyobraźmy sobie, jak napisać ``w~bibliotece TensorFlow'' bez słowa ``biblioteka''. Łatwo jest napisać ``w~Javie'', ale jak napisać ``w~TensorFlow\dots''? Lepiej nie tworzyć własnych zasad i~skorzystać z~podanej tu rady.
 
-Jeśli podajemy określenie polskie, a~dla pewności również jego wersję angielską, robimy to tak: ``\dots{}omawiamy głębokie sieci neuronowe (ang.\ {\em Deep Neural Networks}, DNN)\dots'', ``Przedstawimy teraz koncepcję transformerów wizualnych (ang. {\em Visual Transformers}, ViT).'', ``W~tym celu wykorzystamy interfejs programowania aplikacji (ang. {\em Application Programming Interface}, API)\dots.''
+Jeśli podajemy określenie polskie, a~dla pewności również jego wersję angielską, robimy to tak: ``\dots{}omawiamy głębokie sieci neuronowe (ang.\ {\em Deep Neural Networks}, DNN)\dots'', ``Przedstawimy teraz koncepcję transformerów wizualnych (ang. {\em Visual Transformers}, ViT).'', ``W~tym celu wykorzystamy interfejs programowania aplikacji (ang. {\em Application Programming Interface}, API)\dots.'' Można też pisać tak: ``Korzystamy z~technologii takich jak HTML (ang.\ {\em HyperText Markup Language}) i~CSS (ang.\ {\em Cascading Style Sheets}).'' 
 
 Czcionką wyróżnioną piszemy tylko słowa w~obcym języku, nie skrót `ang.' = `angielski', który jest polskim słowem. 
 
 Po kilku użyciach tej formy można ostatecznie pisać skrótowo bez słowa `ang.', np. ``\dots{}jed\-nost\-ką rozliczeniową jest SKU ({\em Stock Keeping Unit})\dots''.
 
-Zobacz również rozdział \ref{sec:dod:apostrof-dywiz} o~\hyperref[sec:dod:apostrof-dywiz]{końcówkach, apostrofie i dywizie}.
+Zobacz również rozdział \ref{sec:dod:apostrof-dywiz} o~\hyperref[sec:dod:apostrof-dywiz]{końcówkach, apostrofie i dywizie} oraz rozdział~\ref{sec:dod:skroty} o~\hyperref[sec:dod:skroty]{skrótach i~skrótowcach}.
 
 
 \subsubsection{Końcówki: apostrof i dywiz}\ky{KOAD}
@@ -356,9 +356,11 @@ Trzeba odróżnić skrótowiec od nazwy, jaką jest na przykład \LaTeX{}. Nazw,
 
 Skróty wprowadzamy tylko przy pierwszym użyciu, a~przy następnych go używamy nie podając już pełnej nazwy. Jeśli w~streszczeniu pracy jakieś pojęcie ma skrót i~jest użyte więcej niż raz, to również w~streszczeniu wprowadzamy skrót, przy pierwszym użyciu, a~przy następnych go używamy; w~takim przypadku w treści pracy skrót ponownie wprowadzamy przy jego pierwszym użyciu. Przykład: ``Katedra Sztucznej Inteligencji (KSI) jest jedną z katedr wydziału. Pracownicy KSI\dots''.
 
-Rodzajem skrótów są {\em skrótowce}, inaczej {\em akronimy}. Większość z~nich to skróty tak powszechnie znane, że nie ma potrzeby wyjaśniania ich, jak np. PKP, VAT czy w~środowisku informatyków HTML. Są one odmieniane, zasadniczo \hyperref[sec:dod:apostrof-dywiz]{z~zastosowaniem dywizu}, o~którego użyciu napisano w~rozdz.~\ref{sec:dod:skroty}.
+Rodzajem skrótów są {\em skrótowce}, inaczej {\em akronimy}. Większość z~nich to skróty tak powszechnie znane, że nie ma potrzeby wyjaśniania ich, jak np. PKP, VAT czy w~środowisku informatyków HTML (nie ma konieczności, ale można je wyjaśniać, szczególnie skrótowce znane tylko środowisku informatycznemu). Są one odmieniane, zasadniczo \hyperref[sec:dod:apostrof-dywiz]{z~zastosowaniem dywizu}, o~którego użyciu napisano w~rozdz.~\ref{sec:dod:skroty}.
 
 Niektóre skróty (są to w~istocie skrótowce) tak się przyjęły wśród informatyków, że traktujemy je jak słowa, jak np.\ SI, HD, RAM czy CPU. Większość takich skrótów pochodzi z~języka angielskiego, np.\ AI, JS, UI, FIFO. Często używamy ich bez wyjaśnienia, aby nie narazić się na zbytnią dosłowność. Jednak praca dyplomowa jest rodzajem tekstu skierowanego do przeciętnego, ogólnie wykształconego czytelnika, i~taki czytelnik powinien ją zrozumieć. Dlatego stosujmy się do powszechnie przyjętych zasad. Lepiej wyjaśnić za dużo, niż za mało. Nawet przy pozornie oczywistym skrócie SI warto zaznaczyć, czy mamy na myśli sztuczną inteligencję, czy jednolity system jednostek, fr.\ {\em Système international d'unités}.
+
+Zobacz także rozdział~\ref{sec:dod:jezyk-ang} o~\hyperref[sec:dod:jezyk-ang]{języku angielskim i~tłumaczeniach}.
 
 
 \subsection{Typografia}
@@ -947,7 +949,7 @@ Formę obrazu można dopuścić jedynie w~przypadku, gdy pokazana jest konfigura
 $\includegraphics[width=0.29\textwidth]{Testowy-obraz.jpg}$
 \end{lstlisting}%
 
-{\color{white} Z niejasnych przyczyn link do Bibliografii źle działa, jeśli rozdział o bibliografii znajduje się po bezpośrednio po algorytmach. Dlatego wstawiamy ten tekst, który musi wyjść na nową stronę. Nie powinno tak być.}
+%{\color{white} Z niejasnych przyczyn link do Bibliografii źle działa, jeśli rozdział o bibliografii znajduje się po bezpośrednio po algorytmach. Dlatego wstawiamy ten tekst, który musi wyjść na nową stronę. Nie powinno tak być.}
 
 
 \subsection{Bibliografia}
@@ -1015,6 +1017,8 @@ Poniżej nie kopiujemy informacji dla dyplomantów ze stron Dziekanatu, ale poda
 \end{enumerate}
 
 
+\newpage
+
 \section{Słownik kluczy}
 \label{sec:dod:slownik}
 
@@ -1076,17 +1080,19 @@ Poniżej nie kopiujemy informacji dla dyplomantów ze stron Dziekanatu, ale poda
 \end{description}
 
 
-\section{Instrukcja dla promotorów}
+\newpage
+
+\section{Instrukcja dla promotorów}\ky{INPR}
 \label{sec:dod:instrukcja-promotorzy}
 
-Dla\ky{INPR} promotorów, a~także dla tych (nielicznych) recenzentów, który będą mieć dostęp do plików źródłowych pracy dyplomowej, przygotowaliśmy w~klasie {\tt SGGW-thesis} dwie użyteczne komendy. Pierwsza ułatwia poinformowanie Dyplomanta o~systemie kluczy. Druga informuje Dyplomanta o~narzędziach do komentowania i~wprowadzania zmian w~sposób zbliżony do tego, jaki znamy z~edytorów typu WYSIWYG. 
+Dla promotorów, a~także dla tych (nielicznych) recenzentów, który będą mieć dostęp do plików źródłowych pracy dyplomowej, przygotowaliśmy w~klasie {\tt SGGW-thesis} dwie użyteczne komendy. Pierwsza ułatwia poinformowanie Dyplomanta o~systemie kluczy. Druga informuje Dyplomanta o~narzędziach do komentowania i~wprowadzania zmian w~sposób zbliżony do tego, jaki znamy z~edytorów typu WYSIWYG. 
 
-Komendy należy wstawić na początku pierwszego rozdziału pracy dyplomowej zawierającego tekst. Można je umieścić razem. Spowodują one powstanie przypisów z~informacjami dla Dyplomanta, przy czym oba będą miały numer~0 (tu są one jednymi z~dalszych przypisów i~otrzymały inny numer).\\[6pt]
+Komendy najlepiej wstawić na początku pierwszego rozdziału pracy dyplomowej. Wygenerują one nienumerowane przypisy z~informacjami dla Dyplomanta. Łatwo skierować uwagę Dyplomanta na te komendy prosząc o~wyszukanie w~Poradniku według klucza {\tt \#{}Informacja}.\\[6pt]
 \noindent\verb+\keysinfoPL+\\[2pt]
-Zostanie wypisany przypis zawierający tekst jak w~przypisie zaczynającym się od słów {\color{ColorRemark}\bf Informacja o~słowach kluczowych} na dole tej strony\keysinfoPL. Jak widać, tekst informuje Dyplomanta o~tym, jak używać \hyperref[sec:dod:klucze]{kluczy}.\\[6pt]
+Zostanie wypisany przypis zawierający tekst jak w~przypisie zaczynającym się od słów {\color{ColorRemark}\bf \#{}Informacja o~słowach kluczowych} na dole tej strony\keysinfoPL. Jak widać, tekst informuje Dyplomanta o~tym, jak używać \hyperref[sec:dod:klucze]{kluczy}.\\[6pt]
 \noindent\verb+\edreminfoPL+
 \\[2pt]
-Zostanie wypisany przypis zawierający tekst jak w~przypisie zaczynającym się od słów {\color{ColorRemark}\bf Informacja o~interwencjach edytorskich} na dole tej strony\edreminfoPL. Tekst informuje Dyplomanta o~tym, jak obsługiwać system uwag i~zamian.
+Zostanie wypisany przypis zawierający tekst jak w~przypisie zaczynającym się od słów {\color{ColorRemark}\bf \#{}Informacja o~interwencjach edytorskich} na dole tej strony\edreminfoPL. Tekst informuje Dyplomanta o~tym, jak obsługiwać system uwag i~zamian.
 
 \paragraph{Krótka instrukcja systemu uwag i~zamian} z~klasy {\tt SGGW-thesis.cls}\\
 Podamy komendy systemu uwag i~zamian i~wyniki ich działania.
@@ -1103,17 +1109,39 @@ Podamy komendy systemu uwag i~zamian i~wyniki ich działania.
 \item{\verb+wyraz\edremr{Komentarz~E.}+} $\rightarrow$ wyraz\edrema{Komentarz~E.} 
 \item{\verb+\rplr{zamiana odrzucona}{zamiana zaakceptowana}+} $\rightarrow$ \rplr{zamiana odrzucona}{zamiana zaakceptowana}
 \item{\verb+\rplcr{odrzucona}{zaakceptowana}{Komentarz~F}+} $\rightarrow$ \rplcr{odrzucona}{zaakceptowana}{Komentarz~F+}
-\end{description}
+\end{description}\mbox{}\vspace{\parskip}
 
 \noindent Wszystkie te komendy są włączane lub wyłączane komendą, którą należy umieścić w~preambule dokumentu:\\[2pt]
 \verb+\SHOWREMARKStrue+\\[2pt]
-Zaprzeczenie ({\tt true} $\rightarrow$ {\tt false}) lub usuniecie tej komendy spowoduje wyłączenie poniższych komend, zniknięcie komentarzy i~zaakceptowanie zmian. W~takim ustawieniu praca dyplomowa nadaje się do druku.
+Zaprzeczenie ({\tt true} $\rightarrow$ {\tt false}), wykomentowanie lub usuniecie tej komendy spowoduje wyłączenie poniższych komend, zniknięcie komentarzy i~zaakceptowanie zmian. W~takim ustawieniu praca dyplomowa nadaje się do druku.\mbox{}\\[\parskip]
 
+\begin{description}\small
+\item[Przykład: wstawianie tekstu]
+\item{\verb+\rpl{}{tekst do wstawienia}+} $\rightarrow$ \rpl{}{tekst do wstawienia}
+\item[Przykład: usuwanie tekstu]
+\item{\verb+\rpl{tekst do usunięcia}{}+} $\rightarrow$ \rpl{tekst do usunięcia}{}
+\item[Rada: wstawianie i usuwanie tekstu] Aby w~razie akceptacji lub odrzucenia zmiany nie powstała podwójna spacja, z~powodu obecności jednej spacji przed i~po komendzie, piszemy tak:
+\item{\verb+inny \rpl{}{wstawiony }inny+} $\rightarrow$ inny \rpl{}{wstawiony }inny
+\item{\verb+inny \rpl{usunięty }{}inny+} $\rightarrow$ inny \rpl{usunięty }{}inny
+\item[Przykłady pozytywne] Gdy piszemy prawidłowo, nigdy nie powstają podwójne spacje:
+\item{\verb+inny \rplr{}{wstawiony }inny+} $\rightarrow$ inny \rplr{}{wstawiony }inny
+\item{\verb+inny \rpla{usunięty }{}inny+} $\rightarrow$ inny \rpla{usunięty }{}inny
+\item[Przykłady negatywne] Gdy piszemy to nieprawidłowo, powstają podwójne spacje:
+\item{\verb+inny \rplr{}{wstawiony} inny+} $\rightarrow$ inny \rplr{}{wstawiony} inny
+\item{\verb+inny \rpla{usunięty}{} inny+} $\rightarrow$ inny \rpla{usunięty}{} inny
+\end{description}
+
+\paragraph{Komentarz} Czasem zamiany źle wpisują się w linie tekstu, wyrazy w~zmienionych tekstach są źle przenoszone, lub komentarze przechodzące na następną stronę tracą kolor, albo (rzadko) kolor z~odnośnika przechodzi na zwykły tekst. Nie można tego uniknąć. Po wyłączeniu wszystkich zmian lub akceptacji albo odrzuceniu konkretnej zmiany te problemy znikają.
+
+
+\newpage
 
 \section{Zmiany}
 \label{sec:dod:zmiany}
 Zmiany dotyczą przede wszystkim klasy, dodatku, pliku bibliografii i~stylu bibliograficznego. Dotyczą także głównego pliku, w~którym poprawki są rzadkie.  Zmiany są podane datami, od najnowszej do najstarszej.
 \begin{description}
+\item[\rm 2026.06.21:~{\tt SGGW-thesis.cls}, {\tt main.tex}, {\tt dodatek.tex}, {\tt main.pdf}.] Podstawowy \verb+\hypersetup{}+ przeniesiony do klasy, wyłączone ramki na hyperlinkach. Drobne retusze w~poradniku i~wynikająca stąd zmiana w~{\tt main.pdf}. Wersja klasy:~1.085, wersja dodatku:~0.637b.
+\item[\rm 2026.06.19:~{\tt SGGW-thesis.cls}, {\tt dodatek.tex}, {\tt main.pdf}.] Poprawki w~klasie w~komendach \verb+\edreminfoPL+, \verb+\keysinfoPL+ i~wynikający stąd retusz w~dodatku. Wersja klasy:~1.084, wersja dodatku:~0.636b.
 \item[\rm 2026.06.18:~{\tt dodatek.tex}, {\tt SGGW-thesis.cls}, {\tt SGGW-thesis.bib}, {\tt main.pdf}.] \mbox{}\linebreak Nowe porady, retusze w~kilku poradach. W~klasie w~komendzie \verb+\keysinfoPL+ zmieniono odnośniki do literatury na jeden adres z~\cite{klasa-github} w~{\tt GitHub} podany jawnie. Wersja klasy:~1.083, wersja dodatku:~0.635b.
 \item[\rm 2026.06.17:~{\tt main.tex}, {\tt dodatek.tex}, {\tt SGGW-thesis.cls}, {\tt SGGW-thesis.bib}.] \mbox{}\linebreak Dodano rozdział~\ref{sec:dod:instrukcja-promotorzy} zawierający \hyperref[sec:dod:instrukcja-promotorzy]{instrukcję dla promotorów}, na końcu Poradnika. Uporządkowano informacje o~dostępie do tego wzorca i~poradnika nadając im postać pozycji w~bibliografii~\cite{klasa-github, www-LC-klasaLaTeX}, co wymagało poprawek w~niemal wszystkich plikach. Wersja klasy:~1.082, wersja dodatku:~0.634b.
 \item[\rm 2026.06.15:~{\tt dodatek.tex}.] Dodano wiele rozdziałów, niektóre podzielono. Poprawiono strukturę dokumentu. Wersja dodatku:~0.633b. Jest to pierwsza wersja udostępniona do powszechnego użytku.
