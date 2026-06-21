@@ -2,7 +2,18 @@
 % Klasa do pisania prac dyplomowych w SGGW - licencjackich, inzynierskich i magisterskich.
 %
 
-\newcommand{\SGGWthesisVersion}{1.083}
+\newcommand{\SGGWthesisVersion}{1.085}
+
+% Wersja 1.085 z 2026.06.21
+% Autor: Leszek Chmielewski inspirowany pracą mgr Wiktora Jaworskiego
+% Zmiany:
+% 1. podstawowy \hypersetup{} przenesiony do klasy,
+%    dodane hidelinks aby linki nie miały kolorowych ramek
+
+% Wersja 1.084 z 2026.06.19
+% Autor: Leszek Chmielewski
+% Zmiany:
+% 1. Poprawki w komendach \edreminfo, \edreminfoPL i \keysinfoPL.
 
 % Wersja 1.083 z 2026.06.18
 % Autor: Leszek Chmielewski
@@ -485,11 +496,21 @@
 
 % aby pozycje z DOI były aktywnymi linkami
 \RequirePackage{doi}
+% 2026/06/21 hidelinks aby aktywne linki nie były otoczone ramką - ale linki działają
+\hypersetup{breaklinks=true,hidelinks,pdffitwindow=true,pdfnewwindow=true,plainpages=false,linktocpage=true}
 
 
 % 2020/06/13-2021/10/16: making editorial comments in the text
 % 2021/10/16: resigning from the option [dvipsnames] in xcolor package which caused clashes, defining own colours
 % BEGIN making editorial comments in the text
+\providecommand{\blankfootnote}[1]{% for footnotes without a mark in the text
+  \begingroup
+  \renewcommand{\thefootnote}{}%
+  \begin{NoHyper}%
+  \footnotetext{#1}%
+  \end{NoHyper}%
+  \endgroup
+}
 \RequirePackage{xcolor} % Colours modified on 2025/05/05
 \definecolor{ColorInsert}{rgb}{0,0.5,0.1}
 \definecolor{ColorRemove}{rgb}{0.9,0,0}
@@ -504,7 +525,7 @@
 \newcommand{\edreminfo}{% Modified 2023/01/26 (text corrected), 2024/10/18 (text corrected), 2024/11/09 (no footnote mark),
   % 2024/12/27 (correction of explanations); 2025/03/08 (comments become remarks, commands not changed); 2025/03/17 (shortened); 2025/05/05 (corrected).%
   \renewcommand{\remarkname}{Remark}\REMLANGPLfalse%
-  \footnotetext{\color{ColorRemark}{\underline{\bf Information on editorial interventions}\hspace{.5em}%
+  \blankfootnote{\color{ColorRemark}{\underline{\bf \#{}Information on editorial interventions}\hspace{.5em}%
   In this version of the document the editorial interventions: remarks and replacements (some with remarks) are displayed. Remarks are placed in footnotes.
   In the replacements, the deleted text is marked as \rpl{red crossed-out}{}, and the proposed text as \rpl{}{green underlined}.
   Sometimes the replacements can badly fit in the lines of text, or comments continued in the next page can lose colour; this is unavoidable.\\
@@ -520,8 +541,8 @@
 \newcommand{\edreminfoPL}{% Modified 2023/01/26 (text corrected), 2024/10/18 (text corrected), 2024/11/09 (no footnote mark),
   % 2024/12/27 (correction of explanations); 2025/03/08 (comments become remarks, commands not changed); 2025/03/17 (shortened); 2025/05/05 (corrected).%%
   \renewcommand{\remarkname}{Uwaga}\REMLANGPLtrue%
-  \footnotetext{\color{ColorRemark}{\underline{\bf Informacja o interwencjach edytorskich}\hspace{.5em}%
-  W~tej wersji dokumentu są pokazane interwencje edytorskie: uwagi i~zamiany (niektóre z~uwagami). Uwagi są unieszczone w~notkach w~stopce.
+  \blankfootnote{\color{ColorRemark}{\underline{\bf \#{}Informacja o interwencjach edytorskich}\hspace{.5em}%
+  W~tej wersji dokumentu są pokazane interwencje edytorskie: uwagi i~zamiany (niektóre z~uwagami). Uwagi są umieszczone w~przypisach.
   W~zamianach tekst usnięty jest oznaczony jako \rpl{czerwony skreślony}{}, a tekst wprowadzony jako \rpl{}{zielony podkreślony}.
   Czasem zamiany źle wpisują się w~linie tekstu, lub komentarze przechodzące na następną stronę tracą kolor; nie można tego uniknąć.\\
   \indent Interwencje są pokazywane, jeśli w~preambule jest obecna komenda {\tt \textbackslash{}SHOWREMARKStrue}\usp{}.
@@ -566,7 +587,7 @@
 
 % Wypisanie informacji o tym, jak używać kluczy z poradnika bedącego Dodatkiem do wzorcowej pracy dyplomowej.
 \providecommand{\keysinfoPL}{%
-\footnotetext{\color{ColorRemark}\underline{\bf Informacja o~słowach kluczowych}\hspace{.5em}%
+\blankfootnote{\color{ColorRemark}\underline{\bf \#{}Informacja o~słowach kluczowych}\hspace{.5em}%
 Po napotkaniu w~uwagach do Państwa pracy słowa kluczowego w~formacie "\#AAAA", gdzie A -- wielka litera, należy szukać tego słowa w~Poradniku,
 który jest Dodatkiem~A do wzorca pracy dyplomowej (w~pliku {\tt main.pdf} z~repozytorium~\url{https://github.com/lchmiel/SGGW-Thesis-LaTeX}).
 Najpierw trzeba poszukać w~nim słowa kluczowego \#KLCZ, tam jest wyjaśnienie jak używać kluczy.
