@@ -9,6 +9,7 @@
 % Zmiany:
 % 1. podstawowy \hypersetup{} przenesiony do klasy,
 %    dodane hidelinks aby linki nie miały kolorowych ramek
+% 2. Poprawki w komendach \edreminfo, \edreminfoPL i \keysinfoPL.
 
 % Wersja 1.084 z 2026.06.19
 % Autor: Leszek Chmielewski
@@ -503,12 +504,14 @@
 % 2020/06/13-2021/10/16: making editorial comments in the text
 % 2021/10/16: resigning from the option [dvipsnames] in xcolor package which caused clashes, defining own colours
 % BEGIN making editorial comments in the text
-\providecommand{\blankfootnote}[1]{% for footnotes without a mark in the text
+\providecommand{\blankfootnote}[1]{%
   \begingroup
-  \renewcommand{\thefootnote}{}%
-  \begin{NoHyper}%
-  \footnotetext{#1}%
-  \end{NoHyper}%
+    \renewcommand{\thefootnote}{}%
+    \begin{NoHyper}
+      \footnotemark
+    \end{NoHyper}%
+    \footnotetext{#1}%
+    \addtocounter{footnote}{-1}%
   \endgroup
 }
 \RequirePackage{xcolor} % Colours modified on 2025/05/05
@@ -526,7 +529,8 @@
   % 2024/12/27 (correction of explanations); 2025/03/08 (comments become remarks, commands not changed); 2025/03/17 (shortened); 2025/05/05 (corrected).%
   \renewcommand{\remarkname}{Remark}\REMLANGPLfalse%
   \blankfootnote{\color{ColorRemark}{\underline{\bf \#{}Information on editorial interventions}\hspace{.5em}%
-  In this version of the document the editorial interventions: remarks and replacements (some with remarks) are displayed. Remarks are placed in footnotes.
+  In this version of the document the editorial interventions: remarks and replacements (some with remarks) are displayed. Remarks are placed in footnotes
+  starting with the word \underline{\bf Remark}.
   In the replacements, the deleted text is marked as \rpl{red crossed-out}{}, and the proposed text as \rpl{}{green underlined}.
   Sometimes the replacements can badly fit in the lines of text, or comments continued in the next page can lose colour; this is unavoidable.\\
   \indent The interventions are shown if in the preamble the command {\tt \textbackslash{}SHOWREMARKStrue}\usp{} is present.
@@ -542,7 +546,7 @@
   % 2024/12/27 (correction of explanations); 2025/03/08 (comments become remarks, commands not changed); 2025/03/17 (shortened); 2025/05/05 (corrected).%%
   \renewcommand{\remarkname}{Uwaga}\REMLANGPLtrue%
   \blankfootnote{\color{ColorRemark}{\underline{\bf \#{}Informacja o interwencjach edytorskich}\hspace{.5em}%
-  W~tej wersji dokumentu są pokazane interwencje edytorskie: uwagi i~zamiany (niektóre z~uwagami). Uwagi są umieszczone w~przypisach.
+  W~tej wersji dokumentu są pokazane interwencje edytorskie: uwagi i~zamiany (niektóre z~uwagami). Uwagi są umieszczone w~przypisach ze słowem \underline{\bf Uwaga}.
   W~zamianach tekst usnięty jest oznaczony jako \rpl{czerwony skreślony}{}, a tekst wprowadzony jako \rpl{}{zielony podkreślony}.
   Czasem zamiany źle wpisują się w~linie tekstu, lub komentarze przechodzące na następną stronę tracą kolor; nie można tego uniknąć.\\
   \indent Interwencje są pokazywane, jeśli w~preambule jest obecna komenda {\tt \textbackslash{}SHOWREMARKStrue}\usp{}.
