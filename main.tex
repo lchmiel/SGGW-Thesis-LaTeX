@@ -15,7 +15,6 @@
 \promotor{dra hab.\ inż.\ Leszka Chmielewskiego, prof.\ SGGW}
 \pworkplace{Instytut Informatyki Technicznej\\Katedra Sztucznej Inteligencji}
 
-\usepackage{hyperref}
 
 % Pakiety i ustawienia dodane ze względu na Dodatek (\appendix).
 % Trzeba je dołączyć w preambule, więc nie można tego zrobić w Dodatku.
@@ -30,16 +29,12 @@
 \usepackage{marginnote}
 \usepackage[labelformat=simple,labelfont=bf,font=normalsize]{subcaption}\renewcommand\thesubfigure{\alph{subfigure}}
 \usepackage{comment}
-\RequirePackage[normalem]{ulem}
-\definecolor{MgvCiteColor}{rgb}{0.00,0.50,0.00}
-\definecolor{MgvUrlColor}{rgb}{0.00,0.00,0.50}
-\definecolor{MgvLinkColor}{rgb}{0.70,0.00,0.00}
-\definecolor{MgvFileColor}{rgb}{0.50,0.00,0.50} % dark magenta
+\definecolor{SGGWclrCite}{rgb}{0.00,0.50,0.00}
+\definecolor{SGGWclrURL}{rgb}{0.00,0.00,0.50}
+\definecolor{SGGWclrLink}{rgb}{0.70,0.00,0.00}
+\definecolor{SGGWclrFile}{rgb}{0.50,0.00,0.50} % dark magenta
 % Ustawienia kolorów w PDF należy usunąć, bo kolory nie są korzystne w druku.
-\hypersetup{
-  pdffitwindow=true,pdfnewwindow=true,plainpages=false,linktocpage=true,breaklinks=true,colorlinks=true,
-  linkcolor=MgvLinkColor,citecolor=MgvCiteColor,urlcolor=MgvUrlColor,filecolor=MgvFileColor,
-}
+\hypersetup{colorlinks=true, linkcolor=SGGWclrLink,citecolor=SGGWclrCite,urlcolor=SGGWclrURL,filecolor=SGGWclrFile}
 % Pakiety dodane ze względu na Dodatek - koniec
 
 \begin{document}
