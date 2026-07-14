@@ -2,7 +2,13 @@
 % Klasa do pisania prac dyplomowych w SGGW - licencjackich, inzynierskich i magisterskich.
 %
 
-\newcommand{\SGGWthesisVersion}{1.085}
+\newcommand{\SGGWthesisVersion}{1.086}
+
+% Wersja 1.086 z 2026.07.13
+% Autor: Leszek Chmielewski
+% Zmiany:
+% 1. Poprawki w komendzie \blankfootnote, aby \edreminfo, \edreminfoPL i \keysinfoPL
+%    nie produkowały spacji w miejscu wywołania
 
 % Wersja 1.085 z 2026.06.21
 % Autor: Leszek Chmielewski inspirowany pracą mgr Wiktora Jaworskiego
@@ -502,18 +508,18 @@
 
 
 % 2020/06/13-2021/10/16: making editorial comments in the text
-% 2021/10/16: resigning from the option [dvipsnames] in xcolor package which caused clashes, defining own colours
 % BEGIN making editorial comments in the text
-\providecommand{\blankfootnote}[1]{%
-  \begingroup
+\providecommand{\blankfootnote}[1]{% 2026/07/13 adding % at end of each line to avoid producing a space in text
+  \begingroup%
     \renewcommand{\thefootnote}{}%
-    \begin{NoHyper}
-      \footnotemark
+    \begin{NoHyper}%
+      \footnotemark%
     \end{NoHyper}%
     \footnotetext{#1}%
     \addtocounter{footnote}{-1}%
-  \endgroup
+  \endgroup%
 }
+% 2021/10/16: resigning from the option [dvipsnames] in xcolor package which caused clashes, defining own colours
 \RequirePackage{xcolor} % Colours modified on 2025/05/05
 \definecolor{ColorInsert}{rgb}{0,0.5,0.1}
 \definecolor{ColorRemove}{rgb}{0.9,0,0}
