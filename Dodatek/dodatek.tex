@@ -1,6 +1,6 @@
 \appendix
 
-\newcommand{\SGGWappendixVersion}{0.638b} % właśnie pracujemy nad nową wersją. Była 0.636b, będzie 0.637b.
+\newcommand{\SGGWappendixVersion}{0.639b} % Składam poprawki do nowej wersji. Była 0.638b, będzie 0.639b.
 
 % definicje dodane ze względu na Dodatek (\appendix)
 \newcommand{\kf}[1]{{\tt {\#{#1}}}}
@@ -18,7 +18,7 @@
 
 Oczywiście, mogą Państwo napisać własny dodatek do swojej pracy, jeśli jest taka potrzeba. Taki dodatek należy umieścić przed \verb|\beforelastpage|.\vspace{1ex}
 
-\noindent{\bf Uwaga} \hspace{.2em} Poradnik jest w~fazie rozwoju i~należy go traktować jako wersję beta. Wraz z~dokonywaniem uzupełnień będą publikowane nowe wersje tego dodatku, oraz klasy i~wzoru bibliografii. Dokładamy starań, aby nowe wersje były wstecznie zgodne.}
+\noindent{\bf Uwaga} \hspace{.2em} Poradnik jest w~fazie rozwoju i~należy go traktować jako wersję beta. \hyperref[sec:dod:zmiany]{Nowe wersje} dodatku, klasy i~wzoru bibliografii będą publikowane na bieżąco, w~miarę ich aktualizacji. Dokładamy starań, aby nowe wersje były wstecznie zgodne.}
 
 
 \section{Wstęp}
@@ -240,7 +240,7 @@ Zatem, tytuł nie jest zdaniem (por.~rozdz.~\ref{sec:dod:zdaniem}).
 
 Te zasady dotyczą zarówno tytułu pracy dyplomowej, jak i~tytułów jej rozdziałów, podrozdziałów itd.
 
-W polskim języku jedynie pierwsze słowo tytułu jest pisane wielka literą. W~języku angielskim tradycyjnie wszystkie słowa, za wyjątkiem rodzajników i~przyimków, są pisane wielkimi literami (choć obecnie często odchodzi się od tej reguły i~pisze tak, jak tytuły po polsku). Zawsze wielkimi literami piszemy wyrazy, które tego wymagają, jak na przykład nazwy własne i~skrótowce.
+W polskim języku jedynie pierwsze słowo tytułu jest pisane wielka literą. W~języku angielskim tradycyjnie wszystkie słowa, za wyjątkiem rodzajników i~przyimków, są pisane wielkimi literami (choć obecnie często odchodzi się od tej reguły, sczególnie w~przypadku rozdziałów, i~pisze tak, jak tytuły po polsku). Zawsze wielkimi literami piszemy wyrazy, które tego wymagają, jak na przykład nazwy własne i~skrótowce.
 
 \paragraph{Podział tytułu na linie}\ky{PTNL}
 \label{sec:dod:tytul-podzial}
@@ -281,7 +281,7 @@ Konieczne jest używane edytora z~polskim słownikiem. Najlepiej, aby był on do
 
 Należy zapoznać się zasadami używania przecinków w~języku polskim~\cite{sjp-przecinki,interpunkcja-zasady}. 
 
-Najczęstszym błędem interpunkcji jest stawianie przecinka przed słowem {\em który} lub {\em jaki} bez zastanowienia (również: {\em która, któremu, której, jaka, jakiemu} itd.). Łatwo sprawdzić, w~jakich przypadkach taka nadmiernie uproszczona zasada zawodzi~\cite{interpunkcja-przecinek-przed-ktory}. Chyba najjaskrawszym znanym nam przykładem błędnego umieszczenia przecinka jest zdanie ``\negat{To jest miejsce w, którym się dobrze czuję.}''
+Najczęstszym błędem interpunkcji jest stawianie przecinka przed słowem {\em który} lub {\em jaki} bez zastanowienia (również: {\em która, któremu, której, jaka, jakiemu} itd.). Łatwo sprawdzić, w~jakich przypadkach taka nadmiernie uproszczona zasada zawodzi~\cite{interpunkcja-przecinek-przed-ktory}. Chyba najjaskrawszym znanym nam przykładem błędnego umieszczenia przecinka jest zdanie ``\negat{To jest miejsce w, którym się dobrze czuję.}''. Podobnie jest z~przecinkiem przed słowem {\em natomiast\/} i~innymi. Przykład negatywny: ``\negat{Ta metoda może, natomiast generować problemy.}''.
 
 
 \subsection{Styl i składnia}
@@ -408,7 +408,7 @@ gdzie $v$ -- prędkość, $s$ -- droga, $t$ -- czas.''
 Zwróćmy uwagę, że jednostki sa pisane czcionką prostą, ponieważ to nie są zmienne -- zob.\ rozdział~\ref{sec:dod:operatory} o~\hyperref[sec:dod:operatory]{operatorach i~zmiennych o~wieloliterowych nazwach}.
 
 Przykład z~\hyperref[sec:dod:tabela]{tabelą} pokazano w Tabeli~\ref{tab:dod:jednostki} (zob.\ też rozdział~\ref{sec:dod:tabela} o~\hyperref[sec:dod:tabela]{tabelach}).
-\begin{table}[b]
+\begin{table}[t]
   \caption{Przykład tabeli z~jednostkami podanymi w~nagłówkach kolumn i~wartościami z~dokładnością do czterech cyfr znaczących.}
   \label{tab:dod:jednostki}
   \centering
@@ -462,9 +462,9 @@ Warto zwrócić uwagę na inne błędy typograficzne~\cite{bledy-typograficzne-w
 
 Gdy w edytorze MS Word piszemy taki tekst: {\tt Pies - udomowiony ssak drapieżny pochodzący od wilka.}, to znak `-' zostanie zamieniony na myślnik `--'. W~systemie \LaTeX{} myślnik to dwie kreski: `\verb+--+'. Zatem, sami piszemy \verb+Pies -- udomowiony...+, czyli ``Pies -- udomowiony\dots''.
 
-Myślnika używamy m.in. \hyperref[sec:dod:wzorymat]{objaśniając oznaczenia we wzorach} (rozdział~\ref{sec:dod:wzorymat}), podając opisy elementów w~\hyperref[sec:dod:listy]{listach} (rozdz.~\ref{sec:dod:listy}), szczególnie w~\hyperref[sec:dod:listy]{listach} (rozdz.~\ref{sec:dod:listy}), oraz oczywiście w~innych zastosowaniach językowych~\cite{myslnik-contentwriter, wiki-pauzapolpauza,sjp-myslnik}.
+Myślnika używamy m.in. \hyperref[sec:dod:wzorymat]{objaśniając oznaczenia we wzorach} (rozdział~\ref{sec:dod:wzorymat}), podając opisy elementów w~\hyperref[sec:dod:listy]{listach} (rozdz.~\ref{sec:dod:listy}), oraz oczywiście w~wielu innych zastosowaniach~\cite{myslnik-contentwriter, wiki-pauzapolpauza,sjp-myslnik}.
 
-Przykłady: pod równaniem (\ref{eqn:dod:rownanie}) napisaliśmy: ``$a, b \in \mathbb{R}$ -- współczynniki\dots''. W~podpisie pod rysunkiem~\ref{fig:dod:rysunek-prosty} napisaliśmy: ``Okrąg i~kwadrat -- przykładowy prosty rysunek.''. W~paragrafie o~\hyperref[sec:dod:procedura]{procedurze}, w~punkcie~\ref{itm:dod:myslnik-kopia}, napisaliśmy: ``Na CD dyplomant nagrywa pracę -- PDF.''.
+Przykłady: pod równaniem (\ref{eqn:dod:rownanie}) napisaliśmy: ``$a, b \in \mathbb{R}$ -- współczynniki\dots''. W~podpisie pod rysunkiem~\ref{fig:dod:rysunek-prosty} napisaliśmy: ``Okrąg i~kwadrat -- przykładowy prosty rysunek.''. W~paragrafie o~\hyperref[sec:dod:procedura]{procedurze}, w~punkcie~\ref{itm:dod:myslnik-kopia}, napisaliśmy: ``Na CD dyplomant nagrywa pracę -- {\tt PDF}.''.
 
 W języku polskim wokół myślnika dajemy spacje: ``to lubię -- rzekłem''. 
 
@@ -686,7 +686,7 @@ Między środowiskiem (linie~\ref{exm:dod:srodowisko-p}--\ref{exm:dod:srodowisko
 
 Nie może istnieć obiekt pływający, do którego brak odniesienia w~tekście. 
 
-Nie może istnieć rozdział/podrozdział, który zawiera tylko sam obiekt pływający, zakotwiczony kwalifikatorem położenia {\tt [h]}, {\tt [h!]} lub {\tt [H]}. W~takim rozdziale trzeba napisać, co pokazano w~tym obiekcie, i~zrobić odniesienie do niego.
+Nie może istnieć rozdział/podrozdział, który zaczyna się od obiektu pływającego, ani taki, który zawiera tylko sam obiekt pływający, w~szczególności obiekt zakotwiczony kwalifikatorem położenia {\tt [h]}, {\tt [h!]} lub {\tt [H]}. W~takim rozdziale trzeba napisać, co pokazano w~tym obiekcie, i~zrobić odniesienie do niego.
 
 \paragraph{Położenie obiektu w~dokumencie}\ky{PLWO}
 \label{sec:dod:plywajace-dokument}
@@ -741,7 +741,7 @@ Wszystkie aktywne linki w~takim podpisie są ważne.
 
 Powołalibyśmy się na pozycję~\cite{image_twin_lamanta_camara}, gdzie jest podany adres strony grafiki, autor, tytuł, miejsce publikacji itd., natomiast powołanie się tylko na adres pliku obrazu \url{https://upload.wikimedia.org/wikipedia/commons/7/71/Twin_lantana_camara_edit.jpg} byłoby błędem. Jeszcze większym błędem byłoby nie podanie autora, tytułu i~pozostałych danych.
 
-Niektórzy zalecają na końcu podpisów rysunków i~grafik, których jesteśmy autorami, dodawanie notki ``Opracowanie własne'' lub podobnej. Uważamy, że zamiast tego, w~pracy powinna się znaleźć notka o treści ``Rysunki i~grafiki w~tej pracy są opracowaniami własnymi autora, o~ile nie zaznaczono inaczej.'' Ta notka może być umieszczona na końcu podpisu pierwszego rysunku, który rzeczywiście jest pracą własną, lub jako przypis na dole strony przy powołaniu się na pierwszy taki rysunek. Tak zrobiono w~przypadku przykładowego rysunku~\ref{fig:dod:rysunek-prosty} (przypis~\ref{not:dod:prace-wlasne} na dole strony~\pageref{not:dod:prace-wlasne}).
+Niektórzy zalecają na końcu podpisów rysunków i~grafik, których jesteśmy autorami, dodawanie notki ``Opracowanie własne'' lub podobnej. Uważamy, że zamiast tego, w~pracy powinna się znaleźć notka o treści ``Rysunki i~grafiki w~tej pracy są opracowaniami własnymi autora, o~ile nie zaznaczono inaczej.'' Ta notka może być umieszczona na końcu podpisu pierwszego rysunku, który rzeczywiście jest pracą własną, lub jako przypis na dole strony przy powołaniu się na pierwszy taki rysunek. Tak zrobiono w~przypadku przykładowego rysunku~\ref{fig:dod:rysunek-prosty} (przypis~\ref{not:dod:prace-wlasne} na dole strony~\pageref{not:dod:prace-wlasne}). Jest to nasza opinia, nie ogólna zasada. Każde rozsądne rozwiązanie, dzięki któremu staje się jasne, kto jest twórcą danej grafiki, jest dobre.
 
 Jeśli licencja na to pozwala, to czasem sami adaptujemy do własnych potrzeb grafikę uzyskaną z~określonego źródła, na przykład tłumacząc teksty na język polski lub dodając więcej opisów. Wtedy możemy na końcu podpisu pod rysunkiem napisać na przykład tak: ``Opracowanie własne na podstawie\verb+~<cytowanie>+.'' lub ``Adaptacja własna autora na podstawie\verb+~<cytowanie>+.''. 
 
@@ -847,10 +847,10 @@ Podpis tabeli umieszcza się nad tabelą.
 
 Przeczytaj uwagi o~położeniu \hyperref[sec:dod:plywajace-tekst]{środowiska w tekście} oraz \hyperref[sec:dod:plywajace-dokument]{obiektu w~dokumencie}.
 
-Co do autorstwa, obowiązują takie same \hyperref[sec:dod:rysunekautorstwo]{zasady, jak dla rysunków}. Często w~tabelach umieszcza się dane z~innych publikacji, dla porównania. Wtedy każda dana (linia, kolumna w~tabeli) musi być zaopatrzona w~nazwiska cytowanych autorów i~odnośnik do źródła.
+Co do autorstwa, obowiązują takie same \hyperref[sec:dod:rysunekautorstwo]{zasady, jak dla rysunków}. Często w~tabelach umieszcza się dane z~innych publikacji, dla porównania. Wtedy każda dana (linia, kolumna w~tabeli) musi być zaopatrzona w~odnośnik do źródła, a~jeśli miejsce pozwala, również w~nazwiska cytowanych autorów.
 
 W~profesjonalnych tabelach unikamy linii pionowych. Można ich użyć {\em tylko}, jeśli są potrzebne dla zwiększenia czytelności danych. W~przykładowej tabeli~\ref{tab:dod:tabela}
-\begin{table}[b] % unikaj kwalifikatora położenia "h" chyba, że to konieczne
+\begin{table}[tb] % unikaj kwalifikatora położenia "h" chyba, że to konieczne
   \centering
   \caption{Przykład profesjonalnie złożonej tabeli.}
   \label{tab:dod:tabela}
@@ -889,14 +889,15 @@ Należy zwrócić uwagę, że przykłady kodu, pseudokod i~algorytmy, tak jak ka
 \paragraph{Krótki fragment (listing) kodu, krótki algorytm}\ky{LSKK}
 \label{sec:dod:listing-krotki}
 
-Fragment kodu napisany wewnątrz linii tekstu, jak np. {\tt result = obj1.CompareTo(obj2);} jest zwykłym tekstem i~oczywiście nie jest obiektem pływającym. Krótki fragment kodu, wydzielony z~tekstu, kilka lub kilkanaście linijek, bez podpisu, również nie jest obiektem pływającym. Wstawia się go w~osobnych liniach między zwykłym tekstem, w~którym jest objaśnienie do tego kodu, ewentualnie z~niewielkimi dodatkowymi odstępami. Taki listing jest traktowany podobnie jak \hyperref[sec:dod:wzorymat]{wzór matematyczny}, opisany w~sekcji~\ref{sec:dod:wzorymat}, tyle, że nie ma numeru, jaki zwykle (choć \hyperref[not:dod:rownanie-bez-numeru]{nie zawsze}) ma wzór.
+Fragment kodu napisany wewnątrz linii tekstu, jak np. {\tt result = obj1.CompareTo(obj2);} jest zwykłym tekstem (uwaga: \hyperref[sec:dod:czcionka-kodu]{czcionka dla kodu}) i~oczywiście nie jest obiektem pływającym. Krótki fragment kodu, wydzielony z~tekstu, kilka lub kilkanaście linijek, bez podpisu, również nie jest obiektem pływającym. Wstawia się go w~osobnych liniach między zwykłym tekstem, w~którym jest objaśnienie do tego kodu, ewentualnie z~niewielkimi dodatkowymi odstępami. Taki listing jest traktowany podobnie jak \hyperref[sec:dod:wzorymat]{wzór matematyczny}, opisany w~sekcji~\ref{sec:dod:wzorymat}, tyle, że nie ma numeru, jaki zwykle (choć \hyperref[not:dod:rownanie-bez-numeru]{nie zawsze}) ma wzór.
 
-Kod należy pisać bezpośrednio, używając czcionki opisanej w rozdziale~\ref{sec:dod:czcionka-kodu} o~\hyperref[sec:dod:czcionka-kodu]{czcionkach dla kodu}. 
-Rozwiązaniem \underline{zdecydowanie nie zalecanym} jest użycie komendy \verb+\incudegraphics{}+ do wstawiania obrazu kodu zdjętego z~ekranu. Kod jako tekst byłby niedostępny, a~umieszczenie kodu w~nieczytelnej postaci stwarzałoby podejrzenie próby ominięcia mechanizmu anty-plagiatowego. Przykład:
+Kod należy pisać bezpośrednio, używając czcionki opisanej w rozdziale~\ref{sec:dod:czcionka-kodu} o~\hyperref[sec:dod:czcionka-kodu]{czcionkach dla kodu}. Przykład:
 
 ``W języku C\# zmienną publiczną tylko do odczytu można zadeklarować tak:\\[6pt]
 \mbox{}\hspace{40pt}{\tt {\color{blue} public readonly int} zmienna = 25;}\\[6pt]  
 Wartość można nadać w~miejscu deklaracji lub w~konstruktorze odpowiedniej klasy.''
+
+Rozwiązaniem \underline{zdecydowanie nie zalecanym} jest wstawianie obrazu kodu zdjętego z~ekranu. Kod jako tekst byłby niedostępny, a~umieszczenie kodu w~nieczytelnej postaci stwarzałoby podejrzenie próby ominięcia mechanizmu anty-plagiatowego. 
 
 Najlepsze efekty można osiągnąć używając jednego z~pakietów do pisania kodu lub pseudokodu, np. {\tt listings}~\cite{listings}, {\tt algorithms}~\cite{algorithms} lub {\tt algorithmicx}~\cite{algorithmicx}. Pakiet {\tt listings} jest młodszy, zaś {\tt algorithms} i~{\tt algorithmicx} są starsze. Można za ich pomocą pisać zarówno krótkie, jak i~długie listingi i~algorytmy. 
 
@@ -943,7 +944,7 @@ Najlepsze efekty można osiągnąć używając jednego z~pakietów do pisania ko
     language=pseudocode,
     breaklines=true,
 }%
-\begin{lstlisting}[float=b, caption={Obliczanie silni metodą iteracyjną.}, label=alg:dod:silnia]
+\begin{lstlisting}[float=t, caption={Obliczanie silni metodą iteracyjną.}, label=alg:dod:silnia]
 algorytm Silnia
 // dane: n - liczba calkowita nieujemna
 // wynik: n!
@@ -957,12 +958,10 @@ Najważniejszą operację wykonuje się w~linii~\ref{alg:dod:silnia-commented}.'
 
 Kod programu, tak w~formie listingu jak pseudokodu, powinien być przedstawiony w~formie tekstowej. Rozwiązaniem \underline{zdecydowanie nie zalecanym} jest użycie środowiska {\tt figure} do wstawiania obrazu kodu zdjętego z~ekranu. Kod jako tekst byłby niedostępny, umieszczenie kodu w~nieczytelnej postaci stwarzałoby podejrzenie próby ominięcia mechanizmu anty-plagiatowego, oraz kody byłyby oznaczane i~numerowane jako rysunki. 
 
-Formę obrazu można dopuścić jedynie w~przypadku, gdy pokazana jest konfiguracja środowiska, zawierająca fragmenty kodu, natomiast nie przy prezentowaniu kodu stworzonego w~ramach pracy rozwiązania (algorytmów, metod, itp.). Jednak, w~takim przypadku należy umieścić grafikę w~środowisku dla listingów, jak pokazano w~Algorytmie~\ref{alg:graficznie} (gdzie jako przykład wstawiono testową grafikę, nie algorytm). Jeśli używany pakietu {\tt listings}, to należy podać parametry {\tt [mathescape=true, numbers=none]} i~umieszczamy komendę włączającą grafikę w~trybie matematycznym, oraz unikamy jakichkolwiek znaków poza tym trybem, co widać w~źródle.
-\begin{lstlisting}[float, caption={Algorytm jako grafika}, label=alg:graficznie, mathescape=true, numbers=none]
+Formę obrazu można dopuścić jedynie w~przypadku, gdy pokazana jest konfiguracja środowiska, zawierająca fragmenty kodu, natomiast nie przy prezentowaniu kodu stworzonego w~ramach pracy rozwiązania (algorytmów, metod, itp.). Jednak, w~takim przypadku należy umieścić grafikę w~środowisku dla listingów, jak pokazano w~Algorytmie~\ref{alg:graficznie} (gdzie wstawiono przykładową grafikę, nie algorytm). Jeśli używany pakietu {\tt listings}, to należy podać parametry {\tt [mathescape=true, numbers=none]} i~umieszczamy komendę włączającą grafikę w~trybie matematycznym, oraz unikamy jakichkolwiek znaków poza tym trybem, co widać w~źródle.
+\begin{lstlisting}[float=t, caption={Algorytm jako grafika}, label=alg:graficznie, mathescape=true, numbers=none]
 $\includegraphics[width=0.29\textwidth]{Testowy-obraz.jpg}$
 \end{lstlisting}%
-
-%{\color{white} Z niejasnych przyczyn link do Bibliografii źle działa, jeśli rozdział o bibliografii znajduje się po bezpośrednio po algorytmach. Dlatego wstawiamy ten tekst, który musi wyjść na nową stronę. Nie powinno tak być.}
 
 
 \subsection{Bibliografia}
@@ -970,19 +969,17 @@ $\includegraphics[width=0.29\textwidth]{Testowy-obraz.jpg}$
 
 Do\ky{BBLG} tworzenia bibliografii zdecydowanie rekomendujemy pliki bibliografii {\tt *.bib} i~użycie programu Bib\TeX, będącego częścią systemu \LaTeX. Absolutnie rezygnujemy z~tworzenia bibliografii w~środowisku \verb+\thebibliography+. W~ten sposób unikniemy znakomitej większości błędów.
 
-Proponujemy używanie programu Bib\TeX{}, a~nie jego następcy Bib\LaTeX{}a. Wybieramy Bib\TeX, ponieważ są w~nim używane style bibliograficzne {\tt .bst}. Dostarczenie autorom własnego stylu zapewnia jednolitość pozycji literatury. Bib\TeX{} ze stylami jest używany przez przeważającą większość wydawców, którzy udostępniają dane do cytowania prac u~nich opublikowanych w~formacie Bib\TeX{}a. 
+Proponujemy używanie programu Bib\TeX{}, a~nie jego następcy Bib\LaTeX{}a. Wybieramy Bib\TeX, ponieważ są w~nim używane ustalone style bibliograficzne {\tt .bst}. Dostarczenie autorom własnego stylu zapewnia jednolitość pozycji literatury. Bib\TeX{} ze stylami jest używany przez przeważającą większość wydawców, którzy udostępniają dane do cytowania prac u~nich opublikowanych w~formacie Bib\TeX{}a. 
 
 Wprowadzamy styl bibliograficzny {\tt SGGW-thesis.bst} dostosowany do typowych wymagań, który uwzględnia wszystkie potrzebne rodzaje publikacji, w~tym strony i~serwisy internetowe, skraca imiona do inicjałów, redukuje liczbę autorów cytowanych prac do kilku początkowych, sortuje pozycje według nazwisk autorów itd.
 
-Cytowanie z~pozycjami bibliograficznymi w~przypisach na dole strony jest charakterystyczne dla publikacji w~dziedzinach humanistycznych. W~pracach w~dziedzinie informatyki zdecydowanie nie stosujemy tego stylu. Natomiast, jest on dopuszczalny w~pracach dyplomowych na specjalności Informatyka i~ekonometria.
+Zobacz również paragraf o~\hyperref[sec:dod:cytowanie-przypisy]{cytowaniu w~przypisach na dole strony}.
 
-Najczęstsze błędy w bibliografii polegają na pomijaniu ważnych danych bibliograficznych i niewłaściwym formatowaniu pozycji. Aby ich uniknąć, wystarczy wypełnić wszystkie te pola, które są podane dla danego rodzaju publikacji w~załączonym przykładowym pliku bibliografii {\tt SGGW-thesis.bib}. Ma on konstrukcję zbliżoną do maksymalnie prostej bazy danych, co każdy zauważy. W~tym pliku znajdziemy wiele przykładów różnych rodzajów pozycji bibliograficznych, jak {\tt book}~\cite{book, latexcompanion}, {\tt article}~\cite{paper}, {\tt booklet}~\cite{uhdm-arXiv}, {\tt misc}~\cite{wymagania-100, latexclass, WYSIWYM, github}, {\tt techreport}~\cite{10_Bassham}, {\tt phdthesis}~\cite{02_Mitchell}, {\tt masterthesis}~\cite{17_Adamczyk, 25_Alkhaled}. Można je kopiować i~przerabiać na własne, według potrzeby. Najpierw trzeba znaleźć odpowiedni rodzaj publikacji, a następnie skopiować go i~przerobić na własny. Prosimy zwrócić uwagę na to, że zazwyczaj dla stron i~serwisów internetowych najbardziej odpowiedni jest typ rekordu {\tt misc}~\cite{latexclass, WYSIWYM, github}, a~dla serwisów takich, jak arXiv, doskonale nadaje się {\tt booklet}~\cite{uhdm-arXiv}.
+Najczęstsze błędy w bibliografii polegają na pomijaniu ważnych danych bibliograficznych i niewłaściwym formatowaniu pozycji. Aby ich uniknąć, wystarczy wypełnić wszystkie te pola, które są podane dla danego rodzaju publikacji w~załączonym przykładowym pliku bibliografii {\tt SGGW-thesis.bib}. Ma on konstrukcję zbliżoną do maksymalnie prostej bazy danych, co każdy zauważy. W~tym pliku znajdziemy wiele przykładów różnych rodzajów pozycji bibliograficznych, jak {\tt book}~\cite{book, latexcompanion}, {\tt article}~\cite{paper}, {\tt booklet}~\cite{uhdm-arXiv}, {\tt misc}~\cite{wymagania-100, latexclass, WYSIWYM, github, RBAC, PyTorch}, {\tt techreport}~\cite{10_Bassham}, {\tt phdthesis}~\cite{02_Mitchell}, {\tt masterthesis}~\cite{17_Adamczyk, 25_Alkhaled}. Można je kopiować i~przerabiać na własne, według potrzeby. Najpierw trzeba znaleźć odpowiedni rodzaj publikacji, a następnie skopiować go i~przerobić na własny. 
 
 Spośród pozycji wpisanych do pliku {\tt *.bib} w~spisie literatury znajdą się tylko te, które rzeczywiście zacytujemy. Możemy zatem dowolnie rozszerzać ten plik i~używać go do wielu naszych publikacji.
 
-Zwróćmy uwagę na to, że prawie zawsze publikacja, nawet konwencjonalna, ma cyfrowy identyfikator obiektu (ang. {\em Digital Object Identifier}, DOI) i~jeśli on istnieje, powinniśmy go zawsze podawać. Jeśli nie ma DOI, należy podać adres internetowy, najlepiej uzyskany ze stron wydawcy (nie sklepu lub wyszukiwarki literatury). Często wydawcy nie stosujący identyfikatorów DOI podają {\em adres permanentny}, który nie powinien się zmieniać wraz ze zmianami w~serwisach. Przypadki braku jakiegokolwiek adresu cyfrowego są rzadkie (nawet dla źródeł znacznie wcześniejszych od ery Internetu, jak np.~\cite{1774_Euler}). 
-
-W~ujęciu, w~którym dla stron i serwisów internetowych przyjmuje się taką samą konwencję zapisu i~cytowania, jak dla wszystkich publikacji, nie ma potrzeby rozdzielać w~spisie literatury źródeł internetowych od konwencjonalnych. Jest tak tym bardziej, że z~jednej strony większość publikacji jest dostępna w~sieci, z~drugiej zaś poziom edytorski odpowiedzialnych źródeł elektronicznych rośnie i~nie ustępuje poziomowi źródeł tradycyjnych.
+Zwróćmy uwagę na to, że prawie zawsze publikacja, nawet konwencjonalna, ma cyfrowy identyfikator obiektu (ang. {\em Digital Object Identifier}, DOI) i~jeśli on istnieje, powinniśmy go zawsze podawać. Jeśli nie ma DOI, należy podać adres internetowy, najlepiej uzyskany ze stron wydawcy (nie sklepu lub wyszukiwarki literatury). Często wydawcy nie stosujący identyfikatorów DOI podają {\em link permanentny}, który nie powinien się zmieniać wraz ze zmianami w~serwisach (jak np. w~\cite{25_Alkhaled}). Przypadki braku jakiegokolwiek adresu cyfrowego są rzadkie (nawet dla źródeł znacznie wcześniejszych od ery Internetu, jak np.~\cite{1774_Euler}). 
 
 Zwróćmy uwagę na to, że wielkie litery w~tytułach są prawie zawsze zmieniane na małe przez program Bib\TeX{} (ma to sens w~publikacjach typu {\tt article}). Jednak niektóre wielkie litery muszą pozostać, w~szczególności w~skrótowcach (np.\ CNN, CT) i~nazwach własnych. Aby to zapewnić, wszystkie wielkie litery, które maja pozostać wielkimi, należy wziąć w~nawias klamrowy. Pliki {\tt .bib} ściągane od wydawców praktycznie nigdy nie mają takich nawiasów i~wymagają od nas zrobienia korekty.
 
@@ -993,41 +990,107 @@ Komentarze są oznaczone kluczem {\tt comment}. Pola, które nie są przeznaczon
 Pełna informacja znajduje się w~dokumentacji programu Bib\TeX~\cite{BibTeX}.
 
 
+\paragraph{Bibliografia dla adresów internetowych}\ky{BBUR}
+\label{sec:dod:bibliografia-url}
+
+W~ujęciu, w~którym dla stron i serwisów internetowych przyjmuje się taką samą konwencję zapisu i~cytowania, jak dla wszystkich publikacji, nie ma potrzeby rozdzielać w~spisie literatury źródeł internetowych od konwencjonalnych (choć wolno to robić; wymagałoby to pakietu {\tt multibib}~\cite{multibib} lub {\tt multibbl}~\cite{multibbl}). Jest tak tym bardziej, że z~jednej strony większość publikacji jest dostępna w~sieci lub wyłącznie w~sieci, z~drugiej zaś poziom edytorski odpowiedzialnych źródeł elektronicznych rośnie i~nie ustępuje poziomowi źródeł tradycyjnych. 
+
+Dla stron i~serwisów internetowych najbardziej odpowiedni jest typ rekordu {\tt misc}~\cite{latexclass, WYSIWYM, github}, a~dla serwisów takich, jak arXiv, doskonale nadaje się {\tt booklet}~\cite{uhdm-arXiv}. 
+
+Strona internetowa, jak wszystkie inne pozycje bibliografii, ma autora lub autorów, jak~\cite{github, uhdm-arXiv}, lub autorem jest zespół, jak w~\cite{dyplomanci-dziekanat, MGV-main, latexclass}, lub firma~\cite{webpage, interpunkcja-zasady, RBAC, PyTorch}. Klasycznymi przykładami stron internetowych z~firmą jako autorem są materiały o~oprogramowaniu, np.~\cite{RBAC, PyTorch}.
+
+Nieliczne przykłady stron, dla których trudno ustalić autora, to np.~\cite{wymagania-100, wymagania} (choć można za autora uważać JM Rektora lub użyć wybiegu zastosowanego w~pozycjach~\cite{dyplomanci-uczelnia, regulamin-studiow} czy~\cite{MGV-main, dyplomanci-dziekanat}). Przy braku pola {\tt author} w~Bib\TeX{}u pozycja nie jest prawidłowo sortowana i~staje się pierwszą, co zwykle jest nieprawidłowe. Wtedy w~rekordzie należy podać klucz {\tt key} dla sortowania (por.\ plik {\tt SGGW-thesis.bib}, rekord {\tt @misc\{wymagania-100, ...\}}).
+
+Zobacz także paragraf o~\hyperref[sec:dod:cytowanie-url]{cytowaniu adresów internetowych}.
+
+
 \subsection{Cytowanie}\ky{CTWN}
 \label{sec:dod:cytowanie}
 
 Pozycję z~\hyperref[sec:dod:bibliografia]{bibliografii} cytujemy komendą \verb+\cite{<etykieta>}+, gdzie {\tt <etykieta>} jest etykietą wpisu w pliku bibliografii {\tt *.bib}. Przed \verb+\cite{}+ dajemy znak spacji nierozdzielającej (tylda, `\~{}'), aby odnośnik do bibliografii nie został przeniesiony do nowej linii, więc cytowanie wygląda np.\ tak: {\tt omówiono to w\~{}książce\~{}\textbackslash{}cite\{book\}.} Uwaga: między słowem {\tt książce} a~następującą po nim tyldą nie ma spacji! Po skompilowaniu wygląda to tak: ``omówiono to w~książce~\cite{book}.'' (Druga tylda, która znajduje się między słowem~{\tt w} a~słowem {\tt książce} służy kontroli \hyperref[sec:dod:sierotki]{\em sierotek}, rozdział~\ref{sec:dod:sierotki}.)
 
-Cytowanie należy do zdania (``\hyperref[sec:dod:zdaniem]{wszystko jest zdaniem}'', rozdział~\ref{sec:dod:zdaniem}), więc zawsze znajduje się wewnątrz zdania, a~nie po nim, np. ``w~literaturze można znaleźć wiele porad dotyczących dobrego składu tekstu w~systemie \LaTeX~\cite{latexcompanion, notsoshort, notsoshortPL}.'' lub ``metoda analizy obrazów powinna się charakteryzować odpornością na zakłócenia~\cite{chapter-in-book}.''
+Cytowanie należy do zdania (``\hyperref[sec:dod:zdaniem]{wszystko jest zdaniem}'', rozdział~\ref{sec:dod:zdaniem}), więc zawsze znajduje się wewnątrz zdania, a~nie po nim. Przykłady: ``W~literaturze można znaleźć wiele porad dotyczących dobrego składu tekstu w~systemie \LaTeX~\cite{latexcompanion, notsoshort, notsoshortPL}.'' lub ``Metoda analizy obrazów powinna się charakteryzować odpornością na zakłócenia i~dane odstające~\cite{chapter-in-book}.''
 
 Można cytować wiele pozycji w~jednym cytowaniu, np.: {\tt Było to przedmiotem wielu badań\~{}\textbackslash{}cite\{<etykieta1>, <etykieta2>, <etykieta3>\}.} Taki tekst zostanie złożony następująco: ``Było to przedmiotem wielu badań~\cite{paper, conf-simple, book}.'' Jest to zalecana postać wielokrotnego cytowania, a~nie osobne komendy {\tt \textbackslash{}cite\{$\cdot$\}}. Numery pozycji literatury zostały posortowane rosnąco, choć kolejność etykiet była inna. To i~inne ustawienia dotyczące cytowania zostały ustalone w~klasie {\tt SGGW-thesis.cls} i~stylu bibliografii {\tt SGGW-thesis.bst}.
 
-Cytowanie z~pozycjami bibliograficznymi w~przypisach na dole strony jest charakterystyczne dla publikacji w~dziedzinach humanistycznych. W~pracach w~dziedzinie informatyki zdecydowanie nie stosujemy tego stylu. Natomiast, jest on dopuszczalny w~pracach dyplomowych na specjalności Informatyka i~ekonometria.
+\paragraph{Cytowanie z~dodatkowymi informacjami}\ky{CTDI}
+\label{sec:dod:cytowanie-dodatkowe-informacje}
 
-Podawanie adresów internetowych w~przypisach na dole strony jest charakterystyczne dla publikacji nie zawierających spisu literatury. W~pracach dyplomowych z~dziedziny informatyki nie stosujemy tej metody.
+Cytowanie obejmujące dodatkowe informacje, jak rozdział, równanie, rysunek, konkretną stronę itp. w~publikacji wykonuje się w~ten sposób, że ta dodatkowa informacja jest podana w~miejscu cytowania, a~w pozycji literatury jest informacja o~całej pracy, bez informacji dodatkowych. 
 
-Ogólnie, podawanie adresów internetowych w~linii tekstu, jako samych URL, nie jest dobrym stylem. Strona internetowa ma tytuł, autora, itd., i~trzeba to uszanować. Robimy wyjątek w~rozdziale~\ref{sec:dod:instrukcja-promotorzy}, w~informacji o~komendzie \verb+\keysinfoPL+, bo informacja wypisana przez nią znajdzie się w~pracy, w~której pozycji~\cite{klasa-github, www-LC-klasaLaTeX} nie ma w~bazie literatury.
+\noindent Przykłady:
+
+``Składanie wyrażeń matematycznych jest opisane w~książce~\cite{notsoshortPL}, rozdział~3.'' lub ``\dots{}w~książce~\cite[rozdział~3]{notsoshortPL}.''
+
+``Kwestię odstępów w~pliku źródłowym w~systemie \LaTeX{} omówiono na stronach 4--5 w~podręczniku~\cite{notsoshortPL}.'' lub ``\dots{}omówiono w~podręczniku~\cite[str.~4--5]{notsoshortPL}.''
+
+Inaczej jest, gdy rozdział jest osobną całością i~ma własne, osobne cytowanie, jak np.~\cite{chapter-in-book}, albo części książki stanowią osobne pozycje, jak publikacja konferencyjna~\cite{conf-complex} w~materiałach konferencyjnych będących książką~\cite{conf-higher-level}.
+
+
+\paragraph{Cytowanie z nazwiskami autorów w~przeglądzie literatury}\ky{CTNP}
+\label{sec:dod:cytowanie-nazwiska-przeglad}
+
+W~przeglądach literatury zwykle podaje się nie tylko odnośniki do literatury, ale także nazwiska autora lub autorów. W poniższych przykładach pokazano, że nie podajemy imion, ograniczamy się do kilku (zwykle dwóch) autorów lub pierwszego autora i~skrótu ``i~in.'' lub ``et al.'' (łac.~{\em et alii}, czyli ``i~inni'') -- uwaga, et al. piszemy czcionką prostą (to zwyczaj). Nie podajemy tytułów publikacji ani innych danych bibliograficznych, to wszystko jest w bibliografii. Nie podajemy tytułów naukowych autorów (jeśli chcemy napisać więcej o~którymś autorze, robimy to osobno).
+
+\noindent Przykłady: 
+
+``Illingworth i~Kittler~\cite{paper} dokonali przeglądu literatury na temat transformaty Hougha.''
+
+``Mittelbach i~in.~\cite{latexcompanion} opisali zasady używania systemu \LaTeX. Podręcznik na ten sam temat, dostępny w sieci, napisali Oetiker i~in.~\cite{notsoshort}. Jest on dostępny w~polskim tłumaczeniu Przechlewskiego, Kubiaka~i~in.~\cite{notsoshortPL}.''
+
+
+\paragraph{Cytowanie w~przypisach}\ky{CTPT}
+\label{sec:dod:cytowanie-przypisy}
+
+Cytowanie z~pozycjami bibliograficznymi w~przypisach na dole strony jest charakterystyczne dla publikacji w~dziedzinach humanistycznych. W~pracach w~dziedzinie informatyki zdecydowanie nie stosujemy tego stylu. Natomiast jest on dopuszczalny w~pracach dyplomowych na specjalności {\em Informatyka i~ekonometria} -- w~takich pracach jest konieczny również spis literatury. Tutaj nie rozwijamy tego tematu.
+
+\paragraph{Cytowanie adresów internetowych}\ky{CTUR}
+\label{sec:dod:cytowanie-url}
+
+Podawanie adresów internetowych w~przypisach na dole strony jest charakterystyczne dla publikacji nie zawierających spisu literatury. W~pracach informatycznych z~zasady nie stosujemy tej metody.
+
+Ogólnie, podawanie adresów internetowych w~linii tekstu, jako samych URL, nie jest dobrym stylem. Strona internetowa to nie tylko adres, ale ma ona autora, tytuł, itd., i~trzeba to uszanować. Robimy wyjątek w~rozdziale~\ref{sec:dod:instrukcja-promotorzy}, w~informacji o~komendzie \verb+\keysinfoPL+, bo informacja wypisana przez nią znajdzie się w~pracy, w~której pozycji~\cite{klasa-github, www-LC-klasaLaTeX} nie ma w~bazie literatury.
+
+Zobacz również paragraf o \hyperref[sec:dod:bibliografia-url]{pozycjach bibliografii dla adresów internetowych}.
+
+\vspace{2\parsep}
 
 Więcej przykładów cytowania można znaleźć w~rozdziale~\ref{sec:dod:bibliografia}.
 
 
-\section{Oddawanie gotowej pracy}\ky{ODGP}
+\newpage
+
+\section{Oddawanie pracy dyplomowej i egzamin}
+\label{sec:dod:dyplom-egzamin}
+
+\subsection{Oddawanie gotowej pracy}\ky{ODGP}
 \label{sec:dod:oddawanie}
 
 \paragraph{Uwaga} Rzadko się zdarza, ale bywa, że drukarnia znajduje w~pracy dyplomowej jakąś niezgodność ze wzorcem SGGW i~każe poprawić dokument do wydrukowania. Raczej się to nie zdarza z~pracami w~\LaTeX{}u, ale idąc do drukarni warto mieć przy sobie komputer i~pendrive. Jeśli byłyby potrzebne  poprawki, którym można by było zaradzić wprowadzając zmiany w~klasie, to prosimy powiadomić \hyperref[sec:dod:dodatek]{autora~LC}. 
 
-Poniżej nie kopiujemy informacji dla dyplomantów ze stron Dziekanatu, ale podajemy opis procedury, jaki zwykle promotor przedstawia dyplomantom tytułem objaśnienia. Ta sama procedura jest opisana na stronach Dziekanatu w~rozdziale {\em Dyplomanci}~\cite{dyplomanci-dziekanat}, w~dokumencie znajdującym się pod linkiem {\em Dokumenty przed obroną pracy dyplomowej}, rozdział {\em Procedura obiegu dokumentów dotycząca przygotowania do obrony pracy dyplomowej}.
+Poniżej podajemy opis procedury, jaki zwykle promotor przedstawia dyplomantom tytułem objaśnienia. Ta sama procedura jest opisana na stronach Dziekanatu w~rozdziale {\em Dyplomanci}~\cite{dyplomanci-dziekanat}, w~dokumencie znajdującym się pod linkiem {\em Dokumenty przed obroną pracy dyplomowej}, rozdział {\em Procedura obiegu dokumentów dotycząca przygotowania do obrony pracy dyplomowej}. Tu dodaliśmy tylko informację o postępowaniu z~plikami {\tt PDF} gdy nie ma pliku {\tt DOC}/{\tt DOCX} (punkt~\ref{itm:dod:myslnik-kopia}).
 
 \paragraph{Procedura}\label{sec:dod:procedura}
 \begin{enumerate}
   \item Dyplomant dostarcza promotorowi dokładnie ten sam dokument, który był, lub będzie, wydrukowany i~nagrany na CD -- do ostatecznego badania anty-plagiatowego. Jego nazwa musi być zgodna z~wymaganiami podanymi przez Dziekanat: \cite{dyplomanci-dziekanat}~$\rightarrow$~{\em Dokumenty przed obroną pracy dyplomowej}.
-  \item Na CD dyplomant nagrywa pracę -- PDF. Ponieważ nie ma kopii w~DOCX, o~którą prosi Dziekanat, to dyplomant tworzy katalog o~nazwie {\tt Kopia} lub podobnej i~do niego wgrywa tę samą pracę. Kopia jest potrzebna na wypadek, gdyby pierwszy egzemplarz dokumentu był uszkodzony.\label{itm:dod:myslnik-kopia}
+  \item Na CD dyplomant nagrywa pracę -- {\tt PDF}. Ponieważ nie ma kopii w~{\tt DOCX}, o~którą prosi Dziekanat, to dyplomant tworzy katalog o~nazwie {\tt Kopia} lub podobnej i~do niego wgrywa tę samą pracę. Kopia jest potrzebna na wypadek, gdyby pierwszy egzemplarz dokumentu był uszkodzony.\label{itm:dod:myslnik-kopia}
   \item Można nagrać na CD także źródła TeXowe, w~katalogu o~sensownie do tego wybranej nazwie. Nie jest to wymagane.
   \item Dyplomant nagrywa na CD całe oprogramowanie, które powstało w ramach pracy, w katalogu o~sensownie do tego wybranej nazwie.
   \item Dyplomant dostarcza promotorowi do podpisu wydrukowane prace uprzednio podpisane przez siebie. Dostarcza także formularz wyboru recenzenta. Promotor dostarcza wydrukowany i~podpisany raport z~badania anty-plagiatowego. Promotor wypełnia i~podpisuje formularz wyboru recenzenta.
   \item Dyplomant dodaje wydrukowane przez siebie pozostałe dokumenty wymagane przez Dziekanat.
   \item Dyplomant składa komplet dokumentów w~Dziekanacie.
 \end{enumerate}
+
+
+\subsection{Egzamin dyplomowy}\ky{EGDP}
+\label{sec:dod:egzamin}
+
+Informacje o~przebiegu egzaminu dyplomowego są dostępne na stronach Dziekanatu dla dyplomantów~\cite{dyplomanci-dziekanat} i~w~Regulaminie studiów~\cite[Rozdział~XII]{regulamin-studiow}. Tu podamy skrót tych informacji, ponieważ zdarzają się pytania o~przebieg egzaminu.
+\begin{description}
+  \item[Egzamin inżynierski i~magisterski] -- specjalność {\em Informatyka} (obydwa egzaminy) oraz {\em Informatyka i~ekonometria} (tylko egzamin magisterski). Losowane są dwa pytania, z~całości studiów i~ze specjalności, z~list podanych na stronie dla dyplomantów~\cite{dyplomanci-dziekanat}. Trzecie pytanie, z~zakresu pracy dyplomowej, proponuje recenzent pracy. Podczas egzaminu dyplomant nie prezentuje pracy, miejsce prezentacji zajmuje to trzecie pytanie.
+  \item[Egzamin licencjacki] -- specjalność {\em Informatyka i~ekonometria} (nie ma pracy licencjackiej). Losowane są trzy pytania, zgodnie z Regulaminem egzaminu licencjackiego~\cite{dyplomanci-dziekanat}, z~list podanych na stronie dla dyplomantów~\cite{dyplomanci-dziekanat}.
+  \item[Ocena z całości studiów] Sposób wyliczania oceny podano w~Regulaminie studiów~\cite[Rozdział~XIII]{regulamin-studiow}. Z~tej informacji jasno wynika, że dla oceny końcowej najważniejsza jest średnia ze studiów. Aby zdać, student musi dostać ocenę wyższą niż~$2.0$ z~każdego pytania.
+\end{description}
 
 
 \newpage
@@ -1040,9 +1103,15 @@ Poniżej nie kopiujemy informacji dla dyplomantów ze stron Dziekanatu, ale poda
   \item{\kf{ANKT}} -- \hyperref[sec:dod:anakolut]{Anakolut}
   \item{\kf{ANMO}} -- \hyperref[sec:dod:antropomirfizacje]{Antropomorfizacje}
   \item{\kf{BBLG}} -- \hyperref[sec:dod:bibliografia]{Bibliografia}
+  \item{\kf{BBUR}} -- \hyperref[sec:dod:bibliografia-url]{Bibliografia dla adresów internetowych}
   \item{\kf{BZOF}} -- \hyperref[sec:dod:bezosobowo]{Forma bezosobowa}
+  \item{\kf{CTDI}} -- \hyperref[sec:dod:cytowanie-dodatkowe-informacje]{Cytowanie z~dodatkowymi informacjami}
+  \item{\kf{CTNP}} -- \hyperref[sec:dod:cytowanie-nazwiska-przeglad]{Cytowanie z~nazwiskami autorów w~przeglądzie literatury}
+  \item{\kf{CTPT}} -- \hyperref[sec:dod:cytowanie-przypisy]{Cytowanie w~przypisach}
+  \item{\kf{CTUR}} -- \hyperref[sec:dod:cytowanie-url]{Cytowanie adresów internetowych}
   \item{\kf{CTWN}} -- \hyperref[sec:dod:cytowanie]{Cytowanie}
   \item{\kf{CZKD}} -- \hyperref[sec:dod:czcionka-kodu]{Czcionka dla kodu}
+  \item{\kf{EGDP}} -- \hyperref[sec:dod:egzamin]{Egzamin dyplomowy}
   \item{\kf{HRPR}} -- \hyperref[sec:dod:hierarchia]{Hierarchia rozprawy i podział na rozdziały}
   \item{\kf{INPR}} -- \hyperref[sec:dod:instrukcja-promotorzy]{Instrukcja dla promotorów}
   \item{\kf{JDNS}} -- \hyperref[sec:dod:jednostki]{Jednostki}
@@ -1100,14 +1169,14 @@ Poniżej nie kopiujemy informacji dla dyplomantów ze stron Dziekanatu, ale poda
 \section{Instrukcja dla promotorów}\ky{INPR}
 \label{sec:dod:instrukcja-promotorzy}
 
-Dla promotorów, a~także dla tych (nielicznych) recenzentów, który będą mieć dostęp do plików źródłowych pracy dyplomowej, przygotowaliśmy w~klasie {\tt SGGW-thesis} dwie użyteczne komendy. Pierwsza ułatwia poinformowanie Dyplomanta o~systemie kluczy. Druga informuje Dyplomanta o~narzędziach do komentowania i~wprowadzania zmian w~sposób zbliżony do tego, jaki znamy z~edytorów typu WYSIWYG. 
+Dla promotorów, a~także dla tych (nielicznych) recenzentów, który będą mieć dostęp do plików źródłowych pracy dyplomowej, przygotowaliśmy w~klasie {\tt SGGW-thesis} dwie użyteczne komendy informacyjne, oraz komendy systemu uwag i~zamian. Pierwsza komenda informacyjna ułatwia poinformowanie Dyplomanta o~systemie kluczy. Druga informuje Dyplomanta o~narzędziach do komentowania i~wprowadzania zmian w~sposób zbliżony do tego, jaki znamy z~edytorów typu WYSIWYG. 
 
-Komendy najlepiej wstawić na początku pierwszego rozdziału pracy dyplomowej. Wygenerują one nienumerowane przypisy z~informacjami dla Dyplomanta. Łatwo skierować uwagę Dyplomanta na te komendy prosząc o~wyszukanie w~Poradniku według klucza {\tt \#{}Informacja}.\\[6pt]
+Komendy informacyjne najlepiej wstawić na początku pierwszego rozdziału pracy dyplomowej. Wygenerują one nienumerowane przypisy z~informacjami dla Dyplomanta. Łatwo skierować uwagę Dyplomanta na te komendy prosząc o~wyszukanie w~Poradniku według klucza {\tt \#{}Informacja}.\\[6pt]
 \noindent\verb+\keysinfoPL+\\[2pt]
 Zostanie wypisany przypis zawierający tekst jak w~przypisie zaczynającym się od słów {\color{ColorRemark}\bf \#{}Informacja o~słowach kluczowych} na dole tej strony\keysinfoPL. Jak widać, tekst informuje Dyplomanta o~tym, jak używać \hyperref[sec:dod:klucze]{kluczy}.\\[6pt]
 \noindent\verb+\edreminfoPL+
 \\[2pt]
-Zostanie wypisany przypis zawierający tekst jak w~przypisie zaczynającym się od słów {\color{ColorRemark}\bf \#{}Informacja o~interwencjach edytorskich} na dole tej strony\edreminfoPL. Tekst informuje Dyplomanta o~tym, jak obsługiwać system uwag i~zamian.
+Zostanie wypisany przypis zawierający tekst jak w~przypisie zaczynającym się od słów {\color{ColorRemark}\bf \#{}Informacja o~interwencjach edytorskich} na dole tej strony\edreminfoPL{}, Tekst informuje Dyplomanta o~tym, jak obsługiwać system uwag i~zamian.
 
 \paragraph{Krótka instrukcja systemu uwag i~zamian} z~klasy {\tt SGGW-thesis.cls}\\
 Podamy komendy systemu uwag i~zamian i~wyniki ich działania.
@@ -1148,13 +1217,16 @@ Zaprzeczenie ({\tt true} $\rightarrow$ {\tt false}), wykomentowanie lub usunieci
 
 \paragraph{Komentarz} Czasem zamiany źle wpisują się w linie tekstu, wyrazy w~zmienionych tekstach są źle przenoszone, lub komentarze przechodzące na następną stronę tracą kolor, albo (rzadko) kolor z~odnośnika przechodzi na zwykły tekst. Dzieje się tak szczególnie wtedy, gdy komentarze są bardzo długie. Nie można tego uniknąć. Po wyłączeniu wszystkich zmian lub akceptacji albo odrzuceniu konkretnej interwencji te problemy znikają.
 
+Komentarze nie są widoczne po umieszczeniu ich w~podpisach \verb+\caption{...}+. W~zamianie nie można wstawić cytowania \verb+\cite{...}+.
+
 
 \newpage
 
 \section{Zmiany}
 \label{sec:dod:zmiany}
-Zmiany dotyczą przede wszystkim klasy, dodatku i~bibliografii. Dotyczą także głównego pliku, w~którym poprawki wynikają prawie wyłącznie z~przenoszenia funkcjonalności do klasy. Zmiany są podane datami, od najnowszej do najstarszej.
+Zmiany dotyczą przede wszystkim dodatku, klasy i~bibliografii. Dotyczą także głównego pliku, w~którym poprawki wynikają prawie wyłącznie ze zmian w~dodatku, a~czasem w~klasie. Zmiany są podane datami, od najnowszej do najstarszej.
 \begin{description}
+\item[\rm 2026.06.14:~{\tt dodatek.tex}, {\tt SGGW-thesis.bib}, {\tt SGGW-thesis.cls}, {\tt main.pdf}.]\mbox{}\linebreak Wprowadzenie paragrafów z~osobnymi kluczami w~rozdziałach o~\hyperref[sec:dod:bibliografia]{bibliografii} i~\hyperref[sec:dod:cytowanie]{cytowaniu} oraz podrozdziałów w~rozdziale~\ref{sec:dod:dyplom-egzamin}. Dodatkowa literatura. Retusz w~klasie. Wersja klasy:~1.086, wersja dodatku:~0.639b.
 \item[\rm 2026.06.22:~{\tt dodatek.tex}, {\tt main.pdf}.] Uzupełnienia i~porządki w~poradniku i~wynikająca stąd zmiana w~{\tt main.pdf}. Wersja dodatku:~0.638b.
 \item[\rm 2026.06.21:~{\tt SGGW-thesis.cls}, {\tt main.tex}, {\tt dodatek.tex}, {\tt main.pdf}.]\mbox{}\linebreak Podstawowy \verb+\hypersetup{}+ przeniesiony do klasy, wyłączone ramki na hyperlinkach. Drobne retusze w~poradniku i~wynikająca stąd zmiana w~{\tt main.pdf}. Wersja klasy:~1.085, wersja dodatku:~0.637b.
 \item[\rm 2026.06.19:~{\tt SGGW-thesis.cls}, {\tt dodatek.tex}, {\tt main.pdf}.] Poprawki w~klasie w~komendach \verb+\edreminfoPL+, \verb+\keysinfoPL+ i~wynikający stąd retusz w~dodatku. Wersja klasy:~1.084, wersja dodatku:~0.636b.
@@ -1174,8 +1246,7 @@ Zmiany dotyczą przede wszystkim klasy, dodatku i~bibliografii. Dotyczą także 
 
 \section{Do zrobienia}
 \begin{enumerate}
-  \item Wprowadzić porady z~niedawnych przykładowych prac dyplomowych.
-  \item Przeszukać starsze prace pod względem dalszych reguł i~wprowadzić je.
+  \item Przeszukać starsze prace pod względem dalszych reguł i~wprowadzać je.
 \end{enumerate}
 
 \setstretch{1.4} % przywracamy wartość jak w całej pracy; zostało ustawione na 1 w \beforelastpage;
