@@ -12,5 +12,8 @@
 
     analogicznie dla wydziału
 
-    \WZIMtrue % obecnie istnieje tylko ta flaga, ale w przyszłości możliwe, że zostanie dodanych więcej flag
+    \WIItrue  % dla Wydziału Informatyki i Inżynierii
+    \WZIMtrue % dla Wydziału Zastosowań Informatyki i Matematyki
+
+    % Nazwy innych wydziałów mogą być wprowadzone według zapotrzebowania.
 

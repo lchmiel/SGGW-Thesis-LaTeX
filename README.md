@@ -26,8 +26,8 @@ set one of the flags to true
 \MAGISTERSKAtrue
 ```
 
-## Changing department footer
-To change the footer containing the department, after the 
+## Changing the footer for the faculty
+To change the footer containing the faculty, after the 
 ```latex
 \documentclass{SGGW-thesis}
 ```
@@ -35,5 +35,8 @@ To change the footer containing the department, after the
 set one of the flags to true
 
 ```latex
-\WZIMtrue % no other flags for departments exist right now
+\WIItrue  % for "Wydział Informatyki i Inżynierii"
+\WZIMtrue % for "Wydział Zastosowań Informatyki i Matematyki"
 ```
+
+Names of other departments may be introduced as needed. 
