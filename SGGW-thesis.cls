@@ -2,7 +2,12 @@
 % Klasa do pisania prac dyplomowych w SGGW - licencjackich, inzynierskich i magisterskich.
 %
 
-\newcommand{\SGGWthesisVersion}{1.086}
+\newcommand{\SGGWthesisVersion}{1.090}
+
+% Wersja 1.090 z 2026.07.22
+% Autor: Leszek Chmielewski
+% Zmiany:
+% 1. Wprowadzenie opcji Wydziału Informatyki i Inżynierii WII
 
 % Wersja 1.086 z 2026.07.13
 % Autor: Leszek Chmielewski
@@ -272,9 +277,13 @@
 }
 
 \newif\ifWZIM
+\newif\ifWII % 2026.07.22
 \newcommand{\conditionaldepartmentfooter}{
   \ifWZIM
     \includegraphics[width=11.04cm]{stopka_WZIM.png}\par
+  \fi
+  \ifWII % 2026.07.22
+    \includegraphics[width=11.04cm]{stopka_WII.png}\par
   \fi
 }
 
