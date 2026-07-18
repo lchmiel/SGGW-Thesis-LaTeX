@@ -1,6 +1,6 @@
 \appendix
 
-\newcommand{\SGGWappendixVersion}{0.639b} % Składam poprawki do nowej wersji. Była 0.638b, będzie 0.639b.
+\newcommand{\SGGWappendixVersion}{0.640b} % Składam poprawki do nowej wersji. Była 0.640b, będzie ???.
 
 % definicje dodane ze względu na Dodatek (\appendix)
 \newcommand{\kf}[1]{{\tt {\#{#1}}}}
@@ -756,9 +756,9 @@ Gdybyśmy pisali publikację, a~nie rozprawę dyplomową, należałoby dokładni
 Najprościej\ky{RSPP} umieszcza się podrysunki w~rysunku stosując klasyczne komendy \LaTeX{}a, jak na Rys.~\ref{fig:dod:podrysunki-prosty},
 \begin{figure}%[t] % unikaj kwalifikatora położenia [h], chyba, że jest absolutnie niezbędny
   \centering
-  {\bf a}~\includegraphics[width=0.29\textwidth]{Testowy-obraz.jpg}\hfill
-  {\bf b}~\includegraphics[width=0.29\textwidth]{Testowy-obraz.jpg}\hfill
-  {\bf c}~\includegraphics[width=0.29\textwidth]{Testowy-obraz.jpg}
+  {\bf a}~\includegraphics[width=0.29\textwidth]{Obraz-przykladowy.jpg}\hfill
+  {\bf b}~\includegraphics[width=0.29\textwidth]{Obraz-przykladowy.jpg}\hfill
+  {\bf c}~\includegraphics[width=0.29\textwidth]{Obraz-przykladowy.jpg}
   \caption{% wykomentowujemy początkowy biały znak, który psuje formatowanie podpisu
     Rysunek z podrysunkami, wersja prosta.
     ({\bf a})~Pierwszy podrysunek;
@@ -787,19 +787,19 @@ Te ustawienia znajdują się w~preambule głównego pliku źródłowego, tylko z
   \begin{subcaptiongroup}
     \begin{minipage}[t]{0.30\textwidth}
       \centering
-      \includegraphics[width=\textwidth]{Testowy-obraz.jpg}
+      \includegraphics[width=\textwidth]{Obraz-przykladowy.jpg}
       \caption{Pierwszy podrysunek.}
       \label{fig:dod:podrysunki-zlozony:sub-a}
     \end{minipage}\hfill
     \begin{minipage}[t]{0.30\textwidth}
       \centering
-      \includegraphics[width=\textwidth]{Testowy-obraz.jpg}
+      \includegraphics[width=\textwidth]{Obraz-przykladowy.jpg}
       \caption{Drugi podrysunek.}
       \label{fig:dod:podrysunki-zlozony:sub-b}
     \end{minipage}\hfill
     \begin{minipage}[t]{0.30\textwidth}
       \centering
-      \includegraphics[width=\textwidth]{Testowy-obraz.jpg}
+      \includegraphics[width=\textwidth]{Obraz-przykladowy.jpg}
       \caption{Trzeci podrysunek z~dłuższym podpisem.}
       \label{fig:dod:podrysunki-zlozony:sub-c}
     \end{minipage}
@@ -826,13 +826,13 @@ Osobne rysunki umieszczone jeden obok drugiego można łatwo uzyskać umieszczaj
 \begin{figure}
   \begin{minipage}[t]{0.48\textwidth}
     \centering
-    \includegraphics[width=\textwidth]{Testowy-obraz.jpg}
+    \includegraphics[width=\textwidth]{Obraz-przykladowy.jpg}
     \caption{Pierwszy osobny rysunek z~dłuższym podpisem.}
     \label{fig:dod:rysunki-obok-osobno:pierwszy}
   \end{minipage}\hfill
   \begin{minipage}[t]{0.48\textwidth}
     \centering
-    \includegraphics[width=\textwidth]{Testowy-obraz.jpg}
+    \includegraphics[width=\textwidth]{Obraz-przykladowy.jpg}
     \caption{Drugi osobny rysunek.}
     \label{fig:dod:rysunki-obok-osobno:drugi}
   \end{minipage}
@@ -960,7 +960,7 @@ Kod programu, tak w~formie listingu jak pseudokodu, powinien być przedstawiony 
 
 Formę obrazu można dopuścić jedynie w~przypadku, gdy pokazana jest konfiguracja środowiska, zawierająca fragmenty kodu, natomiast nie przy prezentowaniu kodu stworzonego w~ramach pracy rozwiązania (algorytmów, metod, itp.). Jednak, w~takim przypadku należy umieścić grafikę w~środowisku dla listingów, jak pokazano w~Algorytmie~\ref{alg:graficznie} (gdzie wstawiono przykładową grafikę, nie algorytm). Jeśli używany pakietu {\tt listings}, to należy podać parametry {\tt [mathescape=true, numbers=none]} i~umieszczamy komendę włączającą grafikę w~trybie matematycznym, oraz unikamy jakichkolwiek znaków poza tym trybem, co widać w~źródle.
 \begin{lstlisting}[float=t, caption={Algorytm jako grafika}, label=alg:graficznie, mathescape=true, numbers=none]
-$\includegraphics[width=0.29\textwidth]{Testowy-obraz.jpg}$
+$\includegraphics[width=0.29\textwidth]{Obraz-przykladowy.jpg}$
 \end{lstlisting}%
 
 
@@ -1226,6 +1226,7 @@ Komentarze nie są widoczne po umieszczeniu ich w~podpisach \verb+\caption{...}+
 \label{sec:dod:zmiany}
 Zmiany dotyczą przede wszystkim dodatku, klasy i~bibliografii. Dotyczą także głównego pliku, w~którym poprawki wynikają prawie wyłącznie ze zmian w~dodatku, a~czasem w~klasie. Zmiany są podane datami, od najnowszej do najstarszej.
 \begin{description}
+\item[\rm 2026.07.18:~{\tt SGGW-thesis.cls}, {\tt main.tex}, {\tt main.pdf}.]\mbox{}\linebreak Umożliwiono wybór nazwy wydziału: {\em Wydział Informatyki i~Inżynierii}, poza dotychczas dostępną nazwą {\em Wydział Zastosowań Informatyki i~Matematyki}. Drobne retusze w~Dodatku, zmiana nazwy i~zawartości przykładowego obrazu. Wersja klasy:~1.090, wersja dodatku:~0.640b.
 \item[\rm 2026.07.14:~{\tt dodatek.tex}, {\tt SGGW-thesis.bib}, {\tt SGGW-thesis.cls}, {\tt main.pdf}.]\mbox{}\linebreak Wprowadzenie paragrafów z~osobnymi kluczami w~rozdziałach o~\hyperref[sec:dod:bibliografia]{bibliografii} i~\hyperref[sec:dod:cytowanie]{cytowaniu} oraz podrozdziałów w~rozdziale~\ref{sec:dod:dyplom-egzamin}. Dodatkowa literatura. Retusz w~klasie. Wersja klasy:~1.086, wersja dodatku:~0.639b.
 \item[\rm 2026.06.22:~{\tt dodatek.tex}, {\tt main.pdf}.] Uzupełnienia i~porządki w~poradniku i~wynikająca stąd zmiana w~{\tt main.pdf}. Wersja dodatku:~0.638b.
 \item[\rm 2026.06.21:~{\tt SGGW-thesis.cls}, {\tt main.tex}, {\tt dodatek.tex}, {\tt main.pdf}.]\mbox{}\linebreak Podstawowy \verb+\hypersetup{}+ przeniesiony do klasy, wyłączone ramki na hyperlinkach. Drobne retusze w~poradniku i~wynikająca stąd zmiana w~{\tt main.pdf}. Wersja klasy:~1.085, wersja dodatku:~0.637b.
