@@ -1,6 +1,6 @@
 \appendix
 
-\newcommand{\SGGWappendixVersion}{1.000} % Wersja stabilna
+\newcommand{\SGGWappendixVersion}{1.010} % Wersja stabilna
 
 % definicje dodane ze względu na Dodatek (\appendix)
 \newcommand{\kf}[1]{{\tt {\#{#1}}}}
@@ -86,41 +86,32 @@ Należy zapoznać się zwłaszcza z~wytycznymi umieszczonymi na stronie dziekana
 odnoszą się one bezpośrednio do formatu prac przyjmowanych na naszym Wydziale. 
 
 
-\subsection{Praca inżynierska}\ky{OPPI}
-\label{sec:dod:ogolne-praca-inzynierska}
-
-Praca inżynierska może mieć charakter projektowy (tzn. wykonanie wybranej aplikacji, 
-implementacja wybranego rozwiązania, itd.). Projektem może być aplikacja, strona 
-internetowa, program do obliczeń przygotowany zgodnie z~wymaganiami wybranego 
-zastosowania -- oprogramowanie nie jest opcjonalne i~powinno być głównym elementem pracy. 
-
-Ważne jest to, że praca musi mieć zdefiniowany problem badawczy oraz może zawierać hipotezę badawczą. Zatem, nie może zawierać tylko samego oprogramowania, lecz musi rozwiązywać określony we wstępie problem badawczy.
-
 \paragraph{Struktura dokumentu}\ky{STRT}
 \label{sec:dod:struktura}
 Aktualną strukturę dokumentu, oraz wytyczne odnośnie formatowania można znaleźć w~Zarządzeniu Rektora~\cite{wymagania-100}, natomiast poniżej wymienimy kilka elementów, na które należy zwrócić uwagę podczas pisania pracy.
 
 Praca w~dziedzinie informatyki powinna zawierać następujące rozdziały (szerszy opis w wytycznych~\cite{dyplomanci-dziekanat,dyplomanci-uczelnia}):\pagebreak[2]
 \begin{enumerate}
-\item spis treści,  
-\item wstęp,  
-\item cel i zakres pracy,  
-\item przegląd piśmiennictwa, czyli opis stanu wiedzy w~zakresie pracy,
-\item materiał i metodykę pracy, czyli wybrane technologie i~metody,
-\item omówienie i dyskusję wyników, czyli suchy opis wyników bez komentarzy, a~następnie komentarz do nich,
-\item podsumowanie i wnioski, 
+\item spis treści;  
+\item wstęp;  
+\item cel i zakres pracy;  
+\item przegląd piśmiennictwa, czyli opis stanu wiedzy w~zakresie pracy;
+\item materiał i metodykę pracy, czyli w~przypadki informatyki, wybrane technologie i~metody;
+\item omówienie i dyskusję wyników, czyli najpierw suchy opis wyników bez komentarzy, a~następnie komentarz do nich;
+\item podsumowanie i wnioski; 
 \item spis piśmiennictwa. 
 \end{enumerate}
-Dodatkowo, jeżeli jest to uzasadnione zawartością pracy (tzn. jeżeli w pracy 
+Dodatkowo, jeżeli jest to uzasadnione zawartością pracy (tzn. jeżeli w~pracy 
 występują podobne elementy w większej ilości), można dodać również: spis ilustracji, 
 tabel, wzorów, słownik pojęć i/lub spis symboli. 
 
 W ramach pracy nie należy mieszać poszczególnych elementów. Przykładowo, opis istniejących rozwiązań przygotowujemy w~ramach odpowiedniego rozdziału, a~następnie odwołujemy się do tego rozdziału, ale nie przenosimy jego fragmentów na przykład do rozdziału z~wynikami. Należy również zwrócić uwagę na to, by nie powtarzać niepotrzebnie treści -- jeżeli temat raz był dokładnie opisany, należy odnieść się do miejsca, gdzie zostało to zrobione i~wspomnieć co najwyżej kluczowe punkty. Niedopuszczalne jest wielokrotne powtarzanie tych samych opisów w~różnych miejscach pracy.
 
 
-\paragraph{Logika, uzasadnienia}\ky{LGUZ}
+\paragraph{Logika, uzasadnienia}
 \label{sec:dod:logika-uzasadnienia}
-Praca powinna mieć wyraźny, logiczny ciąg przyczynowo-skutkowy, oraz zawierać uzasadnienia 
+% czasem notatka na marginesie oddziela się od początku swojego akapitu i trzeba ją umieścić w~tym akapicie
+Praca\ky{LGUZ} powinna mieć wyraźny, logiczny ciąg przyczynowo-skutkowy, oraz zawierać uzasadnienia 
 przyjmowanych założeń. To znaczy, że wnioski powinny faktycznie wynikać z~przeprowadzonych analiz/testów/struktury rozwiązania. W~szczególności, w~ramach podsumowania należy m.in. przypomnieć cel i~tezę/tezy pracy oraz odnieść 
 się do nich w kontekście otrzymanych wyników. 
 
@@ -150,6 +141,18 @@ dlaczego.
 początkowych założeń. 
 \item W zależności od tematyki pracy, mogą sie tu pojawić dodatkowe elementy. 
 \end{enumerate}
+
+
+\subsection{Praca inżynierska}
+\label{sec:dod:ogolne-praca-inzynierska}
+
+% czasem notatka na marginesie oddziela się od początku swojego akapitu i trzeba ją umieścić w~tym akapicie
+Praca\ky{OPPI} inżynierska może mieć charakter projektowy (tzn. wykonanie wybranej aplikacji, 
+implementacja wybranego rozwiązania, itd.). Projektem może być aplikacja, strona 
+internetowa, program do obliczeń przygotowany zgodnie z~wymaganiami wybranego 
+zastosowania. Dla kierunku {\em Informatyka} oprogramowanie nie jest opcjonalne i~powinno być głównym elementem pracy. 
+
+Ważne jest to, że praca musi mieć zdefiniowany problem badawczy oraz może zawierać hipotezę badawczą. Zatem, nie może zawierać tylko samego oprogramowania, lecz musi rozwiązywać określony we wstępie problem badawczy.
 
 
 \paragraph{Przegląd literatury}\ky{PRLI}
@@ -182,10 +185,12 @@ jeżeli rozwiązanie jest nowe, należy porównać je do rozwiązań istniejący
 Większość wymagań jest podobna jak w~przypadku prac inżynierskich, jednak jest istotna różnica. Praca nie może być projektem technicznym czy oprogramowaniem, lecz musi być eksperymentem technicznym, technologicznym, laboratoryjnym, lub inną formą badawczą przyjętą w~dyscyplinie, do której kierunek studiów 
 jest przyporządkowany.
 
+
 \paragraph{Przegląd literatury}\ky{PRLM}
 \label{sec:dod:przeglad-literatury-magisterska}
 
 Przegląd literatury powinien być szerszy, niż \hyperref[sec:dod:przeglad-literatury-inzynierska]{w~pracy inżynierskiej}, i~uwzględniać więcej pozycji (najlepiej około 30), w~tym również, w~miarę możliwości, artykuły naukowe w~danej tematyce. O~\hyperref[sec:dod:bibliografia]{bibliografii} i~\hyperref[sec:dod:cytowanie]{cytowaniach} piszemy szerzej w~rozdz.~\ref{sec:dod:bibliografia} i~\ref{sec:dod:cytowanie}. 
+
 
 \paragraph{Liczba stron}\ky{LSPM}
 \label{sec:dod:liczba-stron-magisterskiej}
@@ -214,7 +219,7 @@ Jest to ważne ze względu na zwykłą logikę, jak również dlatego, że brak 
 % czasem notatka na marginesie oddziela się od początku swojego akapitu i trzeba ją umieścić w~tym akapicie
 W\ky{OPPW} każdym rozdziale (lub podrozdziale, jeśli jest taka potrzeba) trzeba zaznaczyć, kto jest autorem. Musi być jasno pokazane, że każdy autor ma zdefiniowany, istotny, osobny wkład w~zawartość pracy, co trzeba opisać we wstępie, najlepiej tworząc w~tym celu odpowiedni podrozdział. 
 
-Oczywiście poza tym trzeba spełnić standardowe wymagania~\cite{wymagania-100}, w~tym na stronie autorów trzeba napisać, które rozdziały napisał który autor (opisano to w~głównej pracy, rozdział~\ref{sec:srodowisko-document}).
+Oczywiście, poza tym trzeba spełnić standardowe wymagania~\cite{wymagania-100}, w~tym na stronie autorów trzeba napisać, które rozdziały napisał który autor (opisano to w~głównej pracy, rozdział~\ref{sec:srodowisko-document}).
 
 
 \section{Kilka podstawowych zasad}
@@ -243,36 +248,37 @@ Te zasady dotyczą zarówno tytułu pracy dyplomowej, jak i~tytułów jej rozdzi
 
 W polskim języku jedynie pierwsze słowo tytułu jest pisane wielka literą. W~języku angielskim tradycyjnie wszystkie słowa, za wyjątkiem rodzajników i~przyimków, są pisane wielkimi literami (choć obecnie często odchodzi się od tej reguły, sczególnie w~przypadku rozdziałów, i~pisze tak, jak tytuły po polsku). Zawsze wielkimi literami piszemy wyrazy, które tego wymagają, jak na przykład nazwy własne i~skrótowce.
 
+
 \paragraph{Podział tytułu na linie}\ky{PTNL}
 \label{sec:dod:tytul-podzial}
-W~tytułach dbamy o to, aby podział na linie tekstu nie zaburzał logicznej spójności tekstu. Dlatego nie rozdzielamy związków logicznych: takich wyrażeń, jak ``analiza~statystyczna'', ``do~obliczania'', ``nowa~metoda'' itp. Ta zasada dotyczy tylko tytułów. W~tym celu w~tytułach często sami wstawiamy spacje nierozdzielające `{\tt \~{}}' -- lepsza metoda, lub znaki nowej linii \verb+\\+ -- gorsza metoda, bo tyuł ze złamanymi liniami wejdzie do spisu treści. Wtedy trzeba dostarczyć wersję tytułu bez łamania korzystając z~opcjonalnego parametru komendy tworzącej tytuł. Jeśli tytuł jest justowany, jak tytuły rozdziałów, i~brak justowania będzie się rzucał w~oczy, to używamy {\tt \tbs{}linebreak}.
-
-Oczywiście unikamy \hyperref[sec:dod:sierotki]{\em sierotek}.
+W~tytułach dbamy o to, aby podział na linie tekstu nie zaburzał logicznej spójności tekstu. Dlatego nie rozdzielamy związków logicznych: takich wyrażeń, jak ``analiza~statystyczna'', ``do~obliczania'', ``nowa~metoda'' itp. Ta zasada dotyczy tylko tytułów. W~tym celu w~tytułach często sami wstawiamy spacje nierozdzielające `{\tt \~{}}' -- lepsza metoda, lub znaki nowej linii \verb+\\+ -- gorsza metoda, bo tytuł ze złamanymi liniami wejdzie do spisu treści (wtedy trzeba dostarczyć wersję tytułu bez łamania korzystając z~opcjonalnego parametru komendy tworzącej tytuł). Jeśli tytuł jest justowany, jak tytuły rozdziałów, i~brak justowania będzie się rzucał w~oczy, to używamy \verb+\linebreak+. Oczywiście unikamy \hyperref[sec:dod:sierotki]{\em sierotek}.
 
 
-\subsection{Podpisy}\ky{PDPS}
+\subsection{Podpisy}
 \label{sec:dod:podpis}
-Podpis pod rysunkiem lub podpis tabeli albo listingu może być traktowany jak tytuł lub jak opis, ale wszystkie podpisy w~całej pracy muszą być traktowane tak samo. 
+
+% czasem notatka na marginesie oddziela się od początku swojego akapitu i trzeba ją umieścić w~tym akapicie
+Podpis\ky{PDPS} pod rysunkiem lub podpis tabeli albo listingu może być traktowany jak tytuł lub jak opis, ale wszystkie podpisy w~całej pracy muszą być traktowane tak samo. 
 
 Jeśli podpis jest traktowany jak opis, to jest jednym lub wieloma zdaniami, obowiązują \hyperref[sec:dod:zdaniem]{zasady jak dla zdania}: kropka na końcu. W~publikacjach naukowych zazwyczaj podpisy to objaśnienia składające się ze zdań. Jest tak w~szczególności wtedy, gdy w~podpisie są zawarte wyjaśnienia dotyczące grafiki lub tabeli, w~szczególności opisy oznaczeń lub krótkie komentarze.
 
 Jeśli mimo wszystko postanawiamy podpis traktować jak tytuł, to obowiązują \hyperref[sec:dod:tytul]{zasady jak dla tytułu}: nie kończy się on kropką, a~jeśli składa się z~kilku zdań, to ostatnie zdanie nie kończy się kropką. Nie jest to rekomendowana forma, jeśli przynajmniej niektóre podpisy składają się z~wielu zdań.
 
 
-\subsection{Hierarchia rozprawy i podział na rozdziały}\ky{HRPR}
+\subsection{Hierarchia rozprawy i podział na rozdziały}
 \label{sec:dod:hierarchia}
-
-Jeżeli dzielmy rozdział na podrozdziały, to podrozdziałów musi być więcej, niż jeden. Nie można czegoś podzielić na jedną część, to oczywiste. Tym samym, podrozdział {\em Cel pracy} nie może być jedynym podrozdziałem {\em Wstępu}. Natomiast, można umieścić w~rozdziale jeden tytułowany akapit {\tt \bs{}paragraph\{\}} (ale nie zachęcamy do umieszczania celu pracy w~takim paragrafie).
+% czasem notatka na marginesie oddziela się od początku swojego akapitu i trzeba ją umieścić w~tym akapicie
+Jeżeli\ky{HRPR} dzielmy rozdział na podrozdziały, to podrozdziałów musi być więcej, niż jeden. Nie można czegoś podzielić na jedną część, to oczywiste. Tym samym, podrozdział {\em Cel pracy} nie może być jedynym podrozdziałem {\em Wstępu}. Natomiast, można umieścić w~rozdziale jeden tytułowany akapit {\tt \bs{}paragraph\{\}} (ale nie zachęcamy do umieszczania celu pracy w~takim paragrafie).
 
 W~publikacjach o~charakterze humanistycznym obowiązuje zasada zrównoważenia hierarchii rozdziałów i~podrozdziałów, to znaczy, że rozdziały powinny być podzielone podobnie. W~naszej pracy dyplomowej nie ma takiego wymagania, hierarchia podrozdziałów wynika tylko z~potrzeb związanych z~treścią pracy.
 
 Zgodnie z przypisem~\ref{not:subsubsection} w~głównym tekście pracy, str.~\pageref{not:subsubsection}, rozdział~\ref{sec:srodowisko-document}, nie rekomenduje się używania podrozdziałów poziomu trzeciego {\tt \textbackslash{}subsubsection}, ze względu na czytelność. Zamiast tego dobrze jest stosować części nie numerowane i~nie umieszczane w~spisie treści, jak {\tt \textbackslash{}subsubsection*} lub {\tt \textbackslash{}paragraph} (w~tym poradniku wyjątkowo nie stosujemy się do tej zasady -- rozdział~\ref{sec:dod:hierarchia-w-poradniku}).
 
 
-\paragraph{Podział na akapity}\ky{AKPT}
+\paragraph{Podział na akapity}
 \label{sec:dod:akapity}
 
-Nowy akapit zaznacza się pustą linią (jedną lub większą ich liczbą). Komenda \verb+\\+ do tego nie służy -- jest znakiem nowej linii, a~nie akapitu. Akapity (za wyjątkiem pierwszego akapitu rozdziału) mają wcięcia, a~czasem także dodatkowy odstęp, dzięki czemu dobrze je widać. Znak nowej linii powoduje tylko skrócenie linii.
+Nowy\ky{AKPT} akapit zaznacza się pustą linią (jedną lub większą ich liczbą). Komenda \verb+\\+ do tego nie służy -- jest znakiem nowej linii, a~nie akapitu. Akapity (za wyjątkiem pierwszego akapitu rozdziału) mają wcięcia, a~czasem także dodatkowy odstęp, dzięki czemu dobrze je widać. Znak nowej linii powoduje tylko skrócenie linii.
 
 Jest to zasada systemu \LaTeX, a~nie porada dotycząca prac dyplomowych, ale czasem zdarza się autorom tych prac zapominać o niej. 
 
@@ -280,10 +286,10 @@ Jest to zasada systemu \LaTeX, a~nie porada dotycząca prac dyplomowych, ale cza
 
 \section{Dobre zwyczaje i najczęstsze błędy}
 
-\subsection{Pisownia i~interpunkcja}\ky{PIIN}
+\subsection{Pisownia i~interpunkcja}
 \label{sec:dod:pisownia-interpunkcja}
 
-Konieczne jest sprawdzenie pracy pod kątem błędów pisowni i~interpunkcji. Warto dać swoją pracę do sprawdzenia komuś mającemu wykształcenie humanistyczne. Promotorzy nie mogą szczegółowo poprawiać Państwa prac dyplomowych zdanie po zdaniu, to jest Państwa zadanie.
+Konieczne\ky{PIIN} jest sprawdzenie pracy pod kątem błędów pisowni i~interpunkcji. Warto dać swoją pracę do sprawdzenia komuś mającemu wykształcenie humanistyczne. Promotorzy nie mogą szczegółowo poprawiać Państwa prac dyplomowych zdanie po zdaniu, to jest Państwa zadanie.
 
 Konieczne jest używane edytora z~polskim słownikiem. Najlepiej, aby był on dostosowany do systemu \LaTeX, jak na przykład TeXstudio~\cite{TeXstudio}. Błędy literowe nie powinny być obecne w~tekście pracy. 
 
@@ -343,8 +349,6 @@ w~porozumieniu z~promotorem przyjęto, że w~pracy używane będą słowa angiel
 
 Słowa w~obcym języku piszemy czcionką wyróżnioną: ``{\em Client Side Rendering}'', ``{\em First In First Out}'', ``{\em endpoint}''. Zwykle dzieje się tak przy okazji wyjaśniania skrótów, co omówiono dalej (oczywiście czcionka wyróżniona jest stosowana również do zwykłego \hyperref[sec:dod:pojecia-cudzyslowy]{wyróżniania, na przykład nowo wprowadzanych pojęć}).
 
-Z całą pewnością nie polecamy pisania nazw typowo angielskich z~polskimi końcówkami. Dotyczy to słów, które jeszcze nie zostały zasymilowane w~polskim języku. Złotą zasadą jest dodanie odpowiedniego polskiego rzeczownika przed nazwą angielską, i~odmienianie tego rzeczownika. Przykłady: ``firmę Microsoft'', ``w~języku JavaScript'', ``na platformie MS Teams'', ``w~bibliotece TensorFlow'', ``w~środowisku Visual Studio'' (w~tym celu trzeba wiedzieć, czy TensorFlow to biblioteka, a~Visual Studio to środowisko). Ta zasada może się wydawać przesadna, ale wyobraźmy sobie, jak napisać ``w~bibliotece TensorFlow'' bez słowa ``biblioteka''. Łatwo jest napisać ``w~Javie'', ale jak napisać ``w~TensorFlow\dots''? Lepiej nie tworzyć własnych zasad i~skorzystać z~podanej tu rady.
-
 Jeśli podajemy określenie polskie, a~dla pewności również jego wersję angielską, robimy to tak: ``\dots{}omawiamy głębokie sieci neuronowe (ang.\ {\em Deep Neural Networks}, DNN)\dots'', ``Przedstawimy teraz koncepcję transformerów wizualnych (ang. {\em Visual Transformers}, ViT).'', ``W~tym celu wykorzystamy interfejs programowania aplikacji (ang. {\em Application Programming Interface}, API)\dots.'' Można też pisać tak: ``Korzystamy z~technologii takich jak HTML (ang.\ {\em HyperText Markup Language}) i~CSS (ang.\ {\em Cascading Style Sheets}).'' 
 
 Czcionką wyróżnioną piszemy tylko słowa w~obcym języku, nie skrót `ang.' = `angielski', który jest polskim słowem. 
@@ -352,6 +356,11 @@ Czcionką wyróżnioną piszemy tylko słowa w~obcym języku, nie skrót `ang.' 
 Po kilku użyciach tej formy można ostatecznie pisać skrótowo bez słowa `ang.', np. ``\dots{}jed\-nost\-ką rozliczeniową jest SKU ({\em Stock Keeping Unit})\dots''.
 
 Zobacz również rozdział \ref{sec:dod:apostrof-dywiz} o~\hyperref[sec:dod:apostrof-dywiz]{końcówkach, apostrofie i dywizie} oraz rozdział~\ref{sec:dod:skroty} o~\hyperref[sec:dod:skroty]{skrótach i~skrótowcach}.
+
+
+\paragraph{Słowa angielskie z polskimi końcówkami}\ky{ANGK}
+\label{sec:dod:jezyk-ang-polskie-koncowki}
+Z całą pewnością nie polecamy pisania słów typowo angielskich z~polskimi końcówkami, czyli odmieniania słów angielskich jak polskie. Dotyczy to słów, które jeszcze nie zostały zasymilowane w~polskim języku. Złotą zasadą jest dodanie odpowiedniego polskiego rzeczownika przed nazwą angielską, i~odmienianie tego rzeczownika. Przykłady: ``firmę Microsoft'', ``w~języku JavaScript'', ``na platformie MS Teams'', ``w~bibliotece TensorFlow'', ``w~środowisku Visual Studio'' (w~tym celu trzeba wiedzieć, czy TensorFlow to biblioteka, a~Visual Studio to środowisko). Ta zasada może się wydawać przesadna, ale wyobraźmy sobie, jak napisać ``w~bibliotece TensorFlow'' bez słowa ``biblioteka''. Łatwo jest napisać ``w~Javie'', ale jak napisać ``w~TensorFlow\dots''? Lepiej nie tworzyć własnych zasad i~skorzystać z~podanej tu rady.
 
 
 \subsubsection{Końcówki: apostrof i dywiz}\ky{KOAD}
@@ -422,7 +431,7 @@ gdzie $v$ -- prędkość, $s$ -- droga, $t$ -- czas.''
 Zwróćmy uwagę, że jednostki sa pisane czcionką prostą, ponieważ to nie są zmienne -- zob.\ rozdział~\ref{sec:dod:operatory} o~\hyperref[sec:dod:operatory]{operatorach i~zmiennych o~wieloliterowych nazwach}.
 
 Przykład z~\hyperref[sec:dod:tabela]{tabelą} pokazano w Tabeli~\ref{tab:dod:jednostki} (zob.\ też rozdział~\ref{sec:dod:tabela} o~\hyperref[sec:dod:tabela]{tabelach}).
-\begin{table}[b]
+\begin{table}
   \caption{Przykład tabeli z~jednostkami podanymi w~nagłówkach kolumn i~wartościami z~dokładnością do czterech cyfr znaczących.}
   \label{tab:dod:jednostki}
   \centering
@@ -464,11 +473,13 @@ Przy okazji, polski cudzysłów to nie \negat{"cudzysłów"}, ale \posit{,,dwa p
 \subsubsection{{\em Sierotki\/} i inne podobne błędy}\ky{SIRT}
 \label{sec:dod:sierotki}
 
-Terminem {\em sierotka} określamy błąd typograficzny będący wyrazem jednoliterowym znajdującym się na końcu linii tekstu~\cite{sierotka-wikipedia}. Wyrazy dwuliterowe obecnie nie są uważane za {\em sierotki}. Jest to jeden z~obecnie najczęstszych błędów typograficznych.
+Terminem {\em sierotka} określamy błąd typograficzny będący wyrazem jednoliterowym znajdującym się na końcu linii tekstu~\cite{sierotka-wikipedia}. Jest to jeden z~najczęstszych błędów typograficznych. Wyrazy dwuliterowe obecnie nie są uważane za {\em sierotki}. 
 
 Aby uniknąć {\em sierotki}, łączymy jednoliterowy wyraz z~następującym po nim wyrazem spacją nierozdzielającą. W~systemie \LaTeX{} jest to tylda: `\~{}'. Jak widać w~źródle tego dokumentu, niemal wszystkie wyrazy jednoliterowe zostały w~ten sposób połączone, na wszelki wypadek, aby nigdy nie stały się {\em sierotkami}, niezależnie od układu tekstu, który przecież zmienia się w~trakcie pisania pracy.
 
 Warto zwrócić uwagę na inne błędy typograficzne~\cite{bledy-typograficzne-wikipedia, bledy-typograficzne-contentwriter, bledy-typograficzne-born}, dla których nie ma prostych metod zapobiegawczych, a~które z~zasady trzeba eliminować ręcznie, odpowiednio przeredagowując tekst. Być może, dla uniknięcia błędów typu {\em wdowa} i~{\em bękart} można zastosować pakiet {\tt nowidow}~\cite{nowidow}, choć nasze doświadczenia z~tym pakietem były umiarkowanie pozytywne.
+
+Przyznajemy, że w~tym poradniku trudno jest uniknąć szczególnie {\em bękartów}, ponieważ tekst jest często uzupełniany i~przeredagowywany, i~czasem umyka nam jakiś błąd typograficzny, który znajduje się daleko poniżej edytowanego tekstu.
 
 
 \subsubsection{Myślnik, minus, dywiz}\ky{MYMD}
@@ -484,7 +495,7 @@ W języku polskim wokół myślnika dajemy spacje: ``to lubię -- rzekłem''.
 
 Tak samo używa się myślnika w~języku angielskim w~wariancie brytyjskim. Natomiast w~wariancie amerykańskim myślnik jest dłuższy (\verb+---+) i~wokół niego nie ma spacji: ``American English uses em dashes---typically without spaces.''
 
-Między liczbami określającymi zakres, jak lata, stronice itp. dajemy półpauzę, którą piszemy tak samo, jak myślnik `\verb+--+': ``lata 2002--2004'', ``str.\ 15--16''. Co do stron, zajmie się tym \hyperref[sec:dod:bibliografia]{Bib\TeX} (rozdz.~\ref{sec:dod:bibliografia}).
+Między liczbami określającymi zakres, jak lata, stronice itp. dajemy półpauzę, którą piszemy tak samo, jak myślnik `\verb+--+': ``lata 2002--2004'', ``str.\ 15--16''. Co do stron w~spisie literatury, zajmie się tym \hyperref[sec:dod:bibliografia]{Bib\TeX} (rozdz.~\ref{sec:dod:bibliografia}).
 
 Dywiz służy do połączeń takich, jak czerwono-zielono-niebieski, 5-letni, z-ca prezesa, bez \hyperref[sec:dod:apostrof-dywiz]{PIN-u}.
 
@@ -581,10 +592,10 @@ Problem jest rozwiązany.''
 Zamiast myślników można zastosować dwukropki, jak w~jednym z~przykładów w~rozdz.~\ref{sec:dod:lista-wiele-zdan}.
 
 
-\subsubsection{Lista składająca się z~wielu zdań}\ky{LSTW}
+\subsubsection{Lista składająca się z~wielu zdań}
 \label{sec:dod:lista-wiele-zdan}
 
-Jeśli każdy element listy jest osobnym zdaniem, lub składa się z wielu zdań, to każde zdanie jest zakończone kropką. Wtedy fraza wprowadzająca nie powinna kończyć się dwukropkiem, lecz powinna być zdaniem\footnote{W~niektórych przykładach, jakie można znaleźć w~źródłach internetowych, czasem jest dopuszczony dwukropek kończący frazę wprowadzającą dla list składających się ze zdań. Traktujemy takie przykłady jako rzadkie, nie zalecane odstępstwa od ogólnych zasad.}.
+Jeśli\ky{LSTW} każdy element listy jest osobnym zdaniem, lub składa się z wielu zdań, to każde zdanie jest zakończone kropką. Wtedy fraza wprowadzająca nie powinna kończyć się dwukropkiem, lecz powinna być zdaniem\footnote{W~niektórych przykładach, jakie można znaleźć w~źródłach internetowych, czasem jest dopuszczony dwukropek kończący frazę wprowadzającą dla list składających się ze zdań. Traktujemy takie przykłady jako rzadkie, nie zalecane odstępstwa od ogólnych zasad.}.
 
 Posłużymy sie jeszcze raz tym samym przykładem, przeredagowanym tym razem jako zbiór zdań: ``Podamy teraz algorytm rozwiązywania problemu zupy.
 \begin{description}
@@ -638,7 +649,7 @@ Obliczamy wyróżnik $\Delta$:\footnote{Tu dwukropek może mieć sens.}
   \footnote{Tu się kończy zdanie, stąd kropka po równaniu.}\usp{}
   \footnote{\label{not:dod:rownanie-bez-numeru}Zauważamy, że do tego równania nigdzie dalej nie bedziemy sie odnosić, więc można zrezygnować z~numerowania go.}%
 \]
-Rozważamy trzy przypadki. $1^\circ$~Jeśli $\Delta<0$, to równiance nie ma rozwiązania. $2^\circ$~Jeśli $\Delta=0$, to istnieje jedno rozwiązanie
+Rozważamy trzy przypadki. $1^\circ$~Jeśli $\Delta<0$, to równanie nie ma rozwiązania. $2^\circ$~Jeśli $\Delta=0$, to istnieje jedno rozwiązanie
 \begin{equation}
   x = \frac{-b}{2a} \, .\label{eqn:dod:rozw_jed}
 \end{equation}
@@ -646,8 +657,9 @@ Pozostaje przypadek $3^\circ$~$\Delta>0$, wtedy istnieją dwa rozwiązania
 \begin{equation}
   x_{1,2} = \frac{-b \pm \sqrt{\Delta}}{2a} \, . \label{eqn:dod:rozw_dwa}
 \end{equation}
-\footnote{Można przejść do nowego akapitu, można tego nie robić (tu nie zrobiliśmy).}%
+\footnote{Można otworzyć nowy akapit, można tego nie robić (tu nie zrobiliśmy).}%
 W~ten sposób otrzymujemy rozwiązanie równania~(\ref{eqn:dod:rownanie}) w~jednej z~postaci: (\ref{eqn:dod:rozw_jed}) lub~(\ref{eqn:dod:rozw_dwa})\footnote{Do równań zawsze odnosimy się przez liczbę w~nawiasie okrągłym (tu: literę i~liczbę, bo jesteśmy wewnątrz dodatku). Słowo {\em równanie} jest prawie zawsze niepotrzebne, np.\ piszemy ``w~postaci (\ref{eqn:dod:rozw_jed})'' i~jest jasne, że chodzi o~równanie~(\ref{eqn:dod:rozw_jed}).}.''
+
 
 \paragraph{Operatory i~zmienne o~wieloliterowych nazwach}\ky{MTOP}
 \label{sec:dod:operatory}
@@ -682,6 +694,7 @@ Przypomnijmy również użycie symbolu różniczki. Piszemy \verb+$f(x)\,\mathrm
 
 W~tym rozdziale, wraz z~pływającymi \hyperref[sec:dod:listing-dlugi]{długimi listingami kodu}, omówimy również \hyperref[sec:dod:listing-krotki]{krótkie fragmenty kodu}, które nie są pływające.
 
+
 \paragraph{Położenie środowiska w~tekście źródłowym}\ky{PLWS}
 \label{sec:dod:plywajace-tekst}
 
@@ -692,18 +705,19 @@ W~tym rozdziale, wraz z~pływającymi \hyperref[sec:dod:listing-dlugi]{długimi 
 } % ta komenda nie zajmuje miejsca, otaczające ją puste linie dają jedną pustą linię oddzielającą akapit
 \begin{lstlisting}
 Na rysunku~\ref{<etykieta>} (*\label{exm:dod:otaczajacy-p}*)
-\begin{figure} % bez kwalifikatora lokalizacji (*\label{exm:dod:srodowisko-p}*)
+\begin{figure} % bez kwalifikatora polozenia (*\label{exm:dod:srodowisko-p}*)
   \includegraphics[width=...]{grafika}
   \caption{Obraz X.}
   \label{<etykieta>}
 \end{figure}  (*\label{exm:dod:srodowisko-k}*)
 przedstawiono obraz X... (*\label{exm:dod:otaczajacy-k}*)
 \end{lstlisting}
-Między środowiskiem (linie~\ref{exm:dod:srodowisko-p}--\ref{exm:dod:srodowisko-k})  a~otaczającym tekstem (linie~\ref{exm:dod:otaczajacy-p}, \ref{exm:dod:otaczajacy-k}) nie ma pustych linii. W~dokumencie, między napisem {\em Na rysunku~<numer>} a~napisem {\em przedstawiono} nie będzie podwójnej spacji (gdyby jednak była, można by dać znak komentarza~{\tt \%} bezpośrednio po klamrze zamykającej rysunek w~linii~\ref{exm:dod:srodowisko-k}: \verb+\end{figure}%+). Tak właśnie został umieszczony rysunek~\ref{fig:dod:rysunek-prosty} w~rozdziale~\ref{sec:dod:rysunekprosty} o~\hyperref[sec:dod:rysunekprosty]{rysunku prostym}, dalsze rysunki~\ref{fig:dod:podrysunki-prosty}, \ref{fig:dod:podrysunki-zlozony}, \ref{fig:dod:rysunki-obok-osobno:pierwszy}, \ref{fig:dod:rysunki-obok-osobno:drugi}, tabela~\ref{tab:dod:tabela} w~rozdziale~\ref{sec:dod:tabela} o~\hyperref[sec:dod:tabela]{tabeli} i~algorytm~\ref{alg:dod:silnia} w~rozdziale~\ref{sec:dod:listing-dlugi} o~\hyperref[sec:dod:listing-dlugi]{długim listingu i~algorytmie}.
+Między środowiskiem (linie~\ref{exm:dod:srodowisko-p}--\ref{exm:dod:srodowisko-k})  a~otaczającym tekstem (linie~\ref{exm:dod:otaczajacy-p}, \ref{exm:dod:otaczajacy-k}) nie ma pustych linii. W~dokumencie, między napisem {\em Na rysunku~<numer>} a~napisem {\em przedstawiono\/} nie będzie podwójnej spacji (gdyby jednak była, można by dać znak komentarza~{\tt \%} bezpośrednio po klamrze zamykającej rysunek w~linii~\ref{exm:dod:srodowisko-k}: \verb+\end{figure}%+). Tak właśnie został umieszczony rysunek~\ref{fig:dod:rysunek-prosty} w~rozdziale~\ref{sec:dod:rysunekprosty} o~\hyperref[sec:dod:rysunekprosty]{rysunku prostym}, dalsze rysunki:~\ref{fig:dod:podrysunki-prosty}, \ref{fig:dod:podrysunki-zlozony}, \ref{fig:dod:rysunki-obok-osobno:pierwszy}, \ref{fig:dod:rysunki-obok-osobno:drugi}, tabela~\ref{tab:dod:tabela} w~rozdziale~\ref{sec:dod:tabela} o~\hyperref[sec:dod:tabela]{tabeli} i~algorytm~\ref{alg:dod:silnia} w~rozdziale~\ref{sec:dod:listing-dlugi} o~\hyperref[sec:dod:listing-dlugi]{długim listingu i~algorytmie}.
 
 {\bf Nie może istnieć obiekt pływający}, do którego brak odniesienia w~tekście -- takiego, jak odniesienia do rysunków, tabeli i~algorytmu w~poprzednim akapicie. 
 
 {\bf Nie może istnieć rozdział/podrozdział}, który zaczyna się od obiektu pływającego, ani taki, który zawiera tylko sam obiekt pływający, w~szczególności obiekt zakotwiczony kwalifikatorem położenia {\tt [h]}, {\tt [h!]} lub {\tt [H]}. W~takim rozdziale trzeba napisać, co pokazano w~tym obiekcie, i~zrobić odniesienie do niego.
+
 
 \paragraph{Położenie obiektu w~dokumencie}\ky{PLWO}
 \label{sec:dod:plywajace-dokument}
@@ -713,6 +727,8 @@ Obiekt pływający zostanie przez system \LaTeX{} umieszczony w~dokumencie na g�
 Zwyczaj umieszczania rysunku (tabeli, listingu) bezpośrednio pod tekstem, który się do niego odnosi, nie należy do świata tekstów technicznych i~naukowych. Również odnoszenie się do rysunku przez tekst ``na rysunku \negat{poniżej}\dots \negat{powyżej}\dots'' jest przykładem złego stylu.
 
 Opcjonalne parametry położenia środowisk {\tt figure}, {\tt table}, itd., wymuszające położenie rysunku (tabeli, \dots) na górze lub dole strony, lub w~konkretnym miejscu ({\tt [t]}, {\tt [b]}, {\tt [p]}, {\tt [h]}, {\tt [H]}, itp.), powinny być używane jedynie wtedy, gdy domyślnie obiekt jest umieszczony w~oczywiście niewłaściwy sposób, a~użycie parametru rozwiązuje problem. Domyślną wartością parametru położenia jest {\tt [tbp]}, więc w~przypadkach trudnych prawie zawsze wystarczy zmienić kolejność liter na {\tt [btp]}, co dla obiektów mniejszych niż stronica jest równoznaczne z~podaniem parametru~{\tt [b]}.
+
+W~tym dokumencie zasadniczo nie stosujemy kwalifikatorów położenia, za wyjątkiem przypadków, gdy obiekt jest niewłaściwie umieszczony (jak napisano wyżej). Może się to zdarzyć w~różnych miejscach, w~miarę rozszerzania i~uzupełniania tekstu.
 
 
 \subsubsection{Rysunek}\ky{RSNK}
@@ -724,13 +740,14 @@ Przeczytaj uwagi o~położeniu \hyperref[sec:dod:plywajace-tekst]{środowiska w 
 
 {\bf Uwaga~} \underline{Nigdy} nie robimy podpisów rysunków wewnątrz obrazów. Podpis jest osobnym elementem tekstowym. Na rysunku mogą być objaśnienia, ale nie podpis.
 
-Należy zwrócić uwagę, by podpisy jasno omawiały zawartość grafiki. Przykładowo, tworzenie kilku rysunków z~takim samym podpisem, np.: ``Wynik działania aplikacji.'' będzie błędem -- trzeba zaznaczyć, czego przykład dotyczy. Jeżeli tak pokazane przykłady nie różnią się istotnymi parametrami, lepiej przedstawić je na rysunku złożonym -- patrz rozdziały~\ref{sec:dod:rysunekzpodrysprosty} o~\hyperref[sec:dod:rysunekzpodrysprosty]{prostym rysunku z~podrysunkami} i~\ref{sec:dod:rysunekzpodryszlozony} o~\hyperref[sec:dod:rysunekzpodryszlozony]{złożonym rysunku z~podrysunkami}. Należy również pamiętać, że wykorzystanie grafiki służy zobrazowaniu określonych elementów pracy -- nie należy wykorzystywać grafiki jako wymówki do pominięcia opisu problemu.
+Należy zwrócić uwagę, by podpisy jasno omawiały zawartość grafiki. Przykładowo, tworzenie kilku rysunków z~takim samym podpisem, np.: ``Wynik działania aplikacji.'' będzie błędem -- trzeba zaznaczyć, czego przykład dotyczy. Jeżeli tak pokazane przykłady nie różnią się istotnymi parametrami, lepiej przedstawić je na rysunku złożonym -- patrz akapity o~\hyperref[sec:dod:rysunekzpodrysprosty]{prostym rysunku z~podrysunkami} i~o~\hyperref[sec:dod:rysunekzpodryszlozony]{złożonym rysunku z~podrysunkami}. Należy również pamiętać, że wykorzystanie grafiki służy zobrazowaniu określonych elementów pracy -- nie należy wykorzystywać grafiki jako wymówki do pominięcia opisu problemu.
 
 Wygodnie jest wszystkie obrazy umieścić w~podkatalogu, np. o~nazwie {\tt Obrazy}, i~ścieżkę do niego podać w~preambule komendą (podwójna klamra jest konieczna)
 \begin{verbatim}
 \graphicspath{{Obrazy/}}
 \end{verbatim}
 Wtedy w~głównym katalogu będzie większy porządek.
+
 
 \paragraph{Prosty rysunek}\ky{RSPR}
 \label{sec:dod:rysunekprosty}
@@ -750,6 +767,7 @@ Przykład powołania się na rysunek i~samego rysunku: ``Na rysunku~\ref{fig:dod
   \label{fig:dod:rysunek-prosty}
 \end{figure}
 przedstawiono okrąg i~kwadrat.''
+
 
 \paragraph{Autorstwo rysunków}\ky{RSAU}
 \label{sec:dod:rysunekautorstwo}
@@ -777,7 +795,7 @@ Gdybyśmy pisali publikację, a~nie rozprawę dyplomową, należałoby dokładni
 
 % czasem notatka na marginesie oddziela się od początku swojego akapitu i trzeba ją umieścić w~tym akapicie
 Najprościej\ky{RSPP} umieszcza się podrysunki w~rysunku stosując klasyczne komendy \LaTeX{}a, jak na Rys.~\ref{fig:dod:podrysunki-prosty},
-\begin{figure}[b] % unikaj kwalifikatora położenia [h], chyba, że jest absolutnie niezbędny
+\begin{figure}%[t] % unikaj kwalifikatora położenia [h], chyba, że jest absolutnie niezbędny
   \centering
   {\bf a}~\includegraphics[width=0.29\textwidth]{Obraz-przykladowy.jpg}\hfill
   {\bf b}~\includegraphics[width=0.29\textwidth]{Obraz-przykladowy.jpg}\hfill
@@ -796,16 +814,17 @@ W~tej koncepcji nie ma możliwości odniesienia się do konkretnego podrysunku p
 
 {\bf Uwaga~} \underline{Nigdy} nie robimy oznaczeń podrysunków (a, b, itd.), ani tym bardziej podpisów, wewnątrz obrazów. Takie oznaczenia i podpisy są osobno podawane jako obiekty tekstowe.
 
-\paragraph{Rysunek z podrysunkami -- wersja złożona}\ky{RSPZ}
+
+\paragraph{Rysunek z podrysunkami -- wersja złożona}
 \label{sec:dod:rysunekzpodryszlozony}
 
-Jeśli zachodzi konieczność odwoływania się do podrysunków przez osobne etykiety, można użyć pakietu dla rysunku z podrysunkami. Dobrym kandydatem jest pakiet {\tt subcaption}~\cite{subcaption}, za pomocą którego można robić osobne podpisy dla podelementów także dla innych środowisk mających komendę \verb+\caption{...}+. Aby uzyskać formaty podobne do tych, jakie zastosowano w~Rys.~\ref{fig:dod:podrysunki-prosty}, należy użyć ustawień
+Jeśli\ky{RSPZ} zachodzi konieczność odwoływania się do podrysunków przez osobne etykiety, można użyć pakietu dla rysunku z podrysunkami. Dobrym kandydatem jest pakiet {\tt subcaption}~\cite{subcaption}, za pomocą którego można robić osobne podpisy dla podelementów także dla innych środowisk mających komendę \verb+\caption{...}+. Aby uzyskać formaty podobne do tych, jakie zastosowano w~Rys.~\ref{fig:dod:podrysunki-prosty}, należy użyć ustawień
 {\small\begin{verbatim}
 \usepackage[labelformat=simple,labelfont=bf,font=normalsize]{subcaption}
 \renewcommand\thesubfigure{\alph{subfigure}}
 \end{verbatim}}
 Te ustawienia znajdują się w~preambule głównego pliku źródłowego, tylko ze względu na przykład, jakim jest Rys.~\ref{fig:dod:podrysunki-zlozony}.
-\begin{figure}[b] % unikaj kwalifikatora położenia [h], chyba, że jest absolutnie niezbędny
+\begin{figure}%[b] % unikaj kwalifikatora położenia [h], chyba, że jest absolutnie niezbędny
   \centering
   \begin{subcaptiongroup}
     \begin{minipage}[t]{0.30\textwidth}
@@ -837,7 +856,7 @@ Innym często używanym pakietem dla podrysunków jest {\tt subfig}~\cite{subfig
 {\small\begin{verbatim}
 \usepackage[caption=false,labelformat=simple,labelfont=bf]{subfig}
 \end{verbatim}}
-i~skonstruować rysunek zgodnie z opisem pakietu. Odniesienia do podrysunków będą wyglądały tak samo, jak dla Rys.~\ref{fig:dod:podrysunki-zlozony}.
+a~następnie skonstruować rysunek zgodnie z~opisem pakietu. Odniesienia do podrysunków będą wyglądały tak samo, jak dla Rys.~\ref{fig:dod:podrysunki-zlozony}.
 
 
 \paragraph{Kilka osobnych rysunków obok siebie}\ky{RSOS}
@@ -873,7 +892,7 @@ Przeczytaj uwagi o~położeniu \hyperref[sec:dod:plywajace-tekst]{środowiska w 
 Co do autorstwa, obowiązują takie same \hyperref[sec:dod:rysunekautorstwo]{zasady, jak dla rysunków}. Często w~tabelach umieszcza się dane z~innych publikacji, dla porównania. Wtedy każda dana (linia, kolumna w~tabeli) musi być zaopatrzona w~odnośnik do źródła, a~jeśli miejsce pozwala, również w~nazwiska cytowanych autorów.
 
 W~profesjonalnych tabelach unikamy linii pionowych. Można ich użyć {\em tylko}, jeśli są potrzebne dla zwiększenia czytelności danych. W~przykładowej tabeli~\ref{tab:dod:tabela}
-\begin{table}[tb] % unikaj kwalifikatora położenia "h" chyba, że to konieczne
+\begin{table}[b] % unikaj kwalifikatora położenia "h" chyba, że to konieczne
   \centering
   \caption{Przykład profesjonalnie złożonej tabeli.}
   \label{tab:dod:tabela}
@@ -889,9 +908,8 @@ W~profesjonalnych tabelach unikamy linii pionowych. Można ich użyć {\em tylko
     \bottomrule
   \end{tabular}
 \end{table}
-nie ma linii pionowych ograniczających tabelę z~zewnątrz, ale różne sekcje danych są rozdzielne liniami pionowymi. Zastosowano specjalne linie poziome, zdefiniowane w~pakiecie {\tt booktabs} do tworzenia profesjonalnych tabel (na poziomie edycyjnym jak dla dobrej książki). Zauważmy, że {\tt \bs{}toprule}, {\tt \bs{}midrule} i~{\tt \bs{}bottomrule} generują linie z~sensownymi odstępami, odpowiednio, pod linią, wokół linii i~nad linią, oraz że linie ograniczające tabelę od góry i~od dołu są grubsze, niż linie wewnętrzne
-(tu wyjątkowo środowisko {\tt table} ma kwalifikator położenia~{\tt [b]})%
-.
+nie ma linii pionowych ograniczających tabelę z~zewnątrz, ale różne sekcje danych są rozdzielne liniami pionowymi. Zastosowano specjalne linie poziome, zdefiniowane w~pakiecie {\tt booktabs} do tworzenia profesjonalnych tabel (na poziomie edycyjnym jak dla dobrej książki). Zauważmy, że {\tt \bs{}toprule}, {\tt \bs{}midrule} i~{\tt \bs{}bottomrule} generują linie z~sensownymi odstępami, odpowiednio, pod linią, wokół linii i~nad linią, oraz że linie ograniczające tabelę od góry i~od dołu są grubsze, niż linie wewnętrzne.
+%Tu wyjątkowo środowisko {\tt table} ma kwalifikator położenia~{\tt [b]}.
 
 W~tej tabeli, w~parametrze środowiska {\tt tabular}, zastosowano symbol wyrównania `{\tt S}' z~pakietu {\tt siunitx}, przeznaczony dla liczb zmiennoprzecinkowych, w~trzeciej i~piątej kolumnie. Aby użyć~`{\tt S}', odpowiadająca mu zawartość wiersza nagłówkowego tabeli musi być ujęta w~nawiasy klamrowe (kolumny {\tt \{Liczba\}} w~źródle).
 
@@ -904,6 +922,7 @@ Zobacz również rozdziały: \ref{sec:dod:liczby} o~\hyperref[sec:dod:liczby]{li
 
 \subsubsection{Kody programów, listingi, algorytmy}\mbox{}\\[-2.55\baselineskip]\ky{LSKP}
 \label{sec:dod:listing}\vspace{-1ex} % żeby notka na marginesie była właściwie ustawiona
+
 
 \paragraph{Prezentacja kodu -- uwagi ogólne}\ky{LSUO}
 \label{sec:dod:listing-uwagi-ogolne}
@@ -953,7 +972,7 @@ Przeczytaj uwagi o~położeniu \hyperref[sec:dod:plywajace-tekst]{środowiska w 
 
 Co do autorstwa, obowiązują takie same \hyperref[sec:dod:rysunekautorstwo]{zasady, jak dla rysunków}.
 
-Najlepsze efekty można osiągnąć używając jednego z~pakietów do pisania kodu lub pseudokodu, np. {\tt listings}~\cite{listings}, {\tt algorithms}~\cite{algorithms} lub {\tt algorithmicx}~\cite{algorithmicx}. Można w~ten sposób pisać długie listingi i~algorytmy. Przykład z~pakietem {\tt listings}, środowisko pływające:
+Najlepsze efekty można osiągnąć używając jednego z~pakietów do pisania kodu lub pseudokodu, np. {\tt listings}~\cite{listings}, {\tt algorithms}~\cite{algorithms} lub {\tt algorithmicx}~\cite{algorithmicx}. Można w~ten sposób pisać długie listingi i~algorytmy. Przykład z~pakietem {\tt listings}, pseudokod, środowisko pływające:
 
 ``Obliczanie silni w~pseudokodzie przedstawiono w~Algorytmie~\ref{alg:dod:silnia}.
 \renewcommand{\lstlistingname}{Algorytm}% znaki nowej linii wykomentowano, aby nie powstały 
@@ -968,7 +987,7 @@ Najlepsze efekty można osiągnąć używając jednego z~pakietów do pisania ko
     language=pseudocode,
     breaklines=true,
 }%
-\begin{lstlisting}[float=t, caption={Obliczanie silni metodą iteracyjną.}, label=alg:dod:silnia]
+\begin{lstlisting}[float=b, caption={Obliczanie silni metodą iteracyjną.}, label=alg:dod:silnia]
 algorytm Silnia
 // dane: n - liczba calkowita nieujemna
 // wynik: n!
@@ -982,11 +1001,13 @@ Najważniejszą operację wykonuje się w~linii~\ref{alg:dod:silnia-commented}.'
 
 Kod programu, tak w~formie listingu jak pseudokodu, powinien być przedstawiony w~formie tekstowej. Rozwiązaniem \underline{zdecydowanie nie zalecanym} jest użycie środowiska {\tt figure} do wstawiania obrazu kodu zdjętego z~ekranu. Kod jako tekst byłby niedostępny, umieszczenie kodu w~nieczytelnej postaci stwarzałoby podejrzenie próby ominięcia mechanizmu anty-plagiatowego, oraz kody byłyby oznaczane i~numerowane jako rysunki. 
 
-Formę obrazu można dopuścić jedynie w~przypadku, gdy pokazana jest konfiguracja środowiska, zawierająca fragmenty kodu, natomiast nie przy prezentowaniu kodu stworzonego w~ramach pracy rozwiązania (algorytmów, metod, itp.). Jednak, w~takim przypadku należy umieścić grafikę w~środowisku dla listingów, jak pokazano w~Algorytmie~\ref{alg:graficznie} (gdzie wstawiono przykładową grafikę, nie algorytm). Jeśli używany pakietu {\tt listings}, to należy podać parametry {\tt [mathescape=true, numbers=none]} i~umieszczamy komendę włączającą grafikę w~trybie matematycznym, oraz unikamy jakichkolwiek znaków poza tym trybem, co widać w~źródle.
-\begin{lstlisting}[float=b, caption={Algorytm jako grafika}, label=alg:graficznie, mathescape=true, numbers=none]
+Formę obrazu można dopuścić jedynie w~przypadku, gdy pokazana jest konfiguracja środowiska, zawierająca fragmenty kodu, natomiast nie przy prezentowaniu kodu stworzonego w~ramach pracy rozwiązania (algorytmów, metod, itp.). Jednak, w~takim przypadku należy umieścić grafikę w~środowisku dla listingów, jak pokazano w~Algorytmie~\ref{alg:dod:graficznie} (gdzie wstawiono przykładową grafikę nie zawierającą algorytmu). Jeśli używany pakietu {\tt listings}, to należy podać parametry {\tt [mathescape=true, numbers=none]}. Wtedy umieszczamy komendę włączającą grafikę w~trybie matematycznym, oraz unikamy jakichkolwiek znaków poza tym trybem, co widać w~źródle.
+\begin{lstlisting}[float=t, caption={Algorytm jako grafika}, label=alg:dod:graficznie, mathescape=true, numbers=none]
 $\includegraphics[width=0.29\textwidth]{Obraz-przykladowy.jpg}$
 \end{lstlisting}%
 
+
+\pagebreak[3] % nie daje znaku nowej strony, ale sprawia, że link do etykiety sekcji działa prawidłowo 
 
 \subsection{Bibliografia}
 \label{sec:dod:bibliografia}
@@ -1002,7 +1023,7 @@ Zobacz również paragraf o~\hyperref[sec:dod:cytowanie-przypisy]{cytowaniu w~pr
 
 Najczęstsze błędy w bibliografii polegają na pomijaniu ważnych danych bibliograficznych i niewłaściwym formatowaniu pozycji. Aby ich uniknąć, wystarczy wypełnić wszystkie te pola, które są podane dla danego rodzaju publikacji w~załączonym przykładowym pliku bibliografii {\tt SGGW-thesis.bib}. Ma on konstrukcję zbliżoną do maksymalnie prostej bazy danych, co każdy zauważy. W~tym pliku znajdziemy wiele przykładów różnych rodzajów pozycji bibliograficznych, jak {\tt book}~\cite{book, latexcompanion}, {\tt article}~\cite{paper}, {\tt booklet}~\cite{uhdm-arXiv}, {\tt misc}~\cite{wymagania-100, latexclass, WYSIWYM, github, RBAC, PyTorch}, {\tt techreport}~\cite{10_Bassham}, {\tt phdthesis}~\cite{02_Mitchell}, {\tt masterthesis}~\cite{17_Adamczyk, 25_Alkhaled}. Można je kopiować i~przerabiać na własne, według potrzeby. Najpierw trzeba znaleźć odpowiedni rodzaj publikacji, a następnie skopiować go i~przerobić na własny. 
 
-Spośród pozycji wpisanych do pliku {\tt *.bib} w~spisie literatury znajdą się tylko te, które rzeczywiście zacytujemy. Możemy zatem dowolnie rozszerzać ten plik i~używać go do wielu naszych publikacji.
+Spośród pozycji znajdujących się w~pliku {\tt *.bib} w~spisie literatury znajdą się tylko te, które rzeczywiście zacytujemy. Możemy zatem dowolnie rozszerzać ten plik i~używać go do wielu naszych publikacji.
 
 Prawie zawsze publikacja, nawet konwencjonalna, ma cyfrowy identyfikator obiektu (ang. {\em Digital Object Identifier}, DOI) i~jeśli on istnieje, powinniśmy go zawsze podawać. Jeśli nie ma DOI, należy podać adres internetowy, najlepiej uzyskany ze stron wydawcy (nie sklepu lub wyszukiwarki literatury). Często wydawcy nie stosujący identyfikatorów DOI podają {\em link permanentny}, który nie powinien się zmieniać wraz ze zmianami w~serwisach (jak np. w~\cite{25_Alkhaled}). Przypadki braku jakiegokolwiek adresu cyfrowego są rzadkie (nawet dla źródeł znacznie wcześniejszych od ery Internetu, jak np.~\cite{1774_Euler}). 
 
@@ -1018,7 +1039,7 @@ Pełna informacja znajduje się w~dokumentacji programu Bib\TeX~\cite{BibTeX}.
 \paragraph{Bibliografia dla adresów internetowych}\ky{BBUR}
 \label{sec:dod:bibliografia-url}
 
-W~ujęciu, w~którym dla stron i serwisów internetowych przyjmuje się taką samą konwencję zapisu i~cytowania, jak dla wszystkich publikacji, nie ma potrzeby rozdzielać w~spisie literatury źródeł internetowych od konwencjonalnych (choć wolno to robić; wymagałoby to pakietu {\tt multibib}~\cite{multibib} lub {\tt multibbl}~\cite{multibbl}). Jest tak tym bardziej, że z~jednej strony większość publikacji jest dostępna w~sieci lub wyłącznie w~sieci, z~drugiej zaś poziom edytorski odpowiedzialnych źródeł elektronicznych rośnie i~nie ustępuje poziomowi źródeł tradycyjnych. 
+W~ujęciu, w~którym dla stron i serwisów internetowych przyjmuje się taką samą konwencję zapisu i~cytowania, jak dla wszystkich publikacji, nie ma potrzeby rozdzielać w~spisie literatury źródeł internetowych od konwencjonalnych (choć wolno to robić; wymagałoby to pakietu {\tt multibib}~\cite{multibib} lub {\tt multibbl}~\cite{multibbl}). Jest tak tym bardziej, że z~jednej strony większość publikacji jest dostępna w~sieci lub wyłącznie w~sieci, z~drugiej zaś poziom edytorski odpowiedzialnych źródeł elektronicznych rośnie i~najczęściej nie ustępuje poziomowi źródeł tradycyjnych. 
 
 Dla stron i~serwisów internetowych najbardziej odpowiedni jest typ rekordu {\tt misc}~\cite{latexclass, WYSIWYM, github}, a~dla serwisów takich, jak arXiv, doskonale nadaje się {\tt booklet}~\cite{uhdm-arXiv}.
 
@@ -1031,14 +1052,15 @@ Nieliczne przykłady stron, dla których trudno ustalić autora, to np.~\cite{wy
 Zobacz także paragraf o~\hyperref[sec:dod:cytowanie-url]{cytowaniu adresów internetowych}.
 
 
-\subsection{Cytowanie}\ky{CTWN}
+\subsection{Cytowanie}
 \label{sec:dod:cytowanie}
 
-Pozycję z~\hyperref[sec:dod:bibliografia]{bibliografii} cytujemy komendą \verb+\cite{<etykieta>}+, gdzie {\tt <etykieta>} jest etykietą wpisu w pliku bibliografii {\tt *.bib}. Przed \verb+\cite{}+ dajemy znak spacji nierozdzielającej (tylda, `\~{}'), aby odnośnik do bibliografii nie został przeniesiony do nowej linii, więc cytowanie wygląda np.\ tak: {\tt omówiono to w\~{}książce\~{}\textbackslash{}cite\{book\}.} Uwaga: między słowem {\tt książce} a~następującą po nim tyldą nie ma spacji! Po skompilowaniu wygląda to tak: ``omówiono to w~książce~\cite{book}.'' (Druga tylda, która znajduje się między słowem~{\tt w} a~słowem {\tt książce} służy kontroli \hyperref[sec:dod:sierotki]{\em sierotek}, rozdział~\ref{sec:dod:sierotki}.)
+Pozycję\ky{CTWN} z~\hyperref[sec:dod:bibliografia]{bibliografii} cytujemy komendą \verb+\cite{<etykieta>}+, gdzie {\tt <etykieta>} jest etykietą wpisu w pliku bibliografii {\tt *.bib}. Przed \verb+\cite{}+ dajemy znak spacji nierozdzielającej (tylda, `\~{}'), aby odnośnik do bibliografii nie został przeniesiony do nowej linii, więc cytowanie wygląda np.\ tak: {\tt omówiono to w\~{}książce\~{}\textbackslash{}cite\{book\}.} Uwaga: między słowem {\tt książce} a~następującą po nim tyldą nie ma spacji! Po skompilowaniu wygląda to tak: ``omówiono to w~książce~\cite{book}.'' (Druga tylda, która znajduje się między słowem~{\tt w} a~słowem {\tt książce} służy kontroli \hyperref[sec:dod:sierotki]{\em sierotek}, rozdział~\ref{sec:dod:sierotki}.)
 
 Cytowanie należy do zdania (``\hyperref[sec:dod:zdaniem]{wszystko jest zdaniem}'', rozdział~\ref{sec:dod:zdaniem}), więc zawsze znajduje się wewnątrz zdania, a~nie po nim. Przykłady: ``W~literaturze można znaleźć wiele porad dotyczących dobrego składu tekstu w~systemie \LaTeX~\cite{latexcompanion, notsoshort, notsoshortPL}.'' lub ``Metoda analizy obrazów powinna się charakteryzować odpornością na zakłócenia i~dane odstające~\cite{chapter-in-book}.''
 
 Można cytować wiele pozycji w~jednym cytowaniu, np.: {\tt Było to przedmiotem wielu badań\~{}\textbackslash{}cite\{<etykieta1>, <etykieta2>, <etykieta3>\}.} Taki tekst zostanie złożony następująco: ``Było to przedmiotem wielu badań~\cite{paper, conf-simple, book}.'' Jest to zalecana postać wielokrotnego cytowania, a~nie osobne komendy {\tt \textbackslash{}cite\{$\cdot$\}}. Numery pozycji literatury zostały posortowane rosnąco, choć kolejność etykiet była inna. To i~inne ustawienia dotyczące cytowania zostały ustalone w~klasie {\tt SGGW-thesis.cls} i~stylu bibliografii {\tt SGGW-thesis.bst}.
+
 
 \paragraph{Cytowanie z~dodatkowymi informacjami}\ky{CTDI}
 \label{sec:dod:cytowanie-dodatkowe-informacje}
@@ -1066,10 +1088,10 @@ W~przeglądach literatury zwykle podaje się nie tylko odnośniki do literatury,
 ``Mittelbach i~in.~\cite{latexcompanion} opisali zasady używania systemu \LaTeX. Podręcznik na ten sam temat, dostępny w sieci, napisali Oetiker i~in.~\cite{notsoshort}. Jest on dostępny w~polskim tłumaczeniu Przechlewskiego, Kubiaka~i~in.~\cite{notsoshortPL}.''
 
 
-\paragraph{Cytowanie w~przypisach}\ky{CTPT}
+\paragraph{Cytowanie w~przypisach}
 \label{sec:dod:cytowanie-przypisy}
+Cytowanie\ky{CTPT} z~pozycjami bibliograficznymi w~przypisach na dole strony jest charakterystyczne dla publikacji w~dziedzinach humanistycznych. W~pracach w~dziedzinie informatyki zdecydowanie nie stosujemy tego stylu. Jest on dopuszczalny (lecz nie wymagany) w~pracach dyplomowych na specjalności {\em Informatyka i~ekonometria}. Można użyć pakietu {\tt footbib}~\cite{footbib}. Jednocześnie należy użyć typowych cytowań dla uzyskania spisu literatury na końcu pracy, który jest także konieczny. Nie koliduje to z~funkcjami pakietu {\tt footbib}. Zatem pojedyncze proste cytowanie wyglądałoby tak: \verb+\nocite{<etykieta>}\footcite{<etykieta>}+. Wymagane jest zwrócenie uwagi na zgodną numerację przypisów i~zwykłych cytowań, oraz na zbędne spacje. Tutaj nie rozwijamy tego tematu.
 
-Cytowanie z~pozycjami bibliograficznymi w~przypisach na dole strony jest charakterystyczne dla publikacji w~dziedzinach humanistycznych. W~pracach w~dziedzinie informatyki zdecydowanie nie stosujemy tego stylu. Natomiast jest on dopuszczalny w~pracach dyplomowych na specjalności {\em Informatyka i~ekonometria} -- w~takich pracach jest konieczny również spis literatury. Tutaj nie rozwijamy tego tematu.
 
 \paragraph{Cytowanie adresów internetowych}
 \label{sec:dod:cytowanie-url}
@@ -1093,9 +1115,11 @@ Więcej przykładów cytowania można znaleźć w~rozdziale~\ref{sec:dod:bibliog
 \subsection{Oddawanie gotowej pracy}\ky{ODGP}
 \label{sec:dod:oddawanie}
 
+
 \paragraph{Uwaga} Rzadko się zdarza, ale bywa, że drukarnia znajduje w~pracy dyplomowej jakąś niezgodność ze wzorcem SGGW i~każe poprawić dokument do wydrukowania. Raczej się to nie zdarza z~pracami w~\LaTeX{}u, ale idąc do drukarni warto mieć przy sobie komputer i~pendrive. Jeśli byłyby potrzebne  poprawki, którym można by było zaradzić wprowadzając zmiany w~klasie, to prosimy powiadomić \hyperref[sec:dod:dodatek]{autora~LC}. 
 
 Poniżej podajemy opis procedury, jaki zwykle promotor przedstawia dyplomantom tytułem objaśnienia. Ta sama procedura jest opisana na stronach Dziekanatu w~rozdziale {\em Dyplomanci}~\cite{dyplomanci-dziekanat}, w~dokumencie znajdującym się pod linkiem {\em Dokumenty przed obroną pracy dyplomowej}, rozdział {\em Procedura obiegu dokumentów dotycząca przygotowania do obrony pracy dyplomowej}. Tu dodaliśmy tylko informację o postępowaniu z~plikami {\tt PDF} gdy nie ma pliku {\tt DOC}/{\tt DOCX} (punkt~\ref{itm:dod:myslnik-kopia}).
+
 
 \paragraph{Procedura}\label{sec:dod:procedura}
 \begin{enumerate}
@@ -1109,10 +1133,10 @@ Poniżej podajemy opis procedury, jaki zwykle promotor przedstawia dyplomantom t
 \end{enumerate}
 
 
-\subsection{Egzamin dyplomowy}\ky{EGDP}
+\subsection{Egzamin dyplomowy}
 \label{sec:dod:egzamin}
 
-Informacje o~przebiegu egzaminu dyplomowego są dostępne na stronach Dziekanatu dla dyplomantów~\cite{dyplomanci-dziekanat} i~w~Regulaminie studiów~\cite[Rozdział~XII]{regulamin-studiow}. Tu podamy skrót tych informacji, ponieważ zdarzają się pytania o~przebieg egzaminu.
+Informacje\ky{EGDP} o~przebiegu egzaminu dyplomowego są dostępne na stronach Dziekanatu dla dyplomantów~\cite{dyplomanci-dziekanat} i~w~Regulaminie studiów~\cite[Rozdział~XII]{regulamin-studiow}. Tu podamy skrót tych informacji, ponieważ zdarzają się pytania o~przebieg egzaminu.
 \begin{description}
   \item[Egzamin inżynierski i~magisterski] -- specjalność {\em Informatyka} (obydwa egzaminy) oraz {\em Informatyka i~ekonometria} (tylko egzamin magisterski). Losowane są dwa pytania, z~całości studiów i~ze specjalności, z~list podanych na stronie dla dyplomantów~\cite{dyplomanci-dziekanat}. Trzecie pytanie, z~zakresu pracy dyplomowej, proponuje recenzent pracy. Podczas egzaminu dyplomant nie prezentuje pracy, miejsce prezentacji zajmuje to trzecie pytanie.
   \item[Egzamin licencjacki] -- specjalność {\em Informatyka i~ekonometria} (nie ma pracy licencjackiej). Losowane są trzy pytania, zgodnie z Regulaminem egzaminu licencjackiego~\cite{dyplomanci-dziekanat}, z~list podanych na stronie dla dyplomantów~\cite{dyplomanci-dziekanat}.
@@ -1128,6 +1152,7 @@ Informacje o~przebiegu egzaminu dyplomowego są dostępne na stronach Dziekanatu
 \begin{description}
   \item{\kf{AKPT}} -- \hyperref[sec:dod:akapity]{Podział na akapity}
   \item{\kf{ANGJ}} -- \hyperref[sec:dod:jezyk-ang]{Język angielski i~tłumaczenia}
+  \item{\kf{ANGK}} -- \hyperref[sec:dod:jezyk-ang-polskie-koncowki]{Słowa angielskie z polskimi końcówkami}
   \item{\kf{ANKT}} -- \hyperref[sec:dod:anakolut]{Anakolut}
   \item{\kf{ANMO}} -- \hyperref[sec:dod:antropomirfizacje]{Antropomorfizacje}
   \item{\kf{BBLG}} -- \hyperref[sec:dod:bibliografia]{Bibliografia}
@@ -1209,6 +1234,7 @@ Zostanie wypisany przypis zawierający tekst jak w~przypisie zaczynającym się 
 \end{verbatim}
 Zostanie wypisany przypis zawierający tekst jak w~przypisie zaczynającym się od słów {\color{ColorRemark}\bf \#{}Informacja o~interwencjach edytorskich} na dole tej strony\edreminfoPL{}. Tekst informuje dyplomanta o~tym, jak obsługiwać system uwag i~zamian.
 
+
 \paragraph{Krótka instrukcja systemu uwag i~zamian} z~klasy {\tt SGGW-thesis.cls}\\
 Podamy komendy systemu uwag i~zamian i~wyniki ich działania.
 \begin{description}\small
@@ -1246,6 +1272,7 @@ Zaprzeczenie ({\tt true} $\rightarrow$ {\tt false}), wykomentowanie lub usunieci
 \item{\verb+inny \rpla{usunięty}{} inny+} $\rightarrow$ inny \rpla{usunięty}{} inny
 \end{description}
 
+
 \paragraph{Komentarz} Czasem zamiany źle wpisują się w linie tekstu, wyrazy w~zmienionych tekstach są źle przenoszone, lub komentarze przechodzące na następną stronę tracą kolor, albo (rzadko) kolor z~odnośnika przechodzi na zwykły tekst. Dzieje się tak szczególnie wtedy, gdy komentarze są bardzo długie. Nie można tego uniknąć. Po wyłączeniu wszystkich zmian lub akceptacji albo odrzuceniu konkretnej interwencji te problemy znikają.
 
 Komentarze nie są widoczne po umieszczeniu ich w~podpisach \verb+\caption{...}+. W~zamianie nie można wstawić cytowania \verb+\cite{...}+.
@@ -1258,6 +1285,7 @@ Komentarze nie są widoczne po umieszczeniu ich w~podpisach \verb+\caption{...}+
 Zmiany dotyczą przede wszystkim dodatku, klasy i~bibliografii. Dotyczą także głównego pliku, w~którym poprawki wynikają prawie wyłącznie ze zmian w~dodatku, a~czasem w~klasie. Modyfikacje są i~prawdopodobnie będą nadal wprowadzane zgodnie z~potrzebami. Dokładamy starań, aby nowe wersje były wstecznie zgodne. 
 
 \begin{description}
+\item[\rm 2026.08.06:~{\tt dodatek.tex}, {\tt SGGW-thesis.bib}, {\tt main.pdf}.] Kilka poprawek i~kilka porządkujących zmian kolejności podrozdziałów. Uzupełnienia w~paragrafie o~\hyperref[sec:dod:cytowanie-przypisy]{cytowaniu w~przypisach}. Plany w~związku z~reorganizacją Uczelni w~sekcji~\ref{sec:dod:todo} \hyperref[sec:dod:todo]{Do zrobienia}. Wersja dodatku:~1.010. Wersja klasy bez zmian:~1.090.
 \item[\rm 2026.07.22:~{\tt dodatek.tex}, {\tt main.pdf}.] Wprowadzono wszystkie uzupełnienia w~poradniku pochodzące z~uwag z~nowszych i~dawniejszych prac. Zmiana wersji dodatku z~wersji beta na stabilną. Wersja dodatku:~1.000. Wersja klasy bez zmian:~1.090.
 \item[\rm 2026.07.18:~{\tt SGGW-thesis.cls}, {\tt main.tex}, {\tt main.pdf}.]\mbox{}\linebreak Umożliwiono wybór nazwy wydziału: {\em Wydział Informatyki i~Inżynierii}, poza dotychczas dostępną nazwą {\em Wydział Zastosowań Informatyki i~Matematyki}. Drobne retusze w~Dodatku, zmiana nazwy i~zawartości przykładowego obrazu. Wersja klasy:~1.090, wersja dodatku:~0.640b.
 \item[\rm 2026.07.14:~{\tt dodatek.tex}, {\tt SGGW-thesis.bib}, {\tt SGGW-thesis.cls}, {\tt main.pdf}.]\mbox{}\linebreak Wprowadzenie paragrafów z~osobnymi kluczami w~rozdziałach o~\hyperref[sec:dod:bibliografia]{bibliografii} i~\hyperref[sec:dod:cytowanie]{cytowaniu} oraz podrozdziałów w~rozdziale~\ref{sec:dod:dyplom-egzamin}. Dodatkowa literatura. Retusz w~klasie. Wersja klasy:~1.086, wersja dodatku:~0.639b.
@@ -1279,8 +1307,14 @@ Zmiany dotyczą przede wszystkim dodatku, klasy i~bibliografii. Dotyczą także 
 
 
 \section{Do zrobienia}
+\label{sec:dod:todo}
 \begin{enumerate}
-  \item W związku z~reorganizacją SGGW latem 2026, w~ramach której powstanie  Wydział Informatyki i~Inżynierii przez połączenie Wydziału Zastosowań Informatyki i~Matematyki oraz Wydziału Inżynierii Produkcji, po ustaleniu zasad dotyczących prac dyplomowych i~zasobów internetowych nowego dziekanatu, odpowiednio do zmian skorygować treść i~literaturę.
+  \item W związku z~reorganizacją SGGW latem 2026, w~ramach której powstanie  Wydział Informatyki i~Inżynierii przez połączenie Wydziału Zastosowań Informatyki i~Matematyki oraz Wydziału Inżynierii Produkcji, po ustaleniu zasad dotyczących prac dyplomowych i~zasobów internetowych nowego dziekanatu, odpowiednio do zmian korygować treść i~literaturę.
+  \begin{enumerate}
+    \item Uwzględnić zmiany adresów stron nowego dziekanatu.
+    \item O ile będzie zainteresowanie systemem \LaTeX{} w~specjalnościach pochodzących z~dotychczasowego Wydziału Inżynierii Produkcji, wprowadzać opisy dla prac inżynierskich i~magisterskich dla tych specjalności.
+  \end{enumerate}
+  \item Uwzględnić prace licencjackie, dla kierunku {\em Informatyka i ekonometria}. Powinno to mieć miejsce w~całym rozdziale~\ref{sec:dod:ogolne-porady}, a~szczególnie w~rozdziale~\ref{sec:dod:ogolne-praca-inzynierska} \hyperref[sec:dod:ogolne-praca-inzynierska]{o~pracy inżynierskiej}, aby obejmował on również pracę licencjacką.
 \end{enumerate}
 
 \setstretch{1.4} % przywracamy wartość jak w całej pracy; zostało ustawione na 1 w \beforelastpage;
