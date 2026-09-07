@@ -4,53 +4,55 @@
 
 \newcommand{\SGGWthesisVersion}{1.091}
 
-% Wersja 1.091 z 2026.08.31
+% Wersja 1.091 z 2026/09/07
 % Autor: Leszek Chmielewski
 % Zmiany:
-% 1. Poprawka w \edreminfoPL: usnięty -> usunięty
+% 1. Poprawka w \edreminfoPL: usnięty -> usunięty.
+% 2. Wszystkie daty są zapisane w formacie DD/MM/RRRR, co ułatwia
+%    znalezenie poprawki z danej daty w tekście.
 
-% Wersja 1.090 z 2026.07.22
+% Wersja 1.090 z 2026/07/22
 % Autor: Leszek Chmielewski
 % Zmiany:
-% 1. Wprowadzenie opcji Wydziału Informatyki i Inżynierii WII
+% 1. Wprowadzenie opcji Wydziału Informatyki i Inżynierii WII.
 
-% Wersja 1.086 z 2026.07.13
+% Wersja 1.086 z 2026/07/13
 % Autor: Leszek Chmielewski
 % Zmiany:
 % 1. Poprawki w komendzie \blankfootnote, aby \edreminfo, \edreminfoPL i \keysinfoPL
-%    nie produkowały spacji w miejscu wywołania
+%    nie produkowały spacji w miejscu wywołania.
 
-% Wersja 1.085 z 2026.06.21
+% Wersja 1.085 z 2026/06/21
 % Autor: Leszek Chmielewski inspirowany pracą mgr Wiktora Jaworskiego
 % Zmiany:
 % 1. podstawowy \hypersetup{} przenesiony do klasy,
-%    dodane hidelinks aby linki nie miały kolorowych ramek
+%    dodane hidelinks aby linki nie miały kolorowych ramek.
 % 2. Poprawki w komendach \edreminfo, \edreminfoPL i \keysinfoPL.
 
-% Wersja 1.084 z 2026.06.19
+% Wersja 1.084 z 2026/06/19
 % Autor: Leszek Chmielewski
 % Zmiany:
 % 1. Poprawki w komendach \edreminfo, \edreminfoPL i \keysinfoPL.
 
-% Wersja 1.083 z 2026.06.18
+% Wersja 1.083 z 2026/06/18
 % Autor: Leszek Chmielewski
 % Zmiany:
 % 1. W komendzie \keysinfoPL, która powoduje wypisanie informacji o używaniu kluczy
 %    w Poradniku, zmieniono odnośniki do literatury na adres w GitHub podany jawnie.
 
-% Wersja 1.082 z 2026.06.17
+% Wersja 1.082 z 2026/06/17
 % Autor: Leszek Chmielewski
 % Zmiany:
 % 1. Uściślenia w komendzie \keysinfoPL, która powoduje wypisanie informacji o tym,
 %    jak używać kluczy z poradnika będącego Dodatkiem do wzorcowej pracy dyplomowej.
 % 2. W uwagach i komentarzach do zmian językiem domyślnym jest polski.
 
-% Wersja 1.081 z 2026.06.12
+% Wersja 1.081 z 2026/06/12
 % Autor: Leszek Chmielewski
 % Zmiany:
 % 1. Drobne retusze, nie wpływające na działanie klasy.
 
-% Wersja 1.080 z 2026.06.08
+% Wersja 1.080 z 2026/06/08
 % Autor: Leszek Chmielewski
 % Zmiany:
 % 1. Włączenie do klasy całego mechanizmu dodawania uwag do pracy
@@ -61,7 +63,7 @@
 %    Jest to pierwsze nawiązanie w klasie do Poradnika.
 % 3. Dodanie pakietu [bottom]footmisc, aby przypisy były zawsze na dole strony, pod środowiskami pływającymi
 
-% Wersja 1.072 z 2026.05.22
+% Wersja 1.072 z 2026/05/22
 % Autor: Leszek Chmielewski
 % Zmiany:
 % 1. Dodanie pakietu [nocompress]cite, aby pozycje literatury były sortowane,
@@ -71,13 +73,13 @@
 % Te trzy pozycje muszą być dodane na końcu pliku klasy, inaczej sa błędy w wewnęrznych linkach dokumentu.
 % 4. Definicje skróconych nazw użytecznych komend: \usp, \on, \ud, \tbs, \mbs, \bs
 
-% Wersja 1.071c z 2026.04.16
+% Wersja 1.071c z 2026/04/16
 % Autor: Leszek Chmielewski
 % Zmiana:
 % 1. Zmiana tytułu rozdzialu zawierającego bibliografię z domyślnego dla języka
 %    polskiego "Spis literatury" na "Bibliografia".
 
-% Wersja 1.071b z 2026.01.21
+% Wersja 1.071b z 2026/01/21
 % Autor: Leszek Chmielewski
 % Zmiana:
 % 1. Zmiana poziomu podrozdziałów, które będą numerowane, z domyślnego 2 na 3.
@@ -85,19 +87,19 @@
 %    Nie będą numerowane i nie będą umieszczone w spisie treści: \paragraph, \subparagraph.
 %    Ma to zastosowanie w Dodatku, ktory jest w przygotowaniu.
 
-% Wersja 1.071a z 2025.01.12
+% Wersja 1.071a z 2025/01/12
 % Autor: Leszek Chmielewski
 % Zmiana:
 % 1. Dodana kropka w oświadczeniu autora pracy, akapit pierwszy.
 
-% Wersja 1.071 z 2024.11.05
+% Wersja 1.071 z 2024/11/05
 % Autor: Leszek Chmielewski
 % Zmiany:
 % 1. Drobny retusz w umieszczeniu zmiennej z numerem wersji na początku dokumentu.
 % 2. Uaktualniony komentarz w \ProvidesClass{}[]
 % 3. Retusze w źródle main.tex uaktualniające opis dla nowszej wersji klasy.
 
-% Wersja 1.07 z 2024.10.22 i 2024.11.04
+% Wersja 1.07 z 2024/10/22 i 2024/11/04
 % Autorzy: Leszek Chmielewski, Dawid Puszka
 % Zmiany:
 % 1. Poprawka polegająca na dodaniu pakietu "lmodern" w takm celu, aby
@@ -115,19 +117,19 @@
 % 6. Obecnie zarządzenie Rektora i wytyczne podane są na stronie:
 %    https://www.sggw.edu.pl/studenci/praca-dyplomowa/
 
-% Wersja 1.062 z 2023.07.31
+% Wersja 1.062 z 2023/07/31
 % Autorzy: Konrad Jażdżyk, Patryk Stępień
 % Zmiana:
 % 1. Poprawka wielkości marginesów.
 
-% Wersja 1.061 z 2022.01.26
+% Wersja 1.061 z 2022/01/26
 % Autor: Leszek Chmielewski
 % Zmiany:
 % 1. Drobny retusz na stronie oświadczeń promotora i autora: "Świadom" -> "Świadom/a".
 % 2. W rzeczywistości nowe zarządzenie Rektora i wytyczne podane są na stronie:
 %    https://www.sggw.edu.pl/strona-glowna/studia/informacje-praktyczne-dla-studentow/praca-dyplomowa/
 
-% Wersja 1.06 z 2021.11.14
+% Wersja 1.06 z 2021/11/14
 % Autorzy: Mikołaj Tkaczyk, Mikołaj Piekutowski
 % Zmiany:
 % 1. Zmiana strony tytułowej, aby zgadzała się z Zarządzeniem Rektora SGGW nr 100 z dnia 22 września 2021 r.
@@ -137,24 +139,24 @@
 % 4. Zmiana wersji na zmienną, aby dynamicznie wyświetlała się w notce strony tytułowej.
 % 5. Zmiany te wymagały dodania dodatkowych plików obrazów, które muszą być umieszczone w tym samym katalogu, co plik klasy.
 
-% Wersja 1.05 z 2019.06.25
+% Wersja 1.05 z 2019/06/25
 % Autorzy: Pawel Wasil, Bartosz Sowa
 % Zmiany:
 % 1. Zmiana \onehalfspacing na \setstretch{1.4} - dzieki temu interlinia jest niemal identyczna jak w wersji w Word, czyli odstęp 1.5.
 %
-% Wersja 1.04 z 2018.01.17.
+% Wersja 1.04 z 2018/01/17.
 % Autorzy: Pawel Wasil, Michal Rosa
 % Wspolpraca: Leszek Chmielewski
 % Zmiany:
 % 1. Poprawiono blad wielkosci czcionki tytulu pracy.
 % 2. Drobne retusze w formatach
 
-% Wersja 1.03 z 2018.01.10.
+% Wersja 1.03 z 2018/01/10.
 % Autor: Łukasz Adamczyk
 % Zmiany:
 % 1. Poprawiono blad zwiazany z odstepami linii tekstu tytulu polskiego i angielskiego.
 
-% Wersja 1.02 z 2018.01.08.
+% Wersja 1.02 z 2018/01/08.
 % Autor: Leszek Chmielewski <leszek_chmielewski@sggw.pl>
 % Wspolpraca: Michal Rosa, Pawel Wasil
 % Zmiany:
@@ -167,12 +169,12 @@
 % 4. Koncowe oswiadczenie bedzie na stronie przedostatniej, zawsze nieparzystej.
 %    Ta strona i otaczajace ja puste strony nie beda numerowane.
 
-% Wersja 1.01 z 2017.12.13.
+% Wersja 1.01 z 2017/12/13.
 % Autor: Leszek Chmielewski <leszek_chmielewski@sggw.pl>
 % Zmiany:
 % 1. Poprawka stylu podpisow rys i tab. Zastosowano pakiet "caption".
 
-% Wersja 1.0 z 2017.01.16.
+% Wersja 1.0 z 2017/01/16.
 % Autor: Łukasz Adamczyk
 %
 \NeedsTeXFormat{LaTeX2e}[1995/12/01]
@@ -282,12 +284,12 @@
 }
 
 \newif\ifWZIM
-\newif\ifWII % 2026.07.22
+\newif\ifWII % 2026/07.22
 \newcommand{\conditionaldepartmentfooter}{
   \ifWZIM
     \includegraphics[width=11.04cm]{stopka_WZIM.png}\par
   \fi
-  \ifWII % 2026.07.22
+  \ifWII % 2026/07.22
     \includegraphics[width=11.04cm]{stopka_WII.png}\par
   \fi
 }
@@ -563,7 +565,7 @@
   \indent More information can be found in the class file {\tt SGGW-thesis-EN.cls}.%
 }}}
 \newcommand{\edreminfoPL}{% Modified 2023/01/26 (text corrected), 2024/10/18 (text corrected), 2024/11/09 (no footnote mark),
-  % 2024/12/27 (correction of explanations); 2025/03/08 (comments become remarks, commands not changed); 2025/03/17 (shortened); 2025/05/05, 2026/08/31 (corrected).%%
+  % 2024/12/27 (correction of explanations); 2025/03/08 (comments become remarks, commands not changed); 2025/03/17 (shortened); 2025/05/05, 2026/09/07 (corrected).%%
   \renewcommand{\remarkname}{Uwaga}\REMLANGPLtrue%
   \blankfootnote{\color{ColorRemark}{\underline{\bf \#{}Informacja o interwencjach edytorskich}\hspace{.5em}%
   W~tej wersji dokumentu są pokazane interwencje edytorskie: uwagi i~zamiany (niektóre z~uwagami). Uwagi są umieszczone w~przypisach ze słowem \underline{\bf Uwaga}.
