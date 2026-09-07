@@ -2,7 +2,12 @@
 % Klasa do pisania prac dyplomowych w SGGW - licencjackich, inzynierskich i magisterskich.
 %
 
-\newcommand{\SGGWthesisVersion}{1.090}
+\newcommand{\SGGWthesisVersion}{1.091}
+
+% Wersja 1.091 z 2026.08.31
+% Autor: Leszek Chmielewski
+% Zmiany:
+% 1. Poprawka w \edreminfoPL: usnięty -> usunięty
 
 % Wersja 1.090 z 2026.07.22
 % Autor: Leszek Chmielewski
@@ -558,11 +563,11 @@
   \indent More information can be found in the class file {\tt SGGW-thesis-EN.cls}.%
 }}}
 \newcommand{\edreminfoPL}{% Modified 2023/01/26 (text corrected), 2024/10/18 (text corrected), 2024/11/09 (no footnote mark),
-  % 2024/12/27 (correction of explanations); 2025/03/08 (comments become remarks, commands not changed); 2025/03/17 (shortened); 2025/05/05 (corrected).%%
+  % 2024/12/27 (correction of explanations); 2025/03/08 (comments become remarks, commands not changed); 2025/03/17 (shortened); 2025/05/05, 2026/08/31 (corrected).%%
   \renewcommand{\remarkname}{Uwaga}\REMLANGPLtrue%
   \blankfootnote{\color{ColorRemark}{\underline{\bf \#{}Informacja o interwencjach edytorskich}\hspace{.5em}%
   W~tej wersji dokumentu są pokazane interwencje edytorskie: uwagi i~zamiany (niektóre z~uwagami). Uwagi są umieszczone w~przypisach ze słowem \underline{\bf Uwaga}.
-  W~zamianach tekst usnięty jest oznaczony jako \rpl{czerwony skreślony}{}, a tekst wprowadzony jako \rpl{}{zielony podkreślony}.
+  W~zamianach tekst usunięty jest oznaczony jako \rpl{czerwony skreślony}{}, a tekst wprowadzony jako \rpl{}{zielony podkreślony}.
   Czasem zamiany źle wpisują się w~linie tekstu, lub komentarze przechodzące na następną stronę tracą kolor; nie można tego uniknąć.\\
   \indent Interwencje są pokazywane, jeśli w~preambule jest obecna komenda {\tt \textbackslash{}SHOWREMARKStrue}\usp{}.
   W~przeciwnym przypadku uwagi nie są pokazane, a~zamiany są zaakceptowane.\\

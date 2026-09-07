@@ -1,15 +1,17 @@
 \documentclass{SGGW-thesis}
 
 \INZYNIERSKAtrue
-%\WIItrue
-\WZIMtrue
+\WIItrue
+%\WZIMtrue
 
 \title{Stworzenie klasy \LaTeX-owej\\do użytku przy pisaniu\\pracy dyplomowej w~SGGW}
 \Etitle{Creation of the \LaTeX\ Class to Use When Writing a Thesis\\at the Warsaw University of Life Sciences -- SGGW}
 \author{Łukasz Adamczyk}
-\date{2017\footnote{Ten dokument skompilowano \today{} z klasą {\tt SGGW-thesis} w wersji \SGGWthesisVersion. Różni się ona od opisanej tutaj, lecz różnice w~korzystaniu z~niej są małe -- proszę przeczytać plik {\tt readme}. Aktualną wersję klasy można pobrać z~repozytorium~\cite{klasa-github} lub ze strony~\cite{www-LC-klasaLaTeX}.\\
-\indent Ta wersja pracy zawiera \hyperref[sec:dod:dodatek]{użyteczny Dodatek~}\ref{sec:dod:dodatek} oraz przypisy. Wyjaśniono w~nich różnice między wersją pierwotną z~2017 roku a~obecną.
-{\bf W~Państwa pracach proszę usunąć cały ten przypis.}}}
+\date{2017% Przypis usunąć odtąd
+\footnote{Ten dokument skompilowano \today{} z klasą {\tt SGGW-thesis} w wersji \SGGWthesisVersion. Różni się ona od opisanej tutaj, lecz różnice w~korzystaniu z~niej są małe -- proszę przeczytać plik {\tt readme}. Aktualną wersję klasy można pobrać z~repozytorium~\cite{klasa-github} lub ze strony~\cite{www-LC-klasaLaTeX}.\\
+\indent Ta wersja pracy zawiera użyteczny \hyperref[sec:dod:dodatek]{Dodatek~}\ref{sec:dod:dodatek}. Zawiera także przypisy, w~których wyjaśniono różnice między wersją pierwotną z~2017 roku przygotowaną dla WZIM, a~obecną dla WII.\\
+\indent {\bf W~Państwa pracach należy usunąć cały ten przypis.}}% Przypis usunąć dotąd
+}
 \album{154833}
 \thesis{Praca dyplomowa na kierunku:}
 \course{Informatyka}
@@ -67,6 +69,7 @@ main parts. The first one describes the most important aspects of the implementa
 \section{Motywacja}
 \label{sec:motywacja}
 
+\footnote{Pierwotna wersja klasy oraz ten dokument były przygotowane dla Wydziału Zastosowań Informatyki i~Matematyki -- WZIM. Obecnie klasa wspiera Wydział Informatyki i~Inżynierii -- WII, jak również WZIM, oraz umożliwia dość łatwe dodanie innych Wydziałów. Ten dokument został sparametryzowany nazwą wydziału WII -- opcja {\tt \tbs{}WIItrue}. Przeczytaj również plik {\tt readme}.}%
 Pisanie pracy dyplomowej oprócz oczywistego aspektu przekazywania informacji wiąże się także z odpowiednim sformatowaniem wynikowego tekstu według zasad narzuconych przez uczelnię\footnote{W~pierwotnej wersji klasy było to Zarządzenie nr~34 Rektora SGGW~\cite{wymagania}. Obecnie klasa wspiera wymagania zgodne z~Zarządzeniem nr 100 Rektora SGGW~\cite{wymagania-100}.}. Jednym z narzędzi ułatwiających formatowanie jest \LaTeX, system składania dokumentów opierający się na paradygmacie WYSIWYM ({\em ang.\ What You See Is What You Mean}) co oznacza, że pisząc tekst określamy rolę dla każdego fragmentu danych, a~\LaTeX\ zajmuje się odpowiednią prezentacją. W przypadku Szkoły Głównej Gospodarstwa Wiejskiego w~Warszawie oczekiwania pod względem formatowania dokumentu silnie odbiegają od standardowych rozwiązań zaimplementowanych w~\LaTeX-u\footnote{W wersji pracy z~2017 roku potraktowano słowo \LaTeX{} jak skrótowiec i~zastosowano pisownię: w~\LaTeX-u, \LaTeX-a. Obecnie przyjęto by, że \LaTeX{} jest nazwą zasymilowaną w~języku polskim, i~zastosowano by pisownię: w~\LaTeX{}u, \LaTeX{}a. Tu pozostawiono oryginalną wersję z~roku 2017.}, dlatego postanowiłem stworzyć klasę {\tt SGGW-thesis}, która pomaga w~stworzeniu pracy dyplomowej spełniającej oczekiwania Uczelni\footnote{W pierwotnej wersji pracy nie było tego rozdziału, zaś rozdział~\ref{sec:cel-zakres} miał numer~\ref{sec:motywacja}. Był to błąd, gdyż nie powinien mieć miejsca podział rozdziału na jeden podrozdział.}\footnote{W~tej wersji pracy użyto komendy {\tt \textbackslash{}hypersetup}, w~której definiuje sie m.\ in. kolory aktywnych tekstów, co jest szczególnie przydatne w~Dodatku~\ref{sec:dod:dodatek}. W~Państwa pracach nie potrzeba używać tej komendy, gdyż powoduje ona, że teksty aktywne są drukowane w~kolorach, co nie jest korzystne.}.
 
 
@@ -254,7 +257,7 @@ postulujących klauzulę tajności należy posłużyć się wywołaniem z~opcjon
 \verb|\beforelastpage[2017]|. W~ten sposób do oświadczenia zostanie dopisane zastrzeżenie, że pracę można udostępnić po określonym roku.
 
 Warto wspomnieć, że podczas pisania pracy do rozpoczynania rozdziałów należy użyć komendy \verb|\chapter|, a podrozdziałów \verb|\section|, ze względu na dziedziczenie tej
-funkcjonalności z~klasy \verb|report|\footnote{\label{not:subsubsection}Z~tego powodu rekomenduje się używanie podrozdziałów do poziomu {\tt \textbackslash{}subsection}, a~unikanie poziomu {\tt \textbackslash{}subsubsection}, ze względu na czytelność treści, gdyż ten poziom były już czwartym poziomem w~hierarchii rozdziałów. Zamiast tego dobrze jest stosować {\tt \textbackslash{}subsubsection*} lub {\tt \textbackslash{}paragraph} i~ewentualnie {\tt \textbackslash{}subparagraph}, które są podrozdziałami kolejnych poziomów, lecz nie numerowanymi i~nie umieszczanymi w~spisie treści.}.
+funkcjonalności z~klasy \verb|report|\footnote{\label{not:subsubsection}Z~tego powodu rekomenduje się używanie podrozdziałów do poziomu {\tt \textbackslash{}subsection}, a~unikanie poziomu {\tt \textbackslash{}subsubsection}, ze względu na czytelność treści, gdyż ten poziom byłby już czwartym poziomem w~hierarchii rozdziałów. Zamiast tego dobrze jest stosować {\tt \textbackslash{}subsubsection*} lub {\tt \textbackslash{}paragraph} i~ewentualnie {\tt \textbackslash{}subparagraph}, które są podrozdziałami kolejnych poziomów, lecz nie numerowanymi i~nie umieszczanymi w~spisie treści.}.
 
 
 \chapter{Podsumowanie i wnioski}

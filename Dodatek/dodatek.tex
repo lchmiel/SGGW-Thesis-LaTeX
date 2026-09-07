@@ -1,6 +1,6 @@
 \appendix
 
-\newcommand{\SGGWappendixVersion}{1.010} % Wersja stabilna
+\newcommand{\SGGWappendixVersion}{1.011} % Wersja stabilna
 
 % definicje dodane ze względu na Dodatek (\appendix)
 \newcommand{\kf}[1]{{\tt {\#{#1}}}}
@@ -10,7 +10,7 @@
 \setstretch{1.2}
 
 
-\chapter[Dodatek: Poradnik pisania prac dyplomowych]{Dodatek:\\[-.3\baselineskip] Poradnik pisania prac dyplomowych\\[-.45\baselineskip]{\footnotesize\rm Wersja dodatku {\SGGWappendixVersion}, \hyperref[sec:dod:zmiany]{kompilacja z dnia \today}. Wersja klasy {\SGGWthesisVersion}.}\\[-.35\baselineskip]\normalsize Leszek Chmielewski, Izabella Antoniuk}
+\chapter[Dodatek: Poradnik pisania prac dyplomowych]{Dodatek:\\[-.3\baselineskip] Poradnik pisania prac dyplomowych\\[-.45\baselineskip]{\footnotesize\rm \hyperref[sec:dod:zmiany]{Kompilacja z dnia \today}. Wersja dodatku {\SGGWappendixVersion}. Wersja klasy {\SGGWthesisVersion}.} \\[-.35\baselineskip]\normalsize Leszek Chmielewski, Izabella Antoniuk}
 \label{sec:dod:dodatek}
 
 {\color{red}\footnotesize
@@ -46,8 +46,8 @@ Początki rozdziałów lub akapitów, w~których zaczyna się omawianie określo
 \item klucz kojarzy się z~tematem (luźno); 
 \item klucz nie jest słowem ze słownika używanego języka, 
 \item jest jednoznaczny, 
-\item jest niezmienny,
-\item jego pierwsze wystąpienie wskazuje poszukiwaną treść (drugie jest w~słowniku kluczy na końcu poradnika, co nie wprowadza niejednoznaczności). 
+\item\label{itm:dod:zalozenie-niezmiennosci} jest niezmienny (raz utworzony klucz nie jest zmieniany), 
+\item jego pierwsze wystąpienie wskazuje poszukiwaną treść (drugie i~ostatnie jest w~słowniku kluczy na końcu poradnika, co nie wprowadza niejednoznaczności). 
 \end{enumerate} Klucze ułatwiają znalezienie miejsca, gdzie jest w~tym poradniku omówiony temat wskazany danym kluczem w~naszym komentarzu do Państwa pracy dyplomowej.
 
 
@@ -70,7 +70,7 @@ Początki rozdziałów lub akapitów, w~których zaczyna się omawianie określo
 \subsubsection{Hierarchia i numeracja podrozdziałów w~tym poradniku}
 \label{sec:dod:hierarchia-w-poradniku}
 
-W~tym dodatku, który jest tekstem bardziej zbliżonym do instrukcji obsługi, niż do artykułu, jednak będziemy używać {\tt \textbackslash{}subsubsection}, aby można było łatwo odnieść się także do treści niższego poziomu. Robimy to niezależnie od zalecenia o~\hyperref[sec:dod:hierarchia]{hierarchii rozdziałów} w~Państwa rozprawie (rozdz.~\ref{sec:dod:hierarchia}).
+Pomimo zalecenia o~\hyperref[sec:dod:hierarchia]{hierarchii rozdziałów} w~Państwa rozprawie (rozdz.~\ref{sec:dod:hierarchia}), według którego nie należy używać podrozdziałów powyżej trzeciego poziomu numeracji, to jednak w~tym dodatku będziemy używać {\tt \textbackslash{}subsubsection}, aby można było łatwo odnieść się do treści niższego poziomu. Robimy tak, ponieważ ten dodatek jest tekstem bardziej zbliżonym do instrukcji obsługi, niż do pracy dyplomowej.
 
 
 \section{Ogólne porady o~pracach dyplomowych}
@@ -79,8 +79,7 @@ W~tym dodatku, który jest tekstem bardziej zbliżonym do instrukcji obsługi, n
 \subsection{Praca dyplomowa}\ky{OPPD}
 \label{sec:dod:ogolne-praca-dyplomowa}
 
-Przed rozpoczęciem pracy trzeba się zapoznać z~aktualnym zarządzeniem Rektora oraz wytycznymi w~sprawie prac dyplomowych.
-Dostępne są one na stronie~\cite{dyplomanci-uczelnia}. W~poradach w~dalszych rozdziałach te wytyczne są podane bardzo skrótowo.
+Przed rozpoczęciem pracy trzeba się zapoznać z~aktualnym zarządzeniem Rektora~\cite{wymagania-100} oraz wytycznymi w~sprawie prac dyplomowych dostępnych na stronie~\cite{dyplomanci-uczelnia}. W~poradach w~dalszych rozdziałach te wytyczne są podane bardzo skrótowo.
 
 Należy zapoznać się zwłaszcza z~wytycznymi umieszczonymi na stronie dziekanatu~\cite{dyplomanci-dziekanat}, gdyż 
 odnoszą się one bezpośrednio do formatu prac przyjmowanych na naszym Wydziale. 
@@ -101,9 +100,7 @@ Praca w~dziedzinie informatyki powinna zawierać następujące rozdziały (szers
 \item podsumowanie i wnioski; 
 \item spis piśmiennictwa. 
 \end{enumerate}
-Dodatkowo, jeżeli jest to uzasadnione zawartością pracy (tzn. jeżeli w~pracy 
-występują podobne elementy w większej ilości), można dodać również: spis ilustracji, 
-tabel, wzorów, słownik pojęć i/lub spis symboli. 
+Dodatkowo, jeżeli jest to uzasadnione zawartością pracy (tzn. jeżeli w~pracy występują podobne elementy w większej liczbie), można dodać również: spis ilustracji, tabel, słownik pojęć i/lub spis symboli. 
 
 W ramach pracy nie należy mieszać poszczególnych elementów. Przykładowo, opis istniejących rozwiązań przygotowujemy w~ramach odpowiedniego rozdziału, a~następnie odwołujemy się do tego rozdziału, ale nie przenosimy jego fragmentów na przykład do rozdziału z~wynikami. Należy również zwrócić uwagę na to, by nie powtarzać niepotrzebnie treści -- jeżeli temat raz był dokładnie opisany, należy odnieść się do miejsca, gdzie zostało to zrobione i~wspomnieć co najwyżej kluczowe punkty. Niedopuszczalne jest wielokrotne powtarzanie tych samych opisów w~różnych miejscach pracy.
 
@@ -422,9 +419,9 @@ Bardzo\ky{JDNS} dobrą praktyką typograficzną jest oddzielanie jednostek od li
 
 Jeśli do jednostek nie chcemy używać wąskiej spacji, możemy użyć spacji nierozdzielającej: ``$150$~km/h, czyli \verb+$150$~km/h+''. Nie można dopuścić, aby jednostka została samotnie przeniesiona do nowej linii.
 
-Przy umieszczaniu jednostek na elementach graficznych, jak wykresy (oznaczenia osi), w~tabelach oraz we wzorach, należy je umieścić~w nawiasie kwadratowym. Przykład ze wzorem: ``Prędkość chwilowa jest wyrażona wzorem
+Przy umieszczaniu jednostek w~elementach graficznych, jak wykresy (oznaczenia osi), w~tabelach oraz we wzorach, należy je umieścić~w nawiasie kwadratowym. Przykład ze wzorem: ``Prędkość chwilowa jest wyrażona wzorem
 \begin{equation}
-  v = \frac{\ud s}{\ud t} \; \left[ \frac{\on m}{\on s} \right] \,
+  v = \frac{\ud s}{\ud t} \; \left[ \frac{\on m}{\on s} \right] \, ,
 \end{equation}
 gdzie $v$ -- prędkość, $s$ -- droga, $t$ -- czas.''
 
@@ -682,7 +679,7 @@ Podobnie piszemy \posit{$\sin$}, \posit{$\ln$}, \posit{$\on{min}$}, \posit{$\on{
 
 Te same zasady dotyczą \hyperref[sec:dod:jednostki]{jednostek}, rozdział~\ref{sec:dod:jednostki}.
 
-Przypomnijmy również użycie symbolu różniczki. Piszemy \verb+$f(x)\,\mathrm{d}x$+ czyli \posit{$f(x)\,\mathrm{d}x$}, albo piszemy \verb+$f(x)\,\on{d}x$+ czyli \posit{$f(x)\,\on{d}x$}, lub, korzystając z~makra \verb+\ud+ zdefiniowanego w~klasie {\tt SGGW-thesis}, \verb+$f(x)\,\ud x$+ czyli \posit{$f(x)\,\ud x$}. 
+Przypomnijmy też użycie symbolu różniczki. Piszemy \verb+$f(x)\,\mathrm{d}x$+ czyli \posit{$f(x)\,\mathrm{d}x$}, albo piszemy \verb+$f(x)\,\on{d}x$+ czyli \posit{$f(x)\,\on{d}x$}, lub, korzystając z~makra \verb+\ud+ zdefiniowanego w~klasie {\tt SGGW-thesis}, \verb+$f(x)\,\ud x$+ czyli \posit{$f(x)\,\ud x$}. 
 
 {\bf Nie piszemy} \verb+$dx$+ czyli \negat{$dx$}, ponieważ oznaczałoby to iloczyn zmiennych $d$~i~$x$, a nie różniczkę zmiennej~$x$.
 
@@ -1015,17 +1012,17 @@ $\includegraphics[width=0.29\textwidth]{Obraz-przykladowy.jpg}$
 % czasem notatka na marginesie oddziela się od początku swojego akapitu i trzeba ją umieścić w~tym akapicie
 Do\ky{BBLG} tworzenia bibliografii zdecydowanie rekomendujemy pliki bibliografii {\tt *.bib} i~użycie programu Bib\TeX, będącego częścią systemu \LaTeX. Absolutnie rezygnujemy z~tworzenia bibliografii w~środowisku \verb+\thebibliography+. W~ten sposób unikniemy znakomitej większości błędów.
 
-Proponujemy używanie programu Bib\TeX{}, a~nie jego następcy Bib\LaTeX{}a. Wybieramy Bib\TeX, ponieważ są w~nim używane ustalone style bibliograficzne {\tt .bst}. Dostarczenie autorom własnego stylu zapewnia jednolitość pozycji literatury. Bib\TeX{} ze stylami jest używany przez przeważającą większość wydawców, którzy udostępniają dane do cytowania prac u~nich opublikowanych w~formacie Bib\TeX{}a. 
+Proponujemy używanie programu Bib\TeX{}, a~nie jego następcy Bib\LaTeX{}a. Wybieramy Bib\TeX, ponieważ jest prostszy i~są w~nim używane ustalone style bibliograficzne {\tt .bst}. Dostarczenie autorom własnego stylu zapewnia jednolitość pozycji literatury. Bib\TeX{} ze stylami jest używany przez przeważającą większość wydawców. Wydawcy również udostępniają dane do cytowania prac u~nich opublikowanych w~formacie Bib\TeX. 
 
 Wprowadzamy styl bibliograficzny {\tt SGGW-thesis.bst} dostosowany do typowych wymagań, który uwzględnia wszystkie potrzebne rodzaje publikacji, w~tym strony i~serwisy internetowe, skraca imiona do inicjałów, redukuje liczbę autorów cytowanych prac do kilku początkowych, sortuje pozycje według nazwisk autorów itd.
 
 Zobacz również paragraf o~\hyperref[sec:dod:cytowanie-przypisy]{cytowaniu w~przypisach na dole strony}.
 
-Najczęstsze błędy w bibliografii polegają na pomijaniu ważnych danych bibliograficznych i niewłaściwym formatowaniu pozycji. Aby ich uniknąć, wystarczy wypełnić wszystkie te pola, które są podane dla danego rodzaju publikacji w~załączonym przykładowym pliku bibliografii {\tt SGGW-thesis.bib}. Ma on konstrukcję zbliżoną do maksymalnie prostej bazy danych, co każdy zauważy. W~tym pliku znajdziemy wiele przykładów różnych rodzajów pozycji bibliograficznych, jak {\tt book}~\cite{book, latexcompanion}, {\tt article}~\cite{paper}, {\tt booklet}~\cite{uhdm-arXiv}, {\tt misc}~\cite{wymagania-100, latexclass, WYSIWYM, github, RBAC, PyTorch}, {\tt techreport}~\cite{10_Bassham}, {\tt phdthesis}~\cite{02_Mitchell}, {\tt masterthesis}~\cite{17_Adamczyk, 25_Alkhaled}. Można je kopiować i~przerabiać na własne, według potrzeby. Najpierw trzeba znaleźć odpowiedni rodzaj publikacji, a następnie skopiować go i~przerobić na własny. 
+Najczęstsze błędy w bibliografii polegają na pomijaniu ważnych danych bibliograficznych i niewłaściwym formatowaniu pozycji. Aby ich uniknąć, wystarczy wypełnić wszystkie te pola, które są podane dla danego rodzaju publikacji w~załączonym przykładowym pliku bibliografii {\tt SGGW-thesis.bib}. Ma on konstrukcję zbliżoną do prostej bazy danych, co każdy zauważy. Znajdziemy w~nim wiele przykładów różnych rodzajów pozycji bibliograficznych, jak {\tt book}~\cite{book, latexcompanion}, {\tt article}~\cite{paper}, {\tt booklet}~\cite{uhdm-arXiv}, {\tt misc}~\cite{wymagania-100, latexclass, WYSIWYM, github, RBAC, PyTorch}, {\tt techreport}~\cite{10_Bassham}, {\tt phdthesis}~\cite{02_Mitchell}, {\tt masterthesis}~\cite{17_Adamczyk, 25_Alkhaled}. Można je kopiować i~przerabiać na własne, według potrzeby. Najpierw trzeba znaleźć odpowiedni rodzaj publikacji, a następnie skopiować go i~przerobić na własny. 
 
 Spośród pozycji znajdujących się w~pliku {\tt *.bib} w~spisie literatury znajdą się tylko te, które rzeczywiście zacytujemy. Możemy zatem dowolnie rozszerzać ten plik i~używać go do wielu naszych publikacji.
 
-Prawie zawsze publikacja, nawet konwencjonalna, ma cyfrowy identyfikator obiektu (ang. {\em Digital Object Identifier}, DOI) i~jeśli on istnieje, powinniśmy go zawsze podawać. Jeśli nie ma DOI, należy podać adres internetowy, najlepiej uzyskany ze stron wydawcy (nie sklepu lub wyszukiwarki literatury). Często wydawcy nie stosujący identyfikatorów DOI podają {\em link permanentny}, który nie powinien się zmieniać wraz ze zmianami w~serwisach (jak np. w~\cite{25_Alkhaled}). Przypadki braku jakiegokolwiek adresu cyfrowego są rzadkie (nawet dla źródeł znacznie wcześniejszych od ery Internetu, jak np.~\cite{1774_Euler}). 
+Prawie zawsze publikacja, cyfrowa czy konwencjonalna, ma cyfrowy identyfikator obiektu (ang. {\em Digital Object Identifier}, DOI) i~jeśli on istnieje, powinniśmy go zawsze podawać. Jeśli nie ma DOI, należy podać adres internetowy, najlepiej uzyskany ze stron wydawcy (nie sklepu lub wyszukiwarki literatury). Często wydawcy nie stosujący identyfikatorów DOI podają {\em link permanentny}, który nie powinien się zmieniać wraz ze zmianami w~serwisach (jak np. w~\cite{25_Alkhaled}). Przypadki braku jakiegokolwiek adresu cyfrowego są rzadkie (nawet dla źródeł znacznie wcześniejszych od ery Internetu, jak np.~\cite{1774_Euler}). 
 
 Zwróćmy uwagę na to, że wielkie litery w~tytułach są prawie zawsze zmieniane na małe przez program Bib\TeX{} (ma to sens w~publikacjach typu {\tt article}). Jednak niektóre wielkie litery muszą pozostać, w~szczególności w~skrótowcach (np.\ CNN, CT) i~nazwach własnych. Aby to zapewnić, wszystkie wielkie litery, które maja pozostać wielkimi, należy wziąć w~nawias klamrowy. Pliki {\tt .bib} ściągane od wydawców praktycznie nigdy nie mają takich nawiasów i~wymagają od nas zrobienia korekty.
 
@@ -1047,7 +1044,7 @@ Tytuł strony internetowej podajemy dokładnie taki, jaki jest na tej stronie. W
 
 Strona internetowa, jak wszystkie inne pozycje bibliografii, ma autora lub autorów, jak~\cite{github, uhdm-arXiv}, lub autorem jest zespół, jak w~\cite{dyplomanci-dziekanat, MGV-main, latexclass}, lub firma~\cite{webpage, interpunkcja-zasady, RBAC, PyTorch}. Klasycznymi przykładami stron internetowych z~firmą jako autorem są materiały o~oprogramowaniu, np.~\cite{RBAC, PyTorch}.
 
-Nieliczne przykłady stron, dla których trudno ustalić autora, to np.~\cite{wymagania-100, wymagania} (choć można za autora uważać JM Rektora lub użyć wybiegu zastosowanego w~pozycjach~\cite{dyplomanci-uczelnia, regulamin-studiow} czy~\cite{MGV-main, dyplomanci-dziekanat}). Przy braku pola {\tt author} w~Bib\TeX{}u pozycja nie jest prawidłowo sortowana i~staje się pierwszą, co zwykle jest nieprawidłowe. Wtedy w~rekordzie należy podać klucz {\tt key} dla sortowania (por.\ plik {\tt SGGW-thesis.bib}, rekord {\tt @misc\{wymagania-100, ...\}}).
+Nieliczne przykłady stron, dla których trudno ustalić autora, to np.~\cite{wymagania-100, wymagania} (choć można za autora uważać JM Rektora lub użyć wybiegu zastosowanego w~pozycjach~\cite{dyplomanci-uczelnia, regulamin-studiow} czy~\cite{MGV-main, dyplomanci-dziekanat}). Przy braku pola {\tt author} w~Bib\TeX{}u pozycja nie jest prawidłowo sortowana i~staje się pierwszą, co zwykle jest nieprawidłowe. Wtedy w~rekordzie należy podać klucz {\tt key} dla sortowania. Można zobaczyć przykład użycia takiego klucza w~pliku {\tt SGGW-thesis.bib}, rekord {\tt @misc\{wymagania-100, ...\}}.
 
 Zobacz także paragraf o~\hyperref[sec:dod:cytowanie-url]{cytowaniu adresów internetowych}.
 
@@ -1273,18 +1270,19 @@ Zaprzeczenie ({\tt true} $\rightarrow$ {\tt false}), wykomentowanie lub usunieci
 \end{description}
 
 
-\paragraph{Komentarz} Czasem zamiany źle wpisują się w linie tekstu, wyrazy w~zmienionych tekstach są źle przenoszone, lub komentarze przechodzące na następną stronę tracą kolor, albo (rzadko) kolor z~odnośnika przechodzi na zwykły tekst. Dzieje się tak szczególnie wtedy, gdy komentarze są bardzo długie. Nie można tego uniknąć. Po wyłączeniu wszystkich zmian lub akceptacji albo odrzuceniu konkretnej interwencji te problemy znikają.
+\paragraph{Komentarz} Czasem zamiany źle wpisują się w linie tekstu, wyrazy w~zmianach są źle przenoszone, komentarze przechodzące na następną stronę tracą kolor, albo kolor z~odnośnika przechodzi na zwykły tekst. Dzieje się tak szczególnie wtedy, gdy komentarze są bardzo długie. Nie można tego uniknąć. Po wyłączeniu wszystkich zmian lub akceptacji albo odrzuceniu konkretnej interwencji te problemy znikają.
 
-Komentarze nie są widoczne po umieszczeniu ich w~podpisach \verb+\caption{...}+. W~zamianie nie można wstawić cytowania \verb+\cite{...}+.
+Komentarze nie są widoczne po umieszczeniu ich w~podpisach \verb+\caption{...}+ ani w~równaniach. W~zamianie nie można wstawić cytowania \verb+\cite{...}+. W~komentarzu nie można umieścić komendy \verb+\verb{...}+. W~równaniach tekst usunięty jest podkreślony, a~nie skreślony (ale prawidłowo jest czerwony).
 
 
 \newpage
 
 \section{Zmiany}
 \label{sec:dod:zmiany}
-Zmiany dotyczą przede wszystkim dodatku, klasy i~bibliografii. Dotyczą także głównego pliku, w~którym poprawki wynikają prawie wyłącznie ze zmian w~dodatku, a~czasem w~klasie. Modyfikacje są i~prawdopodobnie będą nadal wprowadzane zgodnie z~potrzebami. Dokładamy starań, aby nowe wersje były wstecznie zgodne. 
+Zmiany dotyczą przede wszystkim dodatku, klasy i~bibliografii. Dotyczą także głównego pliku, w~którym poprawki wynikają prawie wyłącznie ze zmian w~dodatku, a~czasem w~klasie. Modyfikacje są i~prawdopodobnie będą nadal wprowadzane zgodnie z~potrzebami. Wersje są wstecznie zgodne (założenie~\ref{itm:dod:zalozenie-niezmiennosci} w~rozdz.~\ref{sec:dod:klucze}). 
 
 \begin{description}
+\item[\rm 2026.09.07:~{\tt main.tex}, {\tt main.pdf}, {\tt dodatek.tex}, {\tt SGGW-thesis.cls}.] W~pliku głównym przestawiono nazwę Wydziału z~WZIM na WII. Wprowadzono drobne poprawki redakcyjne. Wersja dodatku:~1.011. Wersja klasy:~1.091
 \item[\rm 2026.08.06:~{\tt dodatek.tex}, {\tt SGGW-thesis.bib}, {\tt main.pdf}.] Kilka poprawek i~kilka porządkujących zmian kolejności podrozdziałów. Uzupełnienia w~paragrafie o~\hyperref[sec:dod:cytowanie-przypisy]{cytowaniu w~przypisach}. Plany w~związku z~reorganizacją Uczelni w~sekcji~\ref{sec:dod:todo} \hyperref[sec:dod:todo]{Do zrobienia}. Wersja dodatku:~1.010. Wersja klasy bez zmian:~1.090.
 \item[\rm 2026.07.22:~{\tt dodatek.tex}, {\tt main.pdf}.] Wprowadzono wszystkie uzupełnienia w~poradniku pochodzące z~uwag z~nowszych i~dawniejszych prac. Zmiana wersji dodatku z~wersji beta na stabilną. Wersja dodatku:~1.000. Wersja klasy bez zmian:~1.090.
 \item[\rm 2026.07.18:~{\tt SGGW-thesis.cls}, {\tt main.tex}, {\tt main.pdf}.]\mbox{}\linebreak Umożliwiono wybór nazwy wydziału: {\em Wydział Informatyki i~Inżynierii}, poza dotychczas dostępną nazwą {\em Wydział Zastosowań Informatyki i~Matematyki}. Drobne retusze w~Dodatku, zmiana nazwy i~zawartości przykładowego obrazu. Wersja klasy:~1.090, wersja dodatku:~0.640b.
@@ -1314,7 +1312,7 @@ Zmiany dotyczą przede wszystkim dodatku, klasy i~bibliografii. Dotyczą także 
     \item Uwzględnić zmiany adresów stron nowego dziekanatu.
     \item O ile będzie zainteresowanie systemem \LaTeX{} w~specjalnościach pochodzących z~dotychczasowego Wydziału Inżynierii Produkcji, wprowadzać opisy dla prac inżynierskich i~magisterskich dla tych specjalności.
   \end{enumerate}
-  \item Uwzględnić prace licencjackie, dla kierunku {\em Informatyka i ekonometria}. Powinno to mieć miejsce w~całym rozdziale~\ref{sec:dod:ogolne-porady}, a~szczególnie w~rozdziale~\ref{sec:dod:ogolne-praca-inzynierska} \hyperref[sec:dod:ogolne-praca-inzynierska]{o~pracy inżynierskiej}, aby obejmował on również pracę licencjacką.
+  \item Uwzględnić prace licencjackie dla kierunku {\em Informatyka i ekonometria}, lub także dla innych kierunków. Powinno to mieć miejsce w~całym rozdziale~\ref{sec:dod:ogolne-porady}, a~szczególnie poprzez dodanie podrozdziału o~pracach licencjackich równoległego do rozdziałów~\ref{sec:dod:ogolne-praca-inzynierska} \hyperref[sec:dod:ogolne-praca-inzynierska]{o~pracy inżynierskiej} i~\ref{sec:dod:ogolne-praca-magisterska} \hyperref[sec:dod:ogolne-praca-magisterska]{o~pracy magisterskiej}.
 \end{enumerate}
 
 \setstretch{1.4} % przywracamy wartość jak w całej pracy; zostało ustawione na 1 w \beforelastpage;
