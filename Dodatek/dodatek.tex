@@ -1,6 +1,6 @@
 \appendix
 
-\newcommand{\SGGWappendixVersion}{1.011} % Wersja stabilna
+\newcommand{\SGGWappendixVersion}{1.012}
 
 % definicje dodane ze względu na Dodatek (\appendix), zbędne w głównej pracy
 \newcommand{\kf}[1]{{\tt {\#{#1}}}}
@@ -390,7 +390,7 @@ Zobacz także rozdział~\ref{sec:dod:jezyk-ang} o~\hyperref[sec:dod:jezyk-ang]{j
 \subsubsection{Czcionka dla kodu, nazw obiektów, zmiennych, komend}\ky{CZKD}
 \label{sec:dod:czcionka-kodu}
 
-Fragmenty kodu oprogramowania, nazwy zmiennych, klas, obiektów, metod z~oprogramowania, rozkazy linii komend, nazwy plików, rozkazy \LaTeX{}a, nazwy pakietów \LaTeX{}a itp. najlepiej pisać czcionką, która jest możliwie bliska czcionce stosowanej w~środowisku programistycznym, którego używamy. Należy ustalić jedną taką czcionkę w~całej pracy dyplomowej. Najlepiej nadaje się do tego celu czcionka {\tt \textbackslash{}tt typewriter} lub {\sf \textbackslash{}sf sans serif} (czcionki {\tt \tbs{}tt} używa komenda \verb+\verbatim{}+ często używana do pisania krótkich fragmentów kodu, zaś czcionki {\sf \tbs{}sf} nie, więc {\tt \tbs{}tt} wydaje się bardziej uniwersalna). Przykłady: metoda {\tt Drukuj()}, klasa {\tt List<T>}, plik {\tt main.cpp}, pakiet {\tt graphicx}, komenda systemowa {\tt dir /S/Q/P}. 
+Fragmenty kodu oprogramowania, nazwy zmiennych, klas, obiektów, metod z~oprogramowania, rozkazy linii komend, nazwy plików, rozkazy \LaTeX{}a, nazwy pakietów \LaTeX{}a itp.\ najlepiej pisać czcionką, która jest możliwie bliska czcionce stosowanej w~środowisku programistycznym, którego używamy. Należy ustalić jedną taką czcionkę w~całej pracy dyplomowej. Najlepiej nadaje się do tego celu czcionka {\tt \textbackslash{}tt typewriter} lub {\sf \textbackslash{}sf sans serif} (czcionki {\tt \tbs{}tt} używa komenda \verb+\verbatim{}+ często używana do pisania krótkich fragmentów kodu, zaś czcionki {\sf \tbs{}sf} nie, więc {\tt \tbs{}tt} wydaje się bardziej uniwersalna). Przykłady: metoda {\tt Drukuj()}, klasa {\tt List<T>}, plik {\tt main.cpp}, pakiet {\tt graphicx}, komenda systemowa {\tt dir /S/Q/P}. 
 
 Czcionki dla kodu nie stosujemy dla nazw języków, programów, bibliotek, platform, frameworków, środowisk programistycznych czy tym bardziej firm, jak np.\ Python, .NET, NUnit, TensorFlow, PyCharm czy JetBrains.
 
@@ -723,7 +723,7 @@ Obiekt pływający zostanie przez system \LaTeX{} umieszczony w~dokumencie na g�
 
 Zwyczaj umieszczania rysunku (tabeli, listingu) bezpośrednio pod tekstem, który się do niego odnosi, nie należy do świata tekstów technicznych i~naukowych. Również odnoszenie się do rysunku przez tekst ``na rysunku \negat{poniżej}\dots \negat{powyżej}\dots'' jest przykładem złego stylu.
 
-Opcjonalne parametry położenia środowisk {\tt figure}, {\tt table}, itd., wymuszające położenie rysunku (tabeli, \dots) na górze lub dole strony, lub w~konkretnym miejscu ({\tt [t]}, {\tt [b]}, {\tt [p]}, {\tt [h]}, {\tt [H]}, itp.), powinny być używane jedynie wtedy, gdy domyślnie obiekt jest umieszczony w~oczywiście niewłaściwy sposób, a~użycie parametru rozwiązuje problem. Domyślną wartością parametru położenia jest {\tt [tbp]}, więc w~przypadkach trudnych prawie zawsze wystarczy zmienić kolejność liter na {\tt [btp]}, co dla obiektów mniejszych niż stronica jest równoznaczne z~podaniem parametru~{\tt [b]}.
+Opcjonalne parametry położenia środowisk {\tt figure}, {\tt table}, itd., wymuszające położenie rysunku (tabeli, \dots) na górze lub dole strony, lub w~konkretnym miejscu ({\tt [t]}, {\tt [b]}, {\tt [p]}, {\tt [h]}, {\tt [H]} itp.), powinny być używane jedynie wtedy, gdy domyślnie obiekt jest umieszczony w~oczywiście niewłaściwy sposób, a~użycie parametru rozwiązuje problem. Domyślną wartością parametru położenia jest {\tt [tbp]}, więc w~przypadkach trudnych prawie zawsze wystarczy zmienić kolejność liter na {\tt [btp]}, co dla obiektów mniejszych niż stronica jest równoznaczne z~podaniem parametru~{\tt [b]}.
 
 W~tym dokumencie zasadniczo nie stosujemy kwalifikatorów położenia, za wyjątkiem przypadków, gdy obiekt jest niewłaściwie umieszczony (jak napisano wyżej). Może się to zdarzyć w~różnych miejscach, w~miarę rozszerzania i~uzupełniania tekstu.
 
@@ -998,7 +998,7 @@ Najważniejszą operację wykonuje się w~linii~\ref{alg:dod:silnia-commented}.'
 
 Kod programu, tak w~formie listingu jak pseudokodu, powinien być przedstawiony w~formie tekstowej. Rozwiązaniem \underline{zdecydowanie nie zalecanym} jest użycie środowiska {\tt figure} do wstawiania obrazu kodu zdjętego z~ekranu. Kod jako tekst byłby niedostępny, umieszczenie kodu w~nieczytelnej postaci stwarzałoby podejrzenie próby ominięcia mechanizmu anty-plagiatowego, oraz kody byłyby oznaczane i~numerowane jako rysunki. 
 
-Formę obrazu można dopuścić jedynie w~przypadku, gdy pokazana jest konfiguracja środowiska, zawierająca fragmenty kodu, natomiast nie przy prezentowaniu kodu stworzonego w~ramach pracy rozwiązania (algorytmów, metod, itp.). Jednak, w~takim przypadku należy umieścić grafikę w~środowisku dla listingów, jak pokazano w~Algorytmie~\ref{alg:dod:graficznie} (gdzie wstawiono przykładową grafikę nie zawierającą algorytmu). Jeśli używany pakietu {\tt listings}, to należy podać parametry {\tt [mathescape=true, numbers=none]}. Wtedy umieszczamy komendę włączającą grafikę w~trybie matematycznym, oraz unikamy jakichkolwiek znaków poza tym trybem, co widać w~źródle.
+Formę obrazu można dopuścić jedynie w~przypadku, gdy pokazana jest konfiguracja środowiska, zawierająca fragmenty kodu, natomiast nie przy prezentowaniu kodu rozwiązania stworzonego w~ramach pracy (algorytmów, metod itp.). Jednak, w~takim przypadku należy umieścić grafikę w~środowisku dla listingów, jak pokazano w~Algorytmie~\ref{alg:dod:graficznie} (gdzie wstawiono przykładową grafikę nie zawierającą algorytmu). Jeśli używany pakietu {\tt listings}, to należy podać parametry {\tt [mathescape=true, numbers=none]}. Wtedy umieszczamy komendę włączającą grafikę w~trybie matematycznym, oraz unikamy jakichkolwiek znaków poza tym trybem, co widać w~źródle.
 \begin{lstlisting}[float=t, caption={Algorytm jako grafika}, label=alg:dod:graficznie, mathescape=true, numbers=none]
 $\includegraphics[width=0.29\textwidth]{Obraz-przykladowy.jpg}$
 \end{lstlisting}%
@@ -1282,6 +1282,7 @@ Komentarze nie są widoczne po umieszczeniu ich w~podpisach \verb+\caption{...}+
 Zmiany dotyczą przede wszystkim dodatku, klasy i~bibliografii. Dotyczą także głównego pliku, w~którym poprawki wynikają prawie wyłącznie ze zmian w~dodatku, a~czasem w~klasie. Modyfikacje są i~prawdopodobnie będą nadal wprowadzane zgodnie z~potrzebami. Wersje są wstecznie zgodne (założenie~\ref{itm:dod:zalozenie-niezmiennosci} w~rozdz.~\ref{sec:dod:klucze}). 
 
 \begin{description}
+\item[\rm 2026.09.29:~{\tt dodatek.tex}, {\tt main.pdf}.] Drobne poprawki redakcyjne. Wersja dodatku:~1.012. Wersja klasy bez zmian:~1.091
 \item[\rm 2026.09.07:~{\tt main.tex}, {\tt main.pdf}, {\tt dodatek.tex}, {\tt SGGW-thesis.cls}.] W~pliku głównym przestawiono nazwę Wydziału z~WZIM na WII. Wprowadzono drobne poprawki redakcyjne. Wersja dodatku:~1.011. Wersja klasy:~1.091
 \item[\rm 2026.08.06:~{\tt dodatek.tex}, {\tt SGGW-thesis.bib}, {\tt main.pdf}.] Kilka poprawek i~kilka porządkujących zmian kolejności podrozdziałów. Uzupełnienia w~paragrafie o~\hyperref[sec:dod:cytowanie-przypisy]{cytowaniu w~przypisach}. Plany w~związku z~reorganizacją Uczelni w~sekcji~\ref{sec:dod:todo} \hyperref[sec:dod:todo]{Do zrobienia}. Wersja dodatku:~1.010. Wersja klasy bez zmian:~1.090.
 \item[\rm 2026.07.22:~{\tt dodatek.tex}, {\tt main.pdf}.] Wprowadzono wszystkie uzupełnienia w~poradniku pochodzące z~uwag z~nowszych i~dawniejszych prac. Zmiana wersji dodatku z~wersji beta na stabilną. Wersja dodatku:~1.000. Wersja klasy bez zmian:~1.090.
@@ -1307,7 +1308,7 @@ Zmiany dotyczą przede wszystkim dodatku, klasy i~bibliografii. Dotyczą także 
 \section{Do zrobienia}
 \label{sec:dod:todo}
 \begin{enumerate}
-  \item W związku z~reorganizacją SGGW latem 2026, w~ramach której powstanie  Wydział Informatyki i~Inżynierii przez połączenie Wydziału Zastosowań Informatyki i~Matematyki oraz Wydziału Inżynierii Produkcji, po ustaleniu zasad dotyczących prac dyplomowych i~zasobów internetowych nowego dziekanatu, odpowiednio do zmian korygować treść i~literaturę.
+  \item W związku z~reorganizacją SGGW w~2026 roku, w~ramach której powstaje \href{https://wii.sggw.edu.pl}{Wydział Informatyki i~Inżynierii} przez połączenie \href{https://wzim.sggw.edu.pl}{Wydziału Zastosowań Informatyki i~Matematyki} oraz \href{https://wip.sggw.edu.pl}{Wydziału Inżynierii Produkcji}, po ustaleniu zasad dotyczących prac dyplomowych i~zasobów internetowych nowego dziekanatu, odpowiednio do zmian korygować treść i~literaturę.
   \begin{enumerate}
     \item Uwzględnić zmiany adresów stron nowego dziekanatu.
     \item O ile będzie zainteresowanie systemem \LaTeX{} w~specjalnościach pochodzących z~dotychczasowego Wydziału Inżynierii Produkcji, wprowadzać opisy dla prac inżynierskich i~magisterskich dla tych specjalności.
