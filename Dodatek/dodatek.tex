@@ -1,6 +1,6 @@
 \appendix
 
-\newcommand{\SGGWappendixVersion}{1.012}
+\newcommand{\SGGWappendixVersion}{1.013}
 
 % definicje dodane ze względu na Dodatek (\appendix), zbędne w głównej pracy
 \newcommand{\kf}[1]{{\tt {\#{#1}}}}
@@ -31,11 +31,11 @@ Jeśli jednak jeszcze znajdziemy jakiś błąd w~Państwa pracy, to wpiszemy tyl
 
 Te same porady omawialiśmy prowadząc seminaria dyplomowe. Niektóre wykłady seminaryjne są dostępne na historycznej stronie~\cite{www-LC-sem}\footnote{Spis literatury i~spis treści są wspólne dla głównej pracy i~tego dodatku. Nie rozdzielaliśmy ich, aby nie komplikować struktury głównej pracy.}.
 
-Poradnik jest pisany jako zbiór dobrych praktyk, a~właściwie zaleceń, ale ich wybór wyniknął jako reakcja na błędy. Prosimy czytelników o~akceptację struktury tego poradnika właśnie między innymi według opisów błędów.
+Istnieje bardzo dobry {\em Przewodnik pisania prac magisterskich i~dysertacji doktorskich dla studentów SGGW} autorstwa R.~Zabielskiego~\cite[Przewodnik pisania\dots,]{dyplomowanie-uczelnia} i~warto się z~nim zapoznać. Ujmuje on kwestię pisania dysertacji od strony metodologii i~stylu. Natomiast ten poradnik jest pomyślany jako zbiór dobrych praktyk, a~właściwie zaleceń, a~ich wybór jest wynikiem naszych doświadczeń, jako reakcja na rzeczywiste błędy pojawiające się w~wielu pracach. Prosimy czytelników o~akceptację struktury tego poradnika właśnie między innymi według opisów błędów.
 
 Większość błędów pojawia się niezależnie od tego, jakiego narzędzia użyto do napisania pracy. Ten poradnik jest przeznaczony przede wszystkim dla Autorów, którzy wybrali system \LaTeX, który jest systemem typu WYSIWYM (Widzisz To, Co Masz Na Myśli, ang. {\em What You See Is What You Mean})~\cite{WYSIWYM}, więc przedstawimy sposoby radzenia sobie z~błędami i~trudnościami właściwymi dla tego szacownego systemu. Autorów piszących w~systemach typu WYSIWYG (To Co Widzisz Jest Tym, Co Otrzymujesz, ang. {\em What You See Is What You Get})~\cite{WYSIWYG} również zachęcamy do zapoznania się z~tym poradnikiem, choć sposoby unikania błędów, które będą musieli zastosować, będą oczywiście inne, niż w~systemie \LaTeX.
 
-Zakładamy, że czytelnik zna \LaTeX{}, więc z~zasady nie wyjaśniamy jego funkcji, chyba, że omawianym przez nas błędem jest właśnie ich nieprawidłowe użycie. 
+Zakładamy, że czytelnik dobrze zna system \LaTeX{}, więc z~zasady nie wyjaśniamy jego funkcji, chyba, że błędem omawianym przez nas w~tym poradniku jest właśnie ich nieprawidłowe użycie. 
 
 \subsection{Objaśnienia}
 \subsubsection{Słowa-klucze do wyszukiwania tematów}\ky{KLCZ}
@@ -1282,6 +1282,7 @@ Komentarze nie są widoczne po umieszczeniu ich w~podpisach \verb+\caption{...}+
 Zmiany dotyczą przede wszystkim dodatku, klasy i~bibliografii. Dotyczą także głównego pliku, w~którym poprawki wynikają prawie wyłącznie ze zmian w~dodatku, a~czasem w~klasie. Modyfikacje są i~prawdopodobnie będą nadal wprowadzane zgodnie z~potrzebami. Wersje są wstecznie zgodne (założenie~\ref{itm:dod:zalozenie-niezmiennosci} w~rozdz.~\ref{sec:dod:klucze}). 
 
 \begin{description}
+\item[\rm 2026.10.06:~{\tt dodatek.tex}, {\tt main.pdf}, {\tt SGGW-thesis.bib}.] Pierwsze zmiany wynikające z nowej struktury Uczelni. Wśród adresów www nadal pozostaje odnośnik do strony dziekanatu WZIM~\cite{dyplomanci-dziekanat}, która już nie działa, lecz jeszcze nie istnieje jego nowa wersja prezentująca podobne treści (nie zawierają ich nowe strony~\cite{dziekanat-uczelnia}. Wersja dodatku:~1.013.
 \item[\rm 2026.09.29:~{\tt dodatek.tex}, {\tt main.pdf}.] Drobne poprawki redakcyjne. Wersja dodatku:~1.012. Wersja klasy bez zmian:~1.091
 \item[\rm 2026.09.07:~{\tt main.tex}, {\tt main.pdf}, {\tt dodatek.tex}, {\tt SGGW-thesis.cls}.] W~pliku głównym przestawiono nazwę Wydziału z~WZIM na WII. Wprowadzono drobne poprawki redakcyjne. Wersja dodatku:~1.011. Wersja klasy:~1.091
 \item[\rm 2026.08.06:~{\tt dodatek.tex}, {\tt SGGW-thesis.bib}, {\tt main.pdf}.] Kilka poprawek i~kilka porządkujących zmian kolejności podrozdziałów. Uzupełnienia w~paragrafie o~\hyperref[sec:dod:cytowanie-przypisy]{cytowaniu w~przypisach}. Plany w~związku z~reorganizacją Uczelni w~sekcji~\ref{sec:dod:todo} \hyperref[sec:dod:todo]{Do zrobienia}. Wersja dodatku:~1.010. Wersja klasy bez zmian:~1.090.
@@ -1308,9 +1309,9 @@ Zmiany dotyczą przede wszystkim dodatku, klasy i~bibliografii. Dotyczą także 
 \section{Do zrobienia}
 \label{sec:dod:todo}
 \begin{enumerate}
-  \item W związku z~reorganizacją SGGW w~2026 roku, w~ramach której powstaje \href{https://wii.sggw.edu.pl}{Wydział Informatyki i~Inżynierii} przez połączenie \href{https://wzim.sggw.edu.pl}{Wydziału Zastosowań Informatyki i~Matematyki} oraz \href{https://wip.sggw.edu.pl}{Wydziału Inżynierii Produkcji}, po ustaleniu zasad dotyczących prac dyplomowych i~zasobów internetowych nowego dziekanatu, odpowiednio do zmian korygować treść i~literaturę.
+  \item W związku z~reorganizacją SGGW w~2026 roku, w~ramach której powstał \href{https://wii.sggw.edu.pl}{Wydział Informatyki i~Inżynierii} przez połączenie \href{https://wzim.sggw.edu.pl}{Wydziału Zastosowań Informatyki i~Matematyki} oraz \href{https://wip.sggw.edu.pl}{Wydziału Inżynierii Produkcji}, po ustaleniu adresów zasobów internetowych nowego dziekanatu i~zasad dotyczących prac dyplomowych, odpowiednio do zmian korygować treść i~literaturę.
   \begin{enumerate}
-    \item Uwzględnić zmiany adresów stron nowego dziekanatu.
+    \item Uwzględnić zmiany adresów stron wynikające z~utworzenia nowego dziekanatu centralnego~\cite{dziekanat-uczelnia} i~tej części dziekanatu, która być może pozostanie na nowym Wydziale, oraz zmiany wynikające z~prawdopodobnego zastępowania strony~\cite{dyplomanci-uczelnia} stroną~\cite{dyplomowanie-uczelnia}.
     \item O ile będzie zainteresowanie systemem \LaTeX{} w~specjalnościach pochodzących z~dotychczasowego Wydziału Inżynierii Produkcji, wprowadzać opisy dla prac inżynierskich i~magisterskich dla tych specjalności.
   \end{enumerate}
   \item Uwzględnić prace licencjackie dla kierunku {\em Informatyka i ekonometria}, lub także dla innych kierunków. Powinno to mieć miejsce w~całym rozdziale~\ref{sec:dod:ogolne-porady}, a~szczególnie poprzez dodanie podrozdziału o~pracach licencjackich równoległego do rozdziałów~\ref{sec:dod:ogolne-praca-inzynierska} \hyperref[sec:dod:ogolne-praca-inzynierska]{o~pracy inżynierskiej} i~\ref{sec:dod:ogolne-praca-magisterska} \hyperref[sec:dod:ogolne-praca-magisterska]{o~pracy magisterskiej}.
