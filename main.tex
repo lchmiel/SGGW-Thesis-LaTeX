@@ -24,6 +24,10 @@
 \promotor{dra hab.\ inż.\ Leszka Chmielewskiego, prof.\ SGGW}
 \pworkplace{Instytut Informatyki Technicznej\\Katedra Sztucznej Inteligencji}
 
+% Pakiety i ustawienia dla głównej pracy
+\usepackage{multibib} % dla GSI, który może być używany także w głównej pracy
+\newcites{gsi}{Narzędzia generatywnej sztucznej inteligencji}
+% Pakiety i ustawienia dla głównej pracy - koniec
 
 % Pakiety i ustawienia dodane ze względu na Dodatek (\appendix).
 % Trzeba je dołączyć w preambule, więc nie można tego zrobić w Dodatku.
@@ -37,13 +41,15 @@
 \usepackage{marginnote}
 \usepackage[labelformat=simple,labelfont=bf,font=normalsize]{subcaption}\renewcommand\thesubfigure{\alph{subfigure}}
 \usepackage{comment}
+\usepackage{multibib}
+\newcites{dod}{Bibliografia dodatku}
 \definecolor{SGGWclrCite}{rgb}{0.00,0.50,0.00}
 \definecolor{SGGWclrURL}{rgb}{0.00,0.00,0.50}
 \definecolor{SGGWclrLink}{rgb}{0.70,0.00,0.00}
 \definecolor{SGGWclrFile}{rgb}{0.50,0.00,0.50} % dark magenta
 % W Państwa pracach ustawienia kolorów w PDF należy usunąć, bo kolory nie są korzystne w druku.
 \hypersetup{colorlinks=true, linkcolor=SGGWclrLink,citecolor=SGGWclrCite,urlcolor=SGGWclrURL,filecolor=SGGWclrFile}
-% Pakiety dodane ze względu na Dodatek - koniec
+% Pakiety i ustawienia dodane ze względu na Dodatek - koniec
 
 
 \begin{document}
@@ -269,10 +275,14 @@ funkcjonalności z~klasy \verb|report|\footnote{\label{not:subsubsection}Z~tego 
 \chapter{Podsumowanie i wnioski}
 Zgodnie z założeniami stworzono klasę ułatwiającą tworzenie dokumentów spełniających wymagania przedstawione w~\cite{wymagania}\footnote{Obecna wersja spełnia wymagania opisane w~\cite{wymagania-100}.}. Ostateczna implementacja zawiera niecałe trzysta linii kodu źródłowego\footnote{Obecna wersja ma znacznie więcej linii kodu.}, co świadczy o zwięzłości klasy. Zastosowanie komentarzy znacznie poprawia czytelność. Z~perspektywy piszącego, odpowiednio użyta klasa zapewnia, że tekst spełnia wymagania uczelni stawiane pracy dyplomowej.\footnote{\label{not:bibTeX}W~pierwotnej wersji tej pracy użyto środowiska literatury {\tt thebibliography}. Obecnie zdecydowanie nie rekomenduje się takiego sposobu tworzenia bibliografii. Natomiast, bardzo zalecane jest użycie programu Bib\TeX{} i~stylu bibliograficznego {\tt SGGW-thesis.bst}. Ułatwia to tworzenie literatury. Zostało to opisane w~Dodatku~\ref{sec:dod:dodatek}, rozdział~\ref{sec:dod:bibliografia}. Można skorzystać z~przykładów różnych pozycji literatury z~pliku {\tt SGGW-thesis.bib}.}
 
+
 % Do tworzenia bibliografii zdecydowanie rekomendujemy pliki bibliografii *.bib i użycie programu BibTeX, będącego częścią systemu LaTeX.
 % Absolutnie rezygnujemy z tworzenia bibliografii w środowisku \thebibliography.
 \bibliographystyle{SGGW-thesis} % styl bibliograficzny dostosowany do typowych wymagań, uwzględnia dane internetowe, skraca imiona do inicjałów
 \bibliography{SGGW-thesis} % tu znajdziesz wiele przykładów różnych rodzajów pozycji bibliograficznych, kopiuj i przerabiaj na własne
+
+\bibliographystylegsi{SGGW-thesis} % dla spisu narzędzi sztucznej inteligencji
+\bibliographygsi{SGGW-thesis} % styl i baza bibliografii są te same, co w głównej bibliografii
 
 \beforelastpage
 
